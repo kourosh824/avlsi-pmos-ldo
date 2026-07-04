@@ -1,0 +1,82 @@
+% !TEX program = xelatex
+\documentclass[11pt, a4paper]{article}
+
+% --- Language and Font Encoding ---
+% Compiling with XeLaTeX is recommended for seamless Greek/English switching
+\usepackage{fontspec}
+% Force XeLaTeX to use a font with excellent Greek Unicode support
+\setmainfont{CMU Serif}
+\usepackage[greek, english]{babel}
+
+% --- Engineering & Math Packages ---
+\usepackage{amsmath}
+\usepackage{siunitx} % Perfect formatting for units (e.g., \qty{50}{\milli\ampere})
+\usepackage{graphicx} % For Cadence screenshots
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+% --- Page Configuration ---
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+\setlength{\parindent}{0pt} % No paragraph indenting (cleaner for logs)
+\setlength{\parskip}{0.8em} % Space between paragraphs
+
+% --- Header/Footer Setup ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{PMOS LDO Logbook}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% --- Custom Command: Daily Log Entry ---
+% Usage: \logentry{Date}{Task/Focus}
+\newcommand{\logentry}[2]{
+    \vspace{1em}
+    \hrule
+    \vspace{1em}
+    \noindent\textbf{\Large #1} \hfill \textbf{\large #2}
+    \phantomsection
+    \addcontentsline{toc}{subsection}{#1: #2} % Automatically adds date to Table of Contents
+    \vspace{0.5em}
+    \newline
+}
+
+\begin{document}
+
+\title{\textbf{Project Logbook}\\ \Large PMOS Low-Dropout (LDO) Regulator}
+\author{Kourosh Nourmohammadi Baygi - 03122174}
+\date{Started: July 2026}
+\maketitle
+
+\renewcommand{\contentsname}{Περιεχόμενα}
+\tableofcontents
+\newpage
+
+% ==========================================
+% LOG ENTRIES START HERE
+% ==========================================
+
+\section{RAK}
+
+\logentry{04/07/2026}{Initial Specifications \& Technology Setup}
+Today, I set up the Cadence environment and reviewed the target specifications for the PMOS LDO. 
+\begin{itemize}
+    \item \textbf{Target $V_{out}$:} \qty{1.2}{\volt}
+    \item \textbf{Max Load Current ($I_{load}$):} \qty{50}{\milli\ampere}
+    \item \textbf{Dropout Voltage:} \qty{200}{\milli\volt}
+\end{itemize}
+
+I will begin sizing the PMOS pass transistor tomorrow based on the minimum dropout voltage requirement.
+
+
+\logentry{05/07/2026}{Pass Transistor Sizing \& Greek Test}
+Σήμερα θα
+
+% To add a Cadence screenshot, uncomment the block below and place your image in the same folder:
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{cadence_transient_v1.png}
+%     \caption{Initial transient response of the pass device under maximum load.}
+% \end{figure}
+
+\end{document}
