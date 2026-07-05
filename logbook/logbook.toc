@@ -1,4 +1,3 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}RAK}{2}{section.1}%
-\contentsline {subsection}{04/07/2026: Initial Specifications \& Technology Setup}{2}{section*.2}%
-\contentsline {subsection}{05/07/2026: Pass Transistor Sizing \& Greek Test}{2}{section*.3}%
+\contentsline {section}{\numberline {1}Rapid Adoptation Kit (RAK)}{2}{section.1}%
+\contentsline {subsection}{05/07/2026: Σχεδίαση ενός Δισταδιακού Τ.Ε.}{2}{section*.2}%

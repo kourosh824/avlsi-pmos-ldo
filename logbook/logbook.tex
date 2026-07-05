@@ -12,6 +12,7 @@
 \usepackage{amsmath}
 \usepackage{siunitx} % Perfect formatting for units (e.g., \qty{50}{\milli\ampere})
 \usepackage{graphicx} % For Cadence screenshots
+\usepackage{float}
 \usepackage{geometry}
 \usepackage{hyperref}
 \usepackage{fancyhdr}
@@ -28,7 +29,7 @@
 \fancyhead[R]{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 
-% --- Custom Command: Daily Log Entry ---
+% --- Custom Commands  ---
 % Usage: \logentry{Date}{Task/Focus}
 \newcommand{\logentry}[2]{
     \vspace{1em}
@@ -40,6 +41,14 @@
     \vspace{0.5em}
     \newline
 }
+% Usage: \img{Path}{Caption}{Width}
+\newcommand{\img}[3]{
+    \begin{figure}[H] % <--- CHANGE [h] to [H]
+        \centering
+        \includegraphics[width=#3\textwidth]{#1}
+        \caption{#2}
+    \end{figure}
+}
 
 \begin{document}
 
@@ -49,6 +58,8 @@
 \maketitle
 
 \renewcommand{\contentsname}{Περιεχόμενα}
+\renewcommand{\figurename}{Σχήμα}
+
 \tableofcontents
 \newpage
 
@@ -56,27 +67,38 @@
 % LOG ENTRIES START HERE
 % ==========================================
 
-\section{RAK}
+\section{Rapid Adoptation Kit (RAK)}
 
-\logentry{04/07/2026}{Initial Specifications \& Technology Setup}
-Today, I set up the Cadence environment and reviewed the target specifications for the PMOS LDO. 
-\begin{itemize}
-    \item \textbf{Target $V_{out}$:} \qty{1.2}{\volt}
-    \item \textbf{Max Load Current ($I_{load}$):} \qty{50}{\milli\ampere}
-    \item \textbf{Dropout Voltage:} \qty{200}{\milli\volt}
-\end{itemize}
+\logentry{05/07/2026}{Σχεδίαση ενός Δισταδιακού Τ.Ε.}
+Ξεκινήσαμε σήμερα την εργασία κοιτώντας το RAK που μας δίνεται. Παρακάτω θα δείτε το OpAmp που σχεδιάστηκε στα πλαίσια του RAK:
 
-I will begin sizing the PMOS pass transistor tomorrow based on the minimum dropout voltage requirement.
+\img{images/05_07/img_0.png}{Απλός δισταδιακός OpAmp}{0.5}
+Στη συνέχεια σχεδιάσαμε τα δύο κυκλώματα για την Transient και AC προσμοίωση όπου χρησιμοποιούμε τον OpAmp σε συνδεσμολογία Buffer.
+\img{images/05_07/img_1.png}{Κύκλωμα για Transient προσομοίωση}{0.5}
+\img{images/05_07/img_2.png}{Κύκλωμα για AC προσομοίωση}{0.5}
 
+Παρακάτω ακολουθούν τα αποτελέσματα των Transient προσομοιώσεων που τρέξαμε.
+\img{images/05_07/img_5.png}{Transient προσομοίωση}{0.8}
 
-\logentry{05/07/2026}{Pass Transistor Sizing \& Greek Test}
-Σήμερα θα
+Ως το χειρότερο \textbf{Slew Rate} βρίκουμε το $ 29.3 \frac{V}{us} $. Θα δούμε στη συνέχεια το settling time μαζί με την τελική τιμή και για Rising Edge αλλά και για Falling Edge:
+\img{images/05_07/img_6.png}{Settling time και τελική τιμή για Rising Edge}{0.8}
+Όπως βλέπουμε παραπάνω, έχουμε:
+$ t^{rising}_s = 35.217095ns, y^{rising}_{ss} = 1.2918581V $ 
+\img{images/05_07/img_7.png}{Settling time και τελική τιμή για Falling Edge}{0.8}
+Αντίστοιχα: $ t^{falling}_s = 32.6593659ns, y^{falling}_{ss} = 696.85077mV $ 
 
-% To add a Cadence screenshot, uncomment the block below and place your image in the same folder:
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.8\textwidth]{cadence_transient_v1.png}
-%     \caption{Initial transient response of the pass device under maximum load.}
-% \end{figure}
+Όσον αφορά το DC Offset, έχουμε:
+$ DCoffset = V^{DC}_{OUT} - V^{DC}_{IN} = 994.9mV - 1000mV = -5.1mV $
+
+\img{images/05_07/img_4.png}{AC προσομοίωση}{0.8}
+
+Προκύπτει λοιπόν πως έχουμε κέρδος ανοιχτού βρόχου περίπου ίσο με 40.5006dB ενώ το εύρος ισούται με 38.8669MHz.
+
+Όσον αφορά τώρα τα specs, έχουμε:
+\img{images/05_07/img_8.png}{Specs}{0.7}
+
+Μετά από Tuning:
+\img{images/05_07/img_9.png}{Specs}{0.7}
+
 
 \end{document}
