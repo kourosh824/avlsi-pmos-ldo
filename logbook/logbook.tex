@@ -16,6 +16,7 @@
 \usepackage{geometry}
 \usepackage{hyperref}
 \usepackage{fancyhdr}
+\usepackage{tabularx}
 
 % --- Page Configuration ---
 \geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
@@ -50,6 +51,9 @@
     \end{figure}
 }
 
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+
 \begin{document}
 
 \title{\textbf{Project Logbook}\\ \Large PMOS Low-Dropout (LDO) Regulator}
@@ -59,6 +63,7 @@
 
 \renewcommand{\contentsname}{Περιεχόμενα}
 \renewcommand{\figurename}{Σχήμα}
+\renewcommand{\tablename}{Πίνακας}
 
 \tableofcontents
 \newpage
@@ -71,7 +76,6 @@
 
 \logentry{05/07/2026}{Σχεδίαση ενός Δισταδιακού Τ.Ε.}
 Ξεκινήσαμε σήμερα την εργασία κοιτώντας το RAK που μας δίνεται. Παρακάτω θα δείτε το OpAmp που σχεδιάστηκε στα πλαίσια του RAK:
-
 \img{images/05_07/img_0.png}{Απλός δισταδιακός OpAmp}{0.5}
 Στη συνέχεια σχεδιάσαμε τα δύο κυκλώματα για την Transient και AC προσμοίωση όπου χρησιμοποιούμε τον OpAmp σε συνδεσμολογία Buffer.
 \img{images/05_07/img_1.png}{Κύκλωμα για Transient προσομοίωση}{0.5}
@@ -100,5 +104,112 @@ $ DCoffset = V^{DC}_{OUT} - V^{DC}_{IN} = 994.9mV - 1000mV = -5.1mV $
 Μετά από Tuning:
 \img{images/05_07/img_9.png}{Specs}{0.7}
 
+\section{1ο Παραδοτέο}
+\logentry{07/07/2026}{Σχεδίαση ενός PMOS LDO με Ιδανικά Στοιχεία}
+Αρχικά, θα γράψουμε τα specs που προσπαθούμε να πιάσουμε.
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+        \hline
+        \textbf{Παράμετρος} & \textbf{Προδιαγραφή} \\
+        \hline
+        Τάση Τροφοδοσίας ($V_{EXT}$) & \qty{3}{\volt} \\
+        \hline
+        Τάση Αναφοράς ($V_{REF}$) & \qty{1.2}{\volt} $\pm 1\%$ \\
+        \hline
+        Ονομαστική Τάση Εξόδου ($V_{OUT}$) & \qty{2.3}{\volt} \\
+        \hline
+        Trim Voltages & \qty{1.6}{\volt}, \qty{2.1}{\volt}, \qty{2.3}{\volt} \\
+        \hline
+        Πυκνωτής Αντιστάθμισης ($C_{comp}$) & $< \qty{7}{\pico\farad}$ \\
+        \hline
+        Unity Gain Bandwidth (UGBW) & $< \qty{200}{\kilo\hertz}$ \\
+        \hline
+        Συνολική Κατανάλωση (Consumption) & $< \qty{100}{\micro\ampere}$ \\
+        \hline
+        Phase Margin (Full Load) & $> \qty{70}{\degree}$ \\
+        \hline
+        Phase Margin (No-Load) & $> \qty{60}{\degree}$ \\
+        \hline
+        PSRR @ \qty{1}{\hertz} & $> \qty{65}{\decibel}$ \\
+        \hline
+        PSRR @ \qty{1}{\mega\hertz} & $> \qty{2}{\decibel}$ \\
+        \hline
+        PSRR @ \qty{10}{\mega\hertz} & $> \qty{2}{\decibel}$ \\
+        \hline
+        Output Referred Noise @ \qty{10}{\hertz} & $< -115 \text{ dBV}/\sqrt{\text{Hz}}$ \\
+        \hline
+        Output Referred Noise @ \qty{1}{\kilo\hertz} & $< -125 \text{ dBV}/\sqrt{\text{Hz}}$ \\
+        \hline
+        Output Referred Noise @ \qty{10}{\kilo\hertz} & $< -134 \text{ dBV}/\sqrt{\text{Hz}}$ \\
+        \hline
+        Output Referred Noise @ \qty{100}{\kilo\hertz} & $< -143 \text{ dBV}/\sqrt{\text{Hz}}$ \\
+        \hline
+        Output Referred Noise @ \qty{1}{\mega\hertz} & $< -155 \text{ dBV}/\sqrt{\text{Hz}}$ \\
+        \hline
+        Ρεύμα Φορτίου ($I_{load}$) & \qty{500}{\micro\ampere} \\
+        \hline
+        Saturation Margin ($V_{sat\_marg}$) & $> \qty{50}{\milli\volt} $ \\
+        \hline
+        Ρεύμα Πόλωσης ($I_{bias}$) & \qty{5}{\micro\ampere} \\
+        \hline
+    \end{tabularx}
+    \caption{Προδιαγραφές Σχεδίασης PMOS LDO}
+    \label{tab:ldo_specs}
+\end{table}
+\img{images/07_07/img_0.png}{PMOS LDO με VCVS}{0.65}
+Σχεδιάζουμε τώρα τη διάταξη του PMOS LDO με τη χρήση μιας εξαρτημένης πηγής τάσης VCVS (Voltage Controlled Voltage Source). Επιλέγουμε ως κέρδος την τιμή 10000 που είναι αρκετά μεγάλη. Έτσι λοιπόν στους υπολογισμούς μας μπορούμε να υποθέσουμε ότι έχουμε σχεδόν άπειρο κέρδος.
+
+Όπως φαίνεται και παραπάνω, η διάταξη μας έχει 6 παραμέτρους \textbf{vext}, \textbf{vref}, \textbf{r1}, \textbf{r2}, \textbf{iload} και \textbf{w\_pass}. Για την επιλογή των αντιστάσεων, θα χρησιμοποιήσουμε την παρακάτω σχέση:
+\[
+\frac{V_{OUT}}{V_{REF}} = \frac{R_1+R_2}{R_2} \rightarrow \frac{R_1}{R_2} = \frac{V_{OUT}}{V_{RE}} - 1 = \frac{1.1}{1.2}
+\]
+
+Αρχικά ξεκινήσαμε με \textbf{w\_pass} ίσο με \qty{150}{\nano\meter}. Ωστόσο παρατηρήσαμε μετά πως για φορτίο \qty{500}{\micro\ampere}, αυτό το πλάτος τρανζίστορ είναι πολύ μικρό. Αυξήσαμε το πλάτος σε \qty{5}{\micro\meter} και καταφέραμε να πιάσουμε τα specs.
+
+Συγκεκριμένα, για τις παρακάτω παραμέτρους:
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+        \hline
+        \textbf{Παράμετρος} & \textbf{Τιμή} \\
+        \hline
+        $V_{EXT}$ & \qty{3}{\volt} \\
+        \hline
+        $V_{REF}$ & \qty{1.2}{\volt} \\
+        \hline
+        $R_1$ & \qty{275}{\kilo\ohm} \\
+        \hline
+        $R_2$ & \qty{300}{\kilo\ohm} \\
+        \hline
+        $w_{pass}$ & \qty{5}{\micro\meter} \\
+        \hline
+    \end{tabularx}
+    \caption{Παράμετροι Προσομοίωσης}
+    \label{tab:ldo_params}
+\end{table}
+Πήραμε τις παρακάτω τιμές ως αποτέλεσμα της DC προσομοίωσης που τρέξαμε:
+
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+        \hline
+        \textbf{Name} & \textbf{Value (No Load)} & \textbf{Value (With Load)} \\
+        \hline
+        $V_{OUT}$ & \qty{2.3}{\volt} & \qty{2.3}{\volt} \\
+        \hline
+        $I_{DIV}$ & \qty{4.001}{\micro\ampere} & \qty{4.001}{\micro\ampere} \\
+        \hline
+        $V_{GATE}$ & \qty{2.599}{\volt} & \qty{2.025}{\volt} \\
+        \hline
+        $V_{SAT-MARGIN}$ & \qty{566.2}{\milli\volt} & \qty{239.8}{\milli\volt} \\
+        \hline
+    \end{tabularx}
+    \caption{Αποτελέσματα Προσομοίωσης}
+    \label{tab:ldo_ideal_out}
+\end{table}
 
 \end{document}

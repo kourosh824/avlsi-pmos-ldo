@@ -1,3 +1,5 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Rapid Adoptation Kit (RAK)}{2}{section.1}%
 \contentsline {subsection}{05/07/2026: Σχεδίαση ενός Δισταδιακού Τ.Ε.}{2}{section*.2}%
+\contentsline {section}{\numberline {2}1ο Παραδοτέο}{5}{section.2}%
+\contentsline {subsection}{07/07/2026: Σχεδίαση ενός PMOS LDO με Ιδανικά Στοιχεία}{5}{section*.3}%
