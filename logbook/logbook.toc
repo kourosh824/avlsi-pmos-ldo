@@ -3,3 +3,6 @@
 \contentsline {subsection}{05/07/2026: Σχεδίαση ενός Δισταδιακού Τ.Ε.}{2}{section*.2}%
 \contentsline {section}{\numberline {2}1ο Παραδοτέο}{5}{section.2}%
 \contentsline {subsection}{07/07/2026: Σχεδίαση ενός PMOS LDO με Ιδανικά Στοιχεία}{5}{section*.3}%
+\contentsline {subsection}{09/07/2026: Αντιστάσεις για Trim Voltages}{7}{section*.4}%
+\contentsline {subsection}{21/07/2026: Σχεδίαση Error Amplifier}{7}{section*.5}%
+\contentsline {subsection}{22/07/2026: Σχεδιάση Decoder και Sizing}{7}{section*.6}%
