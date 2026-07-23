@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=xelatex 2026.7.4)  22 JUL 2026 14:16
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=xelatex 2026.7.4)  23 JUL 2026 22:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -618,6 +618,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [7]
 File: images/22_07/img_0.png Graphic file (type bmp)
 <images/22_07/img_0.png>
+File: images/22_07/img_1.png Graphic file (type bmp)
+<images/22_07/img_1.png>
 
 
 
@@ -633,13 +635,13 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `logbook.out' has not changed.
-(rerunfilecheck)             Checksum: 5D8E154DD4125EF512187D568EA9AB72;1976.
+(rerunfilecheck)             Checksum: 5D01D220703334595A99DDF3DB1AFB51;2328.
  ) 
 Here is how much of TeX's memory you used:
- 18521 strings out of 475820
- 407554 string characters out of 5773999
- 820423 words of memory out of 5000000
- 41245 multiletter control sequences out of 15000+600000
+ 18529 strings out of 475820
+ 407782 string characters out of 5773999
+ 820787 words of memory out of 5000000
+ 41253 multiletter control sequences out of 15000+600000
  564158 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  79i,19n,93p,516b,949s stack positions out of 10000i,1000n,20000p,200000b,200000s
