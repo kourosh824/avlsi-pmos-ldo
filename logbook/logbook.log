@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=xelatex 2026.7.4)  23 JUL 2026 22:45
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=xelatex 2026.7.4)  26 JUL 2026 13:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -535,14 +535,14 @@ Package hyperref Info: Link coloring OFF on input line 61.
 [1
 
 ]
-File: images/05_07/img_0.png Graphic file (type bmp)
-<images/05_07/img_0.png>
-File: images/05_07/img_1.png Graphic file (type bmp)
-<images/05_07/img_1.png>
-File: images/05_07/img_2.png Graphic file (type bmp)
-<images/05_07/img_2.png>
-File: images/05_07/img_5.png Graphic file (type bmp)
-<images/05_07/img_5.png>
+File: images/07_05/img_0.png Graphic file (type bmp)
+<images/07_05/img_0.png>
+File: images/07_05/img_1.png Graphic file (type bmp)
+<images/07_05/img_1.png>
+File: images/07_05/img_2.png Graphic file (type bmp)
+<images/07_05/img_2.png>
+File: images/07_05/img_5.png Graphic file (type bmp)
+<images/07_05/img_5.png>
 
 
 
@@ -553,10 +553,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2]
-File: images/05_07/img_6.png Graphic file (type bmp)
-<images/05_07/img_6.png>
-File: images/05_07/img_7.png Graphic file (type bmp)
-<images/05_07/img_7.png>
+File: images/07_05/img_6.png Graphic file (type bmp)
+<images/07_05/img_6.png>
+File: images/07_05/img_7.png Graphic file (type bmp)
+<images/07_05/img_7.png>
 
 
 
@@ -567,12 +567,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [3]
-File: images/05_07/img_4.png Graphic file (type bmp)
-<images/05_07/img_4.png>
-File: images/05_07/img_8.png Graphic file (type bmp)
-<images/05_07/img_8.png>
-File: images/05_07/img_9.png Graphic file (type bmp)
-<images/05_07/img_9.png>
+File: images/07_05/img_4.png Graphic file (type bmp)
+<images/07_05/img_4.png>
+File: images/07_05/img_8.png Graphic file (type bmp)
+<images/07_05/img_8.png>
+File: images/07_05/img_9.png Graphic file (type bmp)
+<images/07_05/img_9.png>
 
 
 
@@ -604,8 +604,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [6]
-File: images/09_07/img_0.png Graphic file (type bmp)
-<images/09_07/img_0.png>
+File: images/07_09/img_0.png Graphic file (type bmp)
+<images/07_09/img_0.png>
 
 
 
@@ -616,10 +616,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [7]
-File: images/22_07/img_0.png Graphic file (type bmp)
-<images/22_07/img_0.png>
-File: images/22_07/img_1.png Graphic file (type bmp)
-<images/22_07/img_1.png>
+File: images/07_22/img_0.png Graphic file (type bmp)
+<images/07_22/img_0.png>
+File: images/07_22/img_1.png Graphic file (type bmp)
+<images/07_22/img_1.png>
 
 
 
@@ -629,21 +629,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[8] (./logbook.aux)
+[8]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[9] (./logbook.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `logbook.out' has not changed.
-(rerunfilecheck)             Checksum: 5D01D220703334595A99DDF3DB1AFB51;2328.
+(rerunfilecheck)             Checksum: B5E37C468607800CCD07E394271D06A1;2474.
  ) 
 Here is how much of TeX's memory you used:
  18529 strings out of 475820
  407782 string characters out of 5773999
- 820787 words of memory out of 5000000
+ 820945 words of memory out of 5000000
  41253 multiletter control sequences out of 15000+600000
  564158 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  79i,19n,93p,516b,949s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on logbook.pdf (8 pages).
+Output written on logbook.pdf (9 pages).

@@ -7,3 +7,4 @@
 \contentsline {subsection}{21/07/2026: Σχεδίαση Error Amplifier}{7}{section*.5}%
 \contentsline {subsection}{22/07/2026: Σχεδιάση Decoder και Sizing}{7}{section*.6}%
 \contentsline {subsection}{23/07/2026: Προσομοίωση για PSRR και Loop Gain}{8}{section*.7}%
+\contentsline {subsection}{25/07/2026: Sizing}{8}{section*.8}%
