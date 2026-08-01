@@ -4,7 +4,9 @@
 \contentsline {section}{\numberline {2}1ο Παραδοτέο}{5}{section.2}%
 \contentsline {subsection}{07/07/2026: Σχεδίαση ενός PMOS LDO με Ιδανικά Στοιχεία}{5}{section*.3}%
 \contentsline {subsection}{09/07/2026: Αντιστάσεις για Trim Voltages}{7}{section*.4}%
-\contentsline {subsection}{21/07/2026: Σχεδίαση Error Amplifier}{7}{section*.5}%
-\contentsline {subsection}{22/07/2026: Σχεδιάση Decoder και Sizing}{7}{section*.6}%
-\contentsline {subsection}{23/07/2026: Προσομοίωση για PSRR και Loop Gain}{8}{section*.7}%
-\contentsline {subsection}{25/07/2026: Sizing}{8}{section*.8}%
+\contentsline {section}{\numberline {3}Σχεδίαση Error Amplifier}{8}{section.3}%
+\contentsline {subsection}{21/07/2026: Αρχική Σχεδίαση με Απλό Διαφορικό Ζεύγος}{8}{section*.5}%
+\contentsline {subsection}{22/07/2026: Σχεδιάση Decoder και Sizing}{8}{section*.6}%
+\contentsline {subsection}{23/07/2026: Προσομοίωση για PSRR και Loop Gain}{9}{section*.7}%
+\contentsline {subsection}{25/07/2026: Sizing}{9}{section*.8}%
+\contentsline {subsection}{01/08/2026: Τηλεσκοπικός Ενισχυτής}{10}{section*.9}%
