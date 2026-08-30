@@ -10,3 +10,4 @@
 \contentsline {subsection}{23/07/2026: Προσομοίωση για PSRR και Loop Gain}{9}{section*.7}%
 \contentsline {subsection}{25/07/2026: Sizing}{9}{section*.8}%
 \contentsline {subsection}{01/08/2026: Τηλεσκοπικός Ενισχυτής}{10}{section*.9}%
+\contentsline {subsection}{07/08/2026: Sizing του Τηελσκοπικού}{11}{section*.10}%
