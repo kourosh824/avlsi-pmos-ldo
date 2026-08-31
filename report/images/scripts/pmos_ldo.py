@@ -1,9 +1,16 @@
+import matplotlib as mpl
 import schemdraw
 import schemdraw.elements as elm
 
+# Set global font to Computer Modern (LaTeX standard)
+mpl.rcParams['mathtext.fontset'] = 'cm'
+mpl.rcParams['font.family'] = 'serif'
+# pForce the default math text to be Roman (upright) instead of Italic
+mpl.rcParams['mathtext.default'] = 'rm'
+
 with schemdraw.Drawing(file='../pmos_ldo.svg') as d:
-    d.config(unit=2)
-    vref = elm.Dot().label(r'$V_{REF}$')
+    d.config(unit=2, lw=1, font='serif')
+    vref = elm.Dot().label(r'$V_{REF}$').fill('white')
     elm.Line()
     ea = elm.Opamp().anchor('in1').label('EA', loc='center')
     ea_in = elm.Line().left().length(1).at(ea['in2'])
@@ -12,11 +19,12 @@ with schemdraw.Drawing(file='../pmos_ldo.svg') as d:
 
     ea_up = elm.Line().up().at(ea.vd).length(2)
     pd_up = elm.Line().up().at(pd.source).toy(ea_up.end)
-    elm.Line().at(ea_up.end).to(pd_up.end).label(r'$V_{EXT}$', loc='top')
+    elm.Line().at(ea_up.end, -0.5).to(pd_up.end, 0.5).label(r'$V_{EXT}$', loc='top').linewidth(3)
     elm.Line().down().length(0.5).at(pd.drain)
     compensation = elm.Dot()
 
     r1 = elm.Resistor().down().at(compensation.start).label(r'$R_1$', loc='bottom')
+    elm.Dot()
     r2 = elm.ResistorVar().down().at(r1.end).label(r'$R_2$', loc='bottom')
     elm.Ground()
     elm.Wire('-|').at(r1.end).to(ea_in.end)
@@ -36,7 +44,11 @@ with schemdraw.Drawing(file='../pmos_ldo.svg') as d:
     elm.Ground()
 
     elm.Line().right().length(2).at(load.start)
+    u_out = elm.Dot()
     elm.Line().down().length(1)
     iload = elm.SourceI().down().label(r'$I_L$', loc='bottom')
     elm.Line().down().length(1)
     elm.Ground()
+
+    elm.Line().right().length(1).at(u_out.start)
+    elm.Dot().label(r'$V_{OUT}$').fill('white')

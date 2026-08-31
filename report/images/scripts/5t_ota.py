@@ -1,9 +1,15 @@
+import matplotlib as mpl
 import schemdraw
 import schemdraw.elements as elm
 
-with schemdraw.Drawing(file="../5t_ota.svg") as d:
-    d.config(unit=2)
+# Set global font to Computer Modern (LaTeX standard)
+mpl.rcParams['mathtext.fontset'] = 'cm'
+mpl.rcParams['font.family'] = 'serif'
+# pForce the default math text to be Roman (upright) instead of Italic
+mpl.rcParams['mathtext.default'] = 'rm'
 
+with schemdraw.Drawing(file='../5t_ota.svg') as d:
+    d.config(unit=2, lw=1, font='serif')
     Q6 = elm.AnalogNFet(offset_gate=False).anchor('gate').label('M6')
     elm.Line().up().length(2).at(Q6.drain)
     ibias = elm.SourceI().reverse().label(r'$I_{BIAS}$', loc='top')
@@ -37,14 +43,14 @@ with schemdraw.Drawing(file="../5t_ota.svg") as d:
     elm.Dot().at(Q3.drain)
     elm.Dot().at(Q3.gate)
     elm.Wire('-').at(Q3.gate).to(Q4.gate)
-    elm.Wire('-').at(Q3_up.end).to(Q4_up.end)
 
-    elm.Wire('|-').at(ibias.end).to(Q3_up.end).label(r'$V_{DD}$', loc='end')
+    elm.Wire('-').at(ibias.end).to((ibias.end.x, Q4_up.end.y))
+    elm.Wire('-').at((ibias.end.x, Q4_up.end.y), -0.5).to(Q4_up.end, 0.5).label(r'$V_{EXT}$', loc='top').linewidth(3)
 
     elm.Line().left().length(0.5).at(Q1.gate)
-    elm.Dot().label(r'$V_{in,p}$')
+    elm.Dot().label(r'$V_{in,p}$').fill('white')
     elm.Line().right().length(0.5).at(Q2.gate)
-    elm.Dot().label(r'$V_{in,n}$')
+    elm.Dot().label(r'$V_{in,n}$').fill('white')
 
     elm.Line().right().length(1.5).at(vout.end)
-    elm.Dot().label(r'$V_{OUT}$')
+    elm.Dot().label(r'$V_{OUT}$').fill('white')

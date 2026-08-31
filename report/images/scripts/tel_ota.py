@@ -1,9 +1,15 @@
+import matplotlib as mpl
 import schemdraw
 import schemdraw.elements as elm
 
-with schemdraw.Drawing(file='../tel_ota.svg') as d:
-    d.config(unit=2)
+# Set global font to Computer Modern (LaTeX standard)
+mpl.rcParams['mathtext.fontset'] = 'cm'
+mpl.rcParams['font.family'] = 'serif'
+# pForce the default math text to be Roman (upright) instead of Italic
+mpl.rcParams['mathtext.default'] = 'rm'
 
+with schemdraw.Drawing(file='../tel_ota.svg') as d:
+    d.config(unit=2, lw=1, font='serif')
     M7 = elm.AnalogNFet(offset_gate=False).anchor('gate').label('M7')
     elm.Line().up().length(3).at(M7.drain)
     ibias = elm.SourceI().reverse().label(r'$I_{BIAS}$', loc='top')
@@ -76,18 +82,19 @@ with schemdraw.Drawing(file='../tel_ota.svg') as d:
     elm.Wire('-').at(M6.drain).to(M10.drain)
 
     elm.Line().left().length(0.5).at(M1.gate)
-    elm.Dot().label(r'$V_{in,p}$')
+    elm.Dot().label(r'$V_{in,p}$').fill('white')
     elm.Line().right().length(0.5).at(M2.gate)
-    elm.Dot().label(r'$V_{in,n}$')
+    elm.Dot().label(r'$V_{in,n}$').fill('white')
 
     elm.Wire('-').at(M3c.gate).to(M4c.gate)
     elm.Wire('-').at(M1c.gate).to(M2c.gate)
     elm.Wire('-').at(M10.gate).to(M9.gate)
     elm.Wire('-').at(M9.drain).to(M8.drain)
-    elm.Wire('|-').at(ibias.end).to(M4_up.end).label(r'$V_{EXT}$')
+    elm.Wire('-').at(ibias.end).to((ibias.end.x, M4_up.end.y))
+    elm.Wire('-').at((ibias.end.x, M4_up.end.y), -0.5).to(M4_up.end, 0.5).label(r'$V_{EXT}$', loc='top').linewidth(3)
 
     elm.Line().right().length(1.5).at(vout.center)
-    elm.Dot().label(r'$V_{OUT}$')
+    elm.Dot().label(r'$V_{OUT}$').fill('white')
 
     # elm.Line().right().length(1.5).at(vout.end)
     # elm.Dot().label(r'$V_{OUT}$')

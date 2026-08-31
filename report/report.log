@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.7.4)  30 AUG 2026 16:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.7.4)  1 SEP 2026 00:42
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -324,53 +324,152 @@ File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfsyssoftpath@bigbuffer@items=\count302
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 20.
+)) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count303
+\calc@Bcount=\count304
+\calc@Adimen=\dimen192
+\calc@Bdimen=\dimen193
+\calc@Askip=\skip56
+\calc@Bskip=\skip57
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count305
+\calc@Cskip=\skip58
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip59
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+LaTeX Info: Redefining \boldsymbol on input line 28.
+\pmbraise@=\dimen194
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count306
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count307
+\leftroot@=\count308
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count309
+\DOTSCASE@=\count310
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box74
+\strutbox@=\box75
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen195
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count311
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count312
+\dotsspace@=\muskip17
+\c@parentequation=\count313
+\dspbrk@lvl=\count314
+\tag@help=\toks30
+\row@=\count315
+\column@=\count316
+\maxfields@=\count317
+\andhelp@=\toks31
+\eqnshift@=\dimen196
+\alignsep@=\dimen197
+\tagshift@=\dimen198
+\tagwidth@=\dimen199
+\totwidth@=\dimen256
+\lineht@=\dimen257
+\@envbody=\toks32
+\multlinegap=\skip60
+\multlinetaggap=\skip61
+\mathdisplay@stack=\toks33
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+\g_MT_multlinerow_int=\count318
+\l_MT_multwidth_dim=\dimen258
+\origjot=\skip62
+\l_MT_shortvdotswithinadjustabove_dim=\dimen259
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen260
+\l_MT_above_intertext_sep=\dimen261
+\l_MT_below_intertext_sep=\dimen262
+\l_MT_above_shortintertext_sep=\dimen263
+\l_MT_below_shortintertext_sep=\dimen264
+\xmathstrut@box=\box76
+\xmathstrut@dim=\dimen265
+)
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 21.
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count303
-\l__pdf_internal_box=\box74
+\l__color_backend_stack_int=\count319
+\l__pdf_internal_box=\box77
 ) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 -- Lines per column: 58 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count304
-\scratchdimen=\dimen192
-\scratchbox=\box75
-\nofMPsegments=\count305
-\nofMParguments=\count306
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count307
-\MPscratchDim=\dimen193
-\MPnumerator=\count308
-\makeMPintoPDFobject=\count309
-\everyMPtoPDFconversion=\toks31
+\scratchcounter=\count320
+\scratchdimen=\dimen266
+\scratchbox=\box78
+\nofMPsegments=\count321
+\nofMParguments=\count322
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count323
+\MPscratchDim=\dimen267
+\MPnumerator=\count324
+\makeMPintoPDFobject=\count325
+\everyMPtoPDFconversion=\toks35
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ (/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 20.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 21.
 
 Package siunitx Info: Option "detect-weight" has been deprecated in this
 (siunitx)             release.
@@ -378,95 +477,74 @@ Package siunitx Info: Option "detect-weight" has been deprecated in this
 (siunitx)             Use "reset-text-series = false, text-series-to-math =
 (siunitx)             true" as a replacement.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 29.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 29.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 29.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 29.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 30.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 41.
-Package svg Info: Last page of `./svg-inkscape/pmos_ldo_svg-tex.pdf' is 1 on input line 84.
+Package svg Info: Last page of `./svg-inkscape/pmos_ldo_svg-tex.pdf' is 1 on input line 85.
  (./svg-inkscape/pmos_ldo_svg-tex.pdf_tex
-<./svg-inkscape/pmos_ldo_svg-tex.pdf, id=5, page=1, 559.37932pt x 343.66191pt>
+<./svg-inkscape/pmos_ldo_svg-tex.pdf, id=5, page=1, 584.90671pt x 343.66191pt>
 File: ./svg-inkscape/pmos_ldo_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/pmos_ldo_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/pmos_ldo_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 258.46837pt x 158.78906pt.
+(pdftex.def)             Requested size: 258.46837pt x 151.86717pt.
 )
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 88.
 
 
-Package svg Info: Last page of `./svg-inkscape/pmos_ldo_ss_svg-tex.pdf' is 1 on input line 102.
+Package svg Info: Last page of `./svg-inkscape/pmos_ldo_ss_svg-tex.pdf' is 1 on input line 117.
 (./svg-inkscape/pmos_ldo_ss_svg-tex.pdf_tex
-<./svg-inkscape/pmos_ldo_ss_svg-tex.pdf, id=7, page=1, 597.31966pt x 129.8949pt>
+<./svg-inkscape/pmos_ldo_ss_svg-tex.pdf, id=7, page=1, 600.45528pt x 129.94266pt>
 File: ./svg-inkscape/pmos_ldo_ss_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/pmos_ldo_ss_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/pmos_ldo_ss_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 258.46837pt x 56.2065pt.
-) (./report.bbl)
+(pdftex.def)             Requested size: 258.46837pt x 55.93571pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
- <./svg-inkscape/pmos_ldo_svg-tex.pdf> <./svg-inkscape/pmos_ldo_ss_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/pmos_ldo_ss_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
+ <./svg-inkscape/pmos_ldo_svg-tex.pdf>] (./report.bbl)
 
 
 
-[leftcolumn badness]: 1000000 on 7.26807pt
-[rightcolumn badness]: 1000000 on 7.26807pt
-[leftcolumn badness]: 1000000 on 7.26807pt
-[rightcolumn badness]: 1000000 on 7.26807pt
-[leftcolumn badness]: 1000000 on 7.26807pt
-[rightcolumn badness]: 1000000 on 7.26807pt
-[leftcolumn badness]: 1000000 on 7.26807pt
-[rightcolumn badness]: 1000000 on 7.26807pt
-[leftcolumn badness]: 1000000 on 7.26807pt
-[rightcolumn badness]: 1000000 on 7.26807pt
-[leftcolumn badness]: 1000000 on 7.26807pt
-[rightcolumn badness]: 1000000 on 7.26807pt
 - LAST -
-Extra skip:10.73193pt
-Left:21.0pt/1.73193pt
-Right:12.0pt/0.0pt
-Split: 21.0pt
-Output:21.0pt
+Extra skip:0.0pt
+Left:253.6784pt/2.16492pt
+Right:258.84991pt/0.0pt
+Split: 256.26416pt
+Output:256.26416pt
 Pageshrink: 0.0pt
 Pagestretch: 0.0pt
 @colht:696.0pt
-FLUSHEND [output]: 21.0pt
+FLUSHEND [output]: 256.26416pt
 FLUSHEND [leftcolumn badness]: 0
-FUSHEND [rightcolumn badness]: 10000
-[2] (./report.aux)
+FUSHEND [rightcolumn badness]: 1
+[2 <./svg-inkscape/pmos_ldo_ss_svg-tex.pdf>] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 9791 strings out of 475102
- 234220 string characters out of 5764878
- 630865 words of memory out of 5000000
- 32619 multiletter control sequences out of 15000+600000
- 607693 words of font info for 128 fonts, out of 8000000 for 9000
+ 11328 strings out of 475102
+ 258850 string characters out of 5764878
+ 664979 words of memory out of 5000000
+ 34118 multiletter control sequences out of 15000+600000
+ 608822 words of font info for 133 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 94i,13n,93p,1298b,775s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (2 pages, 214930 bytes).
+ 94i,13n,93p,1206b,777s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on report.pdf (2 pages, 263046 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
- 214 compressed objects within 3 object streams
+ 362 PDF objects out of 1000 (max. 8388607)
+ 232 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

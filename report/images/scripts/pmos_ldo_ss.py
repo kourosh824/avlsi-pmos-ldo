@@ -1,8 +1,15 @@
+import matplotlib as mpl
 import schemdraw
 import schemdraw.elements as elm
 
+# Set global font to Computer Modern (LaTeX standard)
+mpl.rcParams['mathtext.fontset'] = 'cm'
+mpl.rcParams['font.family'] = 'serif'
+# pForce the default math text to be Roman (upright) instead of Italic
+mpl.rcParams['mathtext.default'] = 'rm'
+
 with schemdraw.Drawing(file='../pmos_ldo_ss.svg') as d:
-    d.config(unit=2)
+    d.config(unit=2, lw=1, font='serif')
     gm_ea = elm.SourceControlledI().down().label(r'$g_{m,EA}u_{in}$')
     elm.Ground()
 
@@ -36,4 +43,4 @@ with schemdraw.Drawing(file='../pmos_ldo_ss.svg') as d:
     elm.Ground()
 
     elm.Line().right().length(1).at(c2.start)
-    elm.Dot().label(r'$u_{out}$')
+    elm.Dot().label(r'$u_{out}$').fill('white')
