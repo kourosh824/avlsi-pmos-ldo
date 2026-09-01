@@ -1,16 +1,17 @@
 # Fdb version 4
-["bibtex report"] 0 "report.aux" "report.bbl" "report" 1788293964.77363 -1
+["bibtex report"] 1788298226.11402 "report.aux" "report.bbl" "report" 1788298226.65516 0
   "./IEEEabrv.bib" 1168499786 17394 5f68ac6bd88a4483a55f39046634d899 ""
   "./report.bib" 1788205961.45604 591 64834472e8c5bc4ed0abe147ce65a21f ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "report.aux" 1788293964.66923 1455 453fdcf7b3d65a2c9e228a662c05b41e "pdflatex"
+  "report.aux" 1788298226.55641 2141 4ca943fbd77635c3096412e5550d1197 "pdflatex"
   (generated)
   "report.bbl"
   "report.blg"
   (rewritten before read)
-["pdflatex"] 1788293964.27402 "/home/kidb/dev/ece-ntua/avlsi-pmos-ldo/report/report.tex" "report.pdf" "report" 1788293964.77381 0
+["pdflatex"] 1788298226.13704 "/home/kidb/dev/ece-ntua/avlsi-pmos-ldo/report/report.tex" "report.pdf" "report" 1788298226.65535 0
+  "../simulations/images/5t_psrr.svg" 1788297915.47763 47715 f87ce13589148103a303d7c421ff6b9c ""
   "/etc/texmf/web2c/texmf.cnf" 1783174740.31686 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/kidb/dev/ece-ntua/avlsi-pmos-ldo/report/report.tex" 1788293964.08521 8064 fbe46747c0a069f88ea2cd4662dd2af9 ""
+  "/home/kidb/dev/ece-ntua/avlsi-pmos-ldo/report/report.tex" 1788298225.38839 8985 e5ab8dfc09a34e00ac87606d3b2db587 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -155,15 +156,23 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1741904018 41538 c016915c1d51223b6dbbfe27341748a8 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1783174746 165211 6b08d096f3d0fe5ff6b266061a2b45e0 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1783175469 1958753 a13da54103a8dc52104caebd551da3e4 ""
+  "images/5t_ota.svg" 1788201333.44655 34626 112e33edf662484a632d7d41c35732df ""
   "images/pmos_ldo.svg" 1788201319.71431 29675 8554b7030fa5684001ea3dbd3b4b7547 ""
   "images/pmos_ldo_ss.svg" 1788201212.03646 26712 92046bb51d1e13668802d3c7a6133fbc ""
-  "report.aux" 1788293964.66923 1455 453fdcf7b3d65a2c9e228a662c05b41e "pdflatex"
-  "report.bbl" 1788292939.43527 1345 6f67f867e1a4485d4cfe90ab3a1c20d8 "bibtex report"
-  "report.tex" 1788293964.08521 8064 fbe46747c0a069f88ea2cd4662dd2af9 ""
+  "images/tel_ota.svg" 1788201326.07442 51559 b3aeb1dedeb98c6bcccc2fc0c1ebd070 ""
+  "report.aux" 1788298226.55641 2141 4ca943fbd77635c3096412e5550d1197 "pdflatex"
+  "report.bbl" 1788298226.1324 1345 6f67f867e1a4485d4cfe90ab3a1c20d8 "bibtex report"
+  "report.tex" 1788298225.38839 8985 e5ab8dfc09a34e00ac87606d3b2db587 ""
+  "svg-inkscape/5t_ota_svg-tex.pdf" 1788294272.29452 40199 550d1c80f1e02aaf47668d3c0a087d1b ""
+  "svg-inkscape/5t_ota_svg-tex.pdf_tex" 1788294272.29852 2081 b3c51e34d5f476d6b30077d19ad25988 ""
+  "svg-inkscape/5t_psrr_svg-tex.pdf" 1788298192.80766 46564 ad23357051f277d3e5149302e45c2199 ""
+  "svg-inkscape/5t_psrr_svg-tex.pdf_tex" 1788298192.80766 2070 acaac86eaeb7d52324537bce1fb46e3e ""
   "svg-inkscape/pmos_ldo_ss_svg-tex.pdf" 1788201213.30448 29675 ef9318b6453289aa05a97b4c06bc26f5 ""
   "svg-inkscape/pmos_ldo_ss_svg-tex.pdf_tex" 1788201213.30448 2090 9590f2cdcf8943abca46f0e025ba9d75 ""
   "svg-inkscape/pmos_ldo_svg-tex.pdf" 1788201320.94634 33644 7479e4d2aa963fd2e68a2de7a373984c ""
   "svg-inkscape/pmos_ldo_svg-tex.pdf_tex" 1788201320.94634 2086 68f59f96b559f285acb8898300e07588 ""
+  "svg-inkscape/tel_ota_svg-tex.pdf" 1788294716.00072 69290 247dbc90c9abd4ff3bca4f6e1f21d6bc ""
+  "svg-inkscape/tel_ota_svg-tex.pdf_tex" 1788294716.00072 2083 0ad495180c970cfaf32334a4699961c1 ""
   (generated)
   "report.aux"
   "report.log"

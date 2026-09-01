@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.7.4)  1 SEP 2026 23:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.7.4)  2 SEP 2026 00:30
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -510,57 +510,82 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
- <./svg-inkscape/pmos_ldo_svg-tex.pdf>] (./report.bbl
-
+ <./svg-inkscape/pmos_ldo_svg-tex.pdf>]
+Package svg Info: Last page of `./svg-inkscape/5t_ota_svg-tex.pdf' is 1 on input line 147.
+ (./svg-inkscape/5t_ota_svg-tex.pdf_tex
+<./svg-inkscape/5t_ota_svg-tex.pdf, id=180, page=1, 361.63457pt x 301.26352pt>
+File: ./svg-inkscape/5t_ota_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/5t_ota_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/5t_ota_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 258.46837pt x 215.32362pt.
 )
 
-[leftcolumn badness]: 1000000 on 49.42339pt
-[rightcolumn badness]: 1000000 on 49.42339pt
-[leftcolumn badness]: 1000000 on 49.42339pt
-[rightcolumn badness]: 1000000 on 49.42339pt
-[leftcolumn badness]: 1000000 on 49.42339pt
-[rightcolumn badness]: 1000000 on 49.42339pt
-[leftcolumn badness]: 1000000 on 49.42339pt
-[rightcolumn badness]: 1000000 on 49.42339pt
-[leftcolumn badness]: 1000000 on 49.42339pt
-[rightcolumn badness]: 1000000 on 49.42339pt
-[leftcolumn badness]: 1000000 on 49.42339pt
-[rightcolumn badness]: 1000000 on 49.42339pt
-[leftcolumn badness]: 1000000 on 49.42339pt
-[rightcolumn badness]: 1000000 on 49.42339pt
-[leftcolumn badness]: 1000000 on 49.42339pt
-[rightcolumn badness]: 1000000 on 49.42339pt
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+Package svg Info: Last page of `./svg-inkscape/5t_psrr_svg-tex.pdf' is 1 on input line 159.
+(./svg-inkscape/5t_psrr_svg-tex.pdf_tex
+<./svg-inkscape/5t_psrr_svg-tex.pdf, id=182, page=1, 578.16pt x 361.35pt>
+File: ./svg-inkscape/5t_psrr_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/5t_psrr_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/5t_psrr_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 258.46837pt x 161.54184pt.
+)
+Package svg Info: Last page of `./svg-inkscape/tel_ota_svg-tex.pdf' is 1 on input line 162.
+ (./svg-inkscape/tel_ota_svg-tex.pdf_tex
+<./svg-inkscape/tel_ota_svg-tex.pdf, id=184, page=1, 704.91707pt x 430.74727pt>
+File: ./svg-inkscape/tel_ota_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/tel_ota_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/tel_ota_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 258.46837pt x 157.94115pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./report.bbl
+
+[2 <./svg-inkscape/pmos_ldo_ss_svg-tex.pdf> <./svg-inkscape/5t_ota_svg-tex.pdf
+
+pdfTeX warning: pdflatex (file ./svg-inkscape/5t_ota_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/5t_psrr_svg-tex.pdf
+
+pdfTeX warning: pdflatex (file ./svg-inkscape/5t_psrr_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>])
+
+
+
 - LAST -
-Extra skip:0.0pt
-Left:429.07828pt/2.16492pt
-Right:387.56674pt/0.0pt
-Split: 416.32251pt
-Output:416.32251pt
-Pageshrink: 1.90005pt
-Pagestretch: 6.90004pt
+Extra skip:44.41997pt
+Left:181.26996pt/0.0pt
+Right:136.84999pt/0.0pt
+Split: 168.35999pt
+Output:168.35999pt
+Pageshrink: 0.0pt
+Pagestretch: 0.0pt
 @colht:696.0pt
-FLUSHEND [output]: 416.32251pt
-FLUSHEND [leftcolumn badness]: 16
+FLUSHEND [output]: 168.35999pt
+FLUSHEND [leftcolumn badness]: 1000000
 FUSHEND [rightcolumn badness]: 0
-[2 <./svg-inkscape/pmos_ldo_ss_svg-tex.pdf>] (./report.aux)
+[3 <./svg-inkscape/tel_ota_svg-tex.pdf>] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 11330 strings out of 475102
- 258908 string characters out of 5764878
+ 11378 strings out of 475102
+ 260821 string characters out of 5764878
  664979 words of memory out of 5000000
- 34120 multiletter control sequences out of 15000+600000
+ 34159 multiletter control sequences out of 15000+600000
  608822 words of font info for 133 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  94i,13n,93p,1206b,777s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (2 pages, 273921 bytes).
+Output written on report.pdf (3 pages, 397406 bytes).
 PDF statistics:
- 367 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
+ 1011 PDF objects out of 1200 (max. 8388607)
+ 659 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 
