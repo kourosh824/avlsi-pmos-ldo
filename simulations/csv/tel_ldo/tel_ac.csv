@@ -1,0 +1,122 @@
+Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
+"Parameters: iload=0, trim_select=0",,,,,,
+1,ac,================ PSRR =================,,,,
+1,ac,PSRR,,,,
+1,ac,PSRR @ 1 Hz,79.45,> 65,,pass
+1,ac,PSRR @ 1 MHz,5.78,> 2,,pass
+1,ac,PSRR @ 10 MHz,9.781,> 2,,pass
+1,ac,============== Loop Gain ===============,,,,
+1,ac,Loop Gain dB20,,,,
+1,ac,Loop Phase deg,,,,
+1,ac,Loop Gain @ 1 Hz,80.6,> 50,,pass
+1,ac,Phase Margin,99,> 70,,pass
+1,ac,Gain Margin,30.91,> 12,,pass
+1,ac,UGBW,1.486e6,< 200K,,fail
+1,ac,================ Noise ================,,,,
+1,ac,Noise,,,,
+1,ac,Noise @ 10 Hz,-115.5,< -115,,pass
+1,ac,Noise @ 1 kHz,-135.1,< -125,,pass
+1,ac,Noise @ 10 kHz,-142.5,< -134,,pass
+1,ac,Noise @ 100 kHz,-145.3,< -143,,pass
+1,ac,Noise @ 1 MHz,-147.7,< -155,,near
+"Parameters: iload=0, trim_select=1",,,,,,
+2,ac,================ PSRR =================,,,,
+2,ac,PSRR,,,,
+2,ac,PSRR @ 1 Hz,81.71,> 65,,pass
+2,ac,PSRR @ 1 MHz,6.148,> 2,,pass
+2,ac,PSRR @ 10 MHz,10.88,> 2,,pass
+2,ac,============== Loop Gain ===============,,,,
+2,ac,Loop Gain dB20,,,,
+2,ac,Loop Phase deg,,,,
+2,ac,Loop Gain @ 1 Hz,81.61,> 50,,pass
+2,ac,Phase Margin,94.27,> 70,,pass
+2,ac,Gain Margin,31.07,> 12,,pass
+2,ac,UGBW,1.609e6,< 200K,,fail
+2,ac,================ Noise ================,,,,
+2,ac,Noise,,,,
+2,ac,Noise @ 10 Hz,-116.3,< -115,,pass
+2,ac,Noise @ 1 kHz,-135.8,< -125,,pass
+2,ac,Noise @ 10 kHz,-143.2,< -134,,pass
+2,ac,Noise @ 100 kHz,-146,< -143,,pass
+2,ac,Noise @ 1 MHz,-148,< -155,,near
+"Parameters: iload=0, trim_select=2",,,,,,
+3,ac,================ PSRR =================,,,,
+3,ac,PSRR,,,,
+3,ac,PSRR @ 1 Hz,88.97,> 65,,pass
+3,ac,PSRR @ 1 MHz,6.822,> 2,,pass
+3,ac,PSRR @ 10 MHz,16.49,> 2,,pass
+3,ac,============== Loop Gain ===============,,,,
+3,ac,Loop Gain dB20,,,,
+3,ac,Loop Phase deg,,,,
+3,ac,Loop Gain @ 1 Hz,83.53,> 50,,pass
+3,ac,Phase Margin,74.15,> 70,,pass
+3,ac,Gain Margin,33.46,> 12,,pass
+3,ac,UGBW,1.562e6,< 200K,,fail
+3,ac,================ Noise ================,,,,
+3,ac,Noise,,,,
+3,ac,Noise @ 10 Hz,-118.6,< -115,,pass
+3,ac,Noise @ 1 kHz,-138.1,< -125,,pass
+3,ac,Noise @ 10 kHz,-145.4,< -134,,pass
+3,ac,Noise @ 100 kHz,-147.9,< -143,,pass
+3,ac,Noise @ 1 MHz,-148.5,< -155,,near
+"Parameters: iload=500u, trim_select=0",,,,,,
+4,ac,================ PSRR =================,,,,
+4,ac,PSRR,,,,
+4,ac,PSRR @ 1 Hz,70.73,> 65,,pass
+4,ac,PSRR @ 1 MHz,6.373,> 2,,pass
+4,ac,PSRR @ 10 MHz,2.107,> 2,,pass
+4,ac,============== Loop Gain ===============,,,,
+4,ac,Loop Gain dB20,,,,
+4,ac,Loop Phase deg,,,,
+4,ac,Loop Gain @ 1 Hz,80.53,> 50,,pass
+4,ac,Phase Margin,120.1,> 70,,pass
+4,ac,Gain Margin,20.5,> 12,,pass
+4,ac,UGBW,1.964e6,< 200K,,fail
+4,ac,================ Noise ================,,,,
+4,ac,Noise,,,,
+4,ac,Noise @ 10 Hz,-115.5,< -115,,pass
+4,ac,Noise @ 1 kHz,-135.1,< -125,,pass
+4,ac,Noise @ 10 kHz,-142.5,< -134,,pass
+4,ac,Noise @ 100 kHz,-145.3,< -143,,pass
+4,ac,Noise @ 1 MHz,-148.3,< -155,,near
+"Parameters: iload=500u, trim_select=1",,,,,,
+5,ac,================ PSRR =================,,,,
+5,ac,PSRR,,,,
+5,ac,PSRR @ 1 Hz,72.19,> 65,,pass
+5,ac,PSRR @ 1 MHz,6.897,> 2,,pass
+5,ac,PSRR @ 10 MHz,2.124,> 2,,pass
+5,ac,============== Loop Gain ===============,,,,
+5,ac,Loop Gain dB20,,,,
+5,ac,Loop Phase deg,,,,
+5,ac,Loop Gain @ 1 Hz,82.33,> 50,,pass
+5,ac,Phase Margin,119.3,> 70,,pass
+5,ac,Gain Margin,19.79,> 12,,pass
+5,ac,UGBW,2.461e6,< 200K,,fail
+5,ac,================ Noise ================,,,,
+5,ac,Noise,,,,
+5,ac,Noise @ 10 Hz,-116.3,< -115,,pass
+5,ac,Noise @ 1 kHz,-135.8,< -125,,pass
+5,ac,Noise @ 10 kHz,-143.2,< -134,,pass
+5,ac,Noise @ 100 kHz,-146,< -143,,pass
+5,ac,Noise @ 1 MHz,-148.7,< -155,,near
+"Parameters: iload=500u, trim_select=2",,,,,,
+6,ac,================ PSRR =================,,,,
+6,ac,PSRR,,,,
+6,ac,PSRR @ 1 Hz,75.86,> 65,,pass
+6,ac,PSRR @ 1 MHz,8.537,> 2,,pass
+6,ac,PSRR @ 10 MHz,2.118,> 2,,pass
+6,ac,============== Loop Gain ===============,,,,
+6,ac,Loop Gain dB20,,,,
+6,ac,Loop Phase deg,,,,
+6,ac,Loop Gain @ 1 Hz,86.23,> 50,,pass
+6,ac,Phase Margin,107.2,> 70,,pass
+6,ac,Gain Margin,17.86,> 12,,pass
+6,ac,UGBW,4.329e6,< 200K,,fail
+6,ac,================ Noise ================,,,,
+6,ac,Noise,,,,
+6,ac,Noise @ 10 Hz,-118.6,< -115,,pass
+6,ac,Noise @ 1 kHz,-138.1,< -125,,pass
+6,ac,Noise @ 10 kHz,-145.4,< -134,,pass
+6,ac,Noise @ 100 kHz,-148,< -143,,pass
+6,ac,Noise @ 1 MHz,-149.9,< -155,,near
+

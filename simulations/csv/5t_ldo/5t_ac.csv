@@ -1,0 +1,116 @@
+Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
+"Parameters: iload=0, trim_select=0",,,,,,
+1,ac,============== PSRR =============,,,,
+1,ac,PSRR,,,,
+1,ac,PSRR @ 1 Hz,50.84,> 65,,fail
+1,ac,PSRR @ 1 MHz,7.975,> 2,,pass
+1,ac,PSRR @ 10 MHz,9.406,> 2,,pass
+1,ac,============ Stability ============,,,,
+1,ac,Loop Gain dB20,,,,
+1,ac,Loop Phase deg,,,,
+1,ac,UGBW,53.82,< 200K,,pass
+1,ac,Phase Margin,99.2,> 70,,pass
+1,ac,Gain Margin,25.75,> 12,,pass
+1,ac,============ Noise ==============,,,,
+1,ac,Noise,,,,
+1,ac,Noise @ 10 Hz,-115.2,< -115,,pass
+1,ac,Noise @ 1 KHz,-135,< -125,,pass
+1,ac,Noise @ 10 KHz,-143.7,< -134,,pass
+1,ac,Noise @ 100 KHz,-148,< -143,,pass
+1,ac,Noise @ 1 MHz,-150.2,< -155,,near
+"Parameters: iload=0, trim_select=1",,,,,,
+2,ac,============== PSRR =============,,,,
+2,ac,PSRR,,,,
+2,ac,PSRR @ 1 Hz,50.74,> 65,,fail
+2,ac,PSRR @ 1 MHz,8.472,> 2,,pass
+2,ac,PSRR @ 10 MHz,10.25,> 2,,pass
+2,ac,============ Stability ============,,,,
+2,ac,Loop Gain dB20,,,,
+2,ac,Loop Phase deg,,,,
+2,ac,UGBW,54.66,< 200K,,pass
+2,ac,Phase Margin,94.56,> 70,,pass
+2,ac,Gain Margin,25.56,> 12,,pass
+2,ac,============ Noise ==============,,,,
+2,ac,Noise,,,,
+2,ac,Noise @ 10 Hz,-116,< -115,,pass
+2,ac,Noise @ 1 KHz,-135.8,< -125,,pass
+2,ac,Noise @ 10 KHz,-144.4,< -134,,pass
+2,ac,Noise @ 100 KHz,-148.7,< -143,,pass
+2,ac,Noise @ 1 MHz,-150.5,< -155,,near
+"Parameters: iload=0, trim_select=2",,,,,,
+3,ac,============== PSRR =============,,,,
+3,ac,PSRR,,,,
+3,ac,PSRR @ 1 Hz,51.68,> 65,,fail
+3,ac,PSRR @ 1 MHz,9.636,> 2,,pass
+3,ac,PSRR @ 10 MHz,14.73,> 2,,pass
+3,ac,============ Stability ============,,,,
+3,ac,Loop Gain dB20,,,,
+3,ac,Loop Phase deg,,,,
+3,ac,UGBW,55.36,< 200K,,pass
+3,ac,Phase Margin,77.62,> 70,,pass
+3,ac,Gain Margin,26.62,> 12,,pass
+3,ac,============ Noise ==============,,,,
+3,ac,Noise,,,,
+3,ac,Noise @ 10 Hz,-118.3,< -115,,pass
+3,ac,Noise @ 1 KHz,-138.1,< -125,,pass
+3,ac,Noise @ 10 KHz,-146.6,< -134,,pass
+3,ac,Noise @ 100 KHz,-150.6,< -143,,pass
+3,ac,Noise @ 1 MHz,-151.5,< -155,,near
+"Parameters: iload=500u, trim_select=0",,,,,,
+4,ac,============== PSRR =============,,,,
+4,ac,PSRR,,,,
+4,ac,PSRR @ 1 Hz,66.07,> 65,,pass
+4,ac,PSRR @ 1 MHz,8.43,> 2,,pass
+4,ac,PSRR @ 10 MHz,4.353,> 2,,pass
+4,ac,============ Stability ============,,,,
+4,ac,Loop Gain dB20,,,,
+4,ac,Loop Phase deg,,,,
+4,ac,UGBW,54.95,< 200K,,pass
+4,ac,Phase Margin,116.2,> 70,,pass
+4,ac,Gain Margin,17.82,> 12,,pass
+4,ac,============ Noise ==============,,,,
+4,ac,Noise,,,,
+4,ac,Noise @ 10 Hz,-115.1,< -115,,pass
+4,ac,Noise @ 1 KHz,-135,< -125,,pass
+4,ac,Noise @ 10 KHz,-143.6,< -134,,pass
+4,ac,Noise @ 100 KHz,-148,< -143,,pass
+4,ac,Noise @ 1 MHz,-150.5,< -155,,near
+"Parameters: iload=500u, trim_select=1",,,,,,
+5,ac,============== PSRR =============,,,,
+5,ac,PSRR,,,,
+5,ac,PSRR @ 1 Hz,88.27,> 65,,pass
+5,ac,PSRR @ 1 MHz,9.063,> 2,,pass
+5,ac,PSRR @ 10 MHz,4.511,> 2,,pass
+5,ac,============ Stability ============,,,,
+5,ac,Loop Gain dB20,,,,
+5,ac,Loop Phase deg,,,,
+5,ac,UGBW,57.13,< 200K,,pass
+5,ac,Phase Margin,107.4,> 70,,pass
+5,ac,Gain Margin,16.91,> 12,,pass
+5,ac,============ Noise ==============,,,,
+5,ac,Noise,,,,
+5,ac,Noise @ 10 Hz,-115.9,< -115,,pass
+5,ac,Noise @ 1 KHz,-135.7,< -125,,pass
+5,ac,Noise @ 10 KHz,-144.4,< -134,,pass
+5,ac,Noise @ 100 KHz,-148.7,< -143,,pass
+5,ac,Noise @ 1 MHz,-150.9,< -155,,near
+"Parameters: iload=500u, trim_select=2",,,,,,
+6,ac,============== PSRR =============,,,,
+6,ac,PSRR,,,,
+6,ac,PSRR @ 1 Hz,66.65,> 65,,pass
+6,ac,PSRR @ 1 MHz,10.95,> 2,,pass
+6,ac,PSRR @ 10 MHz,4.934,> 2,,pass
+6,ac,============ Stability ============,,,,
+6,ac,Loop Gain dB20,,,,
+6,ac,Loop Phase deg,,,,
+6,ac,UGBW,61.63,< 200K,,pass
+6,ac,Phase Margin,82.7,> 70,,pass
+6,ac,Gain Margin,14.37,> 12,,pass
+6,ac,============ Noise ==============,,,,
+6,ac,Noise,,,,
+6,ac,Noise @ 10 Hz,-118.3,< -115,,pass
+6,ac,Noise @ 1 KHz,-138.1,< -125,,pass
+6,ac,Noise @ 10 KHz,-146.5,< -134,,pass
+6,ac,Noise @ 100 KHz,-150.6,< -143,,pass
+6,ac,Noise @ 1 MHz,-152.3,< -155,,near
+

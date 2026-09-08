@@ -1,0 +1,122 @@
+Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
+"Parameters: iload=0, trim_select=0",,,,,,
+7,dc,================== DC ==================,,,,
+7,dc,Vout,2.294,,,
+7,dc,Current Consumption,84.12e-6,< 100u,,pass
+7,dc,============== Saturation ==============,,,,
+7,dc,PD Saturation Margin,567.9e-3,> 50m,,pass
+7,dc,N0 Saturation Margin,65.59e-3,> 50m,,pass
+7,dc,N1 Saturation Margin,64.23e-3,> 50m,,pass
+7,dc,N2 Saturation Margin,1.136,> 50m,,pass
+7,dc,N3 Saturation Margin,1.06,> 50m,,pass
+7,dc,P0 Saturation Margin,59.9e-3,> 50m,,pass
+7,dc,P1 Saturation Margin,61.29e-3,> 50m,,pass
+7,dc,P2 Saturation Margin,92.01e-3,> 50m,,pass
+7,dc,P3 Saturation Margin,167.7e-3,> 50m,,pass
+7,dc,P4 Saturation Margin,449.5e-3,> 50m,,pass
+7,dc,P5 Saturation Margin,449.5e-3,> 50m,,pass
+7,dc,N4 Saturation Margin,611e-3,> 50m,,pass
+7,dc,N5 Saturation Margin,290.1e-3,> 50m,,pass
+7,dc,N6 Saturation Margin,1.837,> 50m,,pass
+7,dc,N7 Saturation Margin,391.6e-3,> 50m,,pass
+"Parameters: iload=0, trim_select=1",,,,,,
+8,dc,================== DC ==================,,,,
+8,dc,Vout,2.096,,,
+8,dc,Current Consumption,75.11e-6,< 100u,,pass
+8,dc,============== Saturation ==============,,,,
+8,dc,PD Saturation Margin,768.8e-3,> 50m,,pass
+8,dc,N0 Saturation Margin,65.59e-3,> 50m,,pass
+8,dc,N1 Saturation Margin,64.58e-3,> 50m,,pass
+8,dc,N2 Saturation Margin,1.136,> 50m,,pass
+8,dc,N3 Saturation Margin,1.079,> 50m,,pass
+8,dc,P0 Saturation Margin,59.89e-3,> 50m,,pass
+8,dc,P1 Saturation Margin,60.99e-3,> 50m,,pass
+8,dc,P2 Saturation Margin,92.01e-3,> 50m,,pass
+8,dc,P3 Saturation Margin,148.6e-3,> 50m,,pass
+8,dc,P4 Saturation Margin,449.5e-3,> 50m,,pass
+8,dc,P5 Saturation Margin,449.5e-3,> 50m,,pass
+8,dc,N4 Saturation Margin,611e-3,> 50m,,pass
+8,dc,N5 Saturation Margin,290.1e-3,> 50m,,pass
+8,dc,N6 Saturation Margin,1.837,> 50m,,pass
+8,dc,N7 Saturation Margin,391.6e-3,> 50m,,pass
+"Parameters: iload=0, trim_select=2",,,,,,
+9,dc,================== DC ==================,,,,
+9,dc,Vout,1.6,,,
+9,dc,Current Consumption,52.56e-6,< 100u,,pass
+9,dc,============== Saturation ==============,,,,
+9,dc,PD Saturation Margin,1.272,> 50m,,pass
+9,dc,N0 Saturation Margin,65.58e-3,> 50m,,pass
+9,dc,N1 Saturation Margin,65.61e-3,> 50m,,pass
+9,dc,N2 Saturation Margin,1.136,> 50m,,pass
+9,dc,N3 Saturation Margin,1.136,> 50m,,pass
+9,dc,P0 Saturation Margin,59.88e-3,> 50m,,pass
+9,dc,P1 Saturation Margin,59.86e-3,> 50m,,pass
+9,dc,P2 Saturation Margin,92.02e-3,> 50m,,pass
+9,dc,P3 Saturation Margin,91.16e-3,> 50m,,pass
+9,dc,P4 Saturation Margin,449.5e-3,> 50m,,pass
+9,dc,P5 Saturation Margin,449.5e-3,> 50m,,pass
+9,dc,N4 Saturation Margin,611e-3,> 50m,,pass
+9,dc,N5 Saturation Margin,290.1e-3,> 50m,,pass
+9,dc,N6 Saturation Margin,1.837,> 50m,,pass
+9,dc,N7 Saturation Margin,391.6e-3,> 50m,,pass
+"Parameters: iload=500u, trim_select=0",,,,,,
+10,dc,================== DC ==================,,,,
+10,dc,Vout,2.294,,,
+10,dc,Current Consumption,84.11e-6,< 100u,,pass
+10,dc,============== Saturation ==============,,,,
+10,dc,PD Saturation Margin,482.4e-3,> 50m,,pass
+10,dc,N0 Saturation Margin,65.62e-3,> 50m,,pass
+10,dc,N1 Saturation Margin,60.34e-3,> 50m,,pass
+10,dc,N2 Saturation Margin,1.136,> 50m,,pass
+10,dc,N3 Saturation Margin,859.6e-3,> 50m,,pass
+10,dc,P0 Saturation Margin,59.92e-3,> 50m,,pass
+10,dc,P1 Saturation Margin,63.4e-3,> 50m,,pass
+10,dc,P2 Saturation Margin,91.99e-3,> 50m,,pass
+10,dc,P3 Saturation Margin,368.8e-3,> 50m,,pass
+10,dc,P4 Saturation Margin,449.5e-3,> 50m,,pass
+10,dc,P5 Saturation Margin,449.5e-3,> 50m,,pass
+10,dc,N4 Saturation Margin,610.9e-3,> 50m,,pass
+10,dc,N5 Saturation Margin,290.1e-3,> 50m,,pass
+10,dc,N6 Saturation Margin,1.837,> 50m,,pass
+10,dc,N7 Saturation Margin,391.6e-3,> 50m,,pass
+"Parameters: iload=500u, trim_select=1",,,,,,
+11,dc,================== DC ==================,,,,
+11,dc,Vout,2.096,,,
+11,dc,Current Consumption,75.11e-6,< 100u,,pass
+11,dc,============== Saturation ==============,,,,
+11,dc,PD Saturation Margin,684e-3,> 50m,,pass
+11,dc,N0 Saturation Margin,65.59e-3,> 50m,,pass
+11,dc,N1 Saturation Margin,60.63e-3,> 50m,,pass
+11,dc,N2 Saturation Margin,1.136,> 50m,,pass
+11,dc,N3 Saturation Margin,873.4e-3,> 50m,,pass
+11,dc,P0 Saturation Margin,59.92e-3,> 50m,,pass
+11,dc,P1 Saturation Margin,63.29e-3,> 50m,,pass
+11,dc,P2 Saturation Margin,91.99e-3,> 50m,,pass
+11,dc,P3 Saturation Margin,355e-3,> 50m,,pass
+11,dc,P4 Saturation Margin,449.5e-3,> 50m,,pass
+11,dc,P5 Saturation Margin,449.5e-3,> 50m,,pass
+11,dc,N4 Saturation Margin,610.9e-3,> 50m,,pass
+11,dc,N5 Saturation Margin,290.1e-3,> 50m,,pass
+11,dc,N6 Saturation Margin,1.837,> 50m,,pass
+11,dc,N7 Saturation Margin,391.6e-3,> 50m,,pass
+"Parameters: iload=500u, trim_select=2",,,,,,
+12,dc,================== DC ==================,,,,
+12,dc,Vout,1.6,,,
+12,dc,Current Consumption,52.56e-6,< 100u,,pass
+12,dc,============== Saturation ==============,,,,
+12,dc,PD Saturation Margin,1.187,> 50m,,pass
+12,dc,N0 Saturation Margin,65.61e-3,> 50m,,pass
+12,dc,N1 Saturation Margin,61.25e-3,> 50m,,pass
+12,dc,N2 Saturation Margin,1.136,> 50m,,pass
+12,dc,N3 Saturation Margin,904.2e-3,> 50m,,pass
+12,dc,P0 Saturation Margin,59.92e-3,> 50m,,pass
+12,dc,P1 Saturation Margin,63.03e-3,> 50m,,pass
+12,dc,P2 Saturation Margin,92e-3,> 50m,,pass
+12,dc,P3 Saturation Margin,324e-3,> 50m,,pass
+12,dc,P4 Saturation Margin,449.5e-3,> 50m,,pass
+12,dc,P5 Saturation Margin,449.5e-3,> 50m,,pass
+12,dc,N4 Saturation Margin,610.9e-3,> 50m,,pass
+12,dc,N5 Saturation Margin,290.1e-3,> 50m,,pass
+12,dc,N6 Saturation Margin,1.837,> 50m,,pass
+12,dc,N7 Saturation Margin,391.6e-3,> 50m,,pass
+
