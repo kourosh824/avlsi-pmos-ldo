@@ -26,4 +26,9 @@ T.~{Chan Carusone}, D.~{A. Johns}, and K.~{W. Martin}, \emph{Analog Integrated C
 \bibitem{2}
 J.~{Torres}, M.~{El-Nozahi}, A.~{Amer}, S.~{Gopalraju}, R.~{Abdullah}, K.~{Entesari}, and E.~{Sanchez-Sinencio}, ``{Low Drop-Out Voltage Regulators: Capacitor-less Architecture Comparison},'' \emph{IEEE Circuits and Systems Magazine}, vol.~14, no.~2, pp. 6--26, 2014.
 
+\bibitem{pretl2026}
+\BIBentryALTinterwordspacing
+H.~Pretl, M.~Koefinger, and S.~Dorrer. Analog {(Integrated)} {Circuit} {Design}. [Online]. Available: \url{https://iic-jku.github.io/analog-circuit-design}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

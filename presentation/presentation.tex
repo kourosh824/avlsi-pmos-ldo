@@ -1,0 +1,158 @@
+\documentclass[10pt, aspectratio=169]{beamer}
+
+% --- Theme Setup ---
+\usetheme{Madrid} % Classic academic theme
+\usecolortheme{seahorse} % Clean blue color palette
+
+% --- Language and Fonts ---
+% Beamer uses sans-serif fonts by default. CMU Sans Serif supports Greek perfectly.
+\usepackage[english]{babel}
+
+% --- Engineering Packages ---
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{booktabs} % For professional tables
+\usepackage{tabularx}
+\usepackage{svg}
+
+% Usage: \svg{Path}{Caption}{WidthMultiplier}
+\newcommand{\svg}[3]{
+    \begin{figure}
+        \centering
+        \includesvg[width=#3\linewidth, height=0.7\textheight, keepaspectratio]{#1}
+        \caption{#2}
+    \end{figure}
+}
+
+% --- Title Page Information ---
+\title[PMOS LDO in 130nm CMOS]{A Comparative Analysis of Capacitor-Less LDO Topologies in 130nm CMOS Technology}
+\author[Kourosh N. Baygi]{Kourosh Nourmohammadi Baygi}
+\institute[NTUA]{
+    Circuits and Systems Group \\
+    School of Electrical and Computer Engineering \\ 
+    National Technical University of Athens
+}
+\date{September 2026}
+
+\begin{document}
+
+% --- Title Slide ---
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% --- Outline ---
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+% ==========================================
+\section{Introduction}
+% ==========================================
+
+\begin{frame}{Motivation \& Target Specifications}
+    \textbf{Design Goal:} Implement a stable, capacitor-less PMOS Low-Dropout Regulator in \qty{130}{\nano\meter} CMOS technology.
+    
+    \vspace{0.5em}
+    \begin{table}
+        \centering
+        \begin{tabular}{ll}
+            \toprule
+            \textbf{Parameter} & \textbf{Target} \\
+            \midrule
+            Supply Voltage ($V_{EXT}$) & \qty{3}{\volt} \\
+            Output Voltage ($V_{OUT}$) & \qty{2.3}{\volt} \\
+            Max Load Current ($I_{load}$) & \qty{500}{\micro\ampere} \\
+            Phase Margin (Full/No Load) & $>\qty{70}{\degree} / >\qty{60}{\degree}$ \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+% ==========================================
+\section{Proposed Architectures}
+% ==========================================
+
+\begin{frame}{Error Amplifier Topologies}
+    To achieve the desired gain and PSRR without an external capacitor, three OTA topologies were evaluated:
+    
+    \begin{itemize}
+        \item \textbf{Standard 5T OTA:} Baseline for area and current consumption.
+        \item \textbf{Telescopic OTA:} High gain and bandwidth, but limited output swing.
+        \item \textbf{Current Mirror OTA:} Improved slew rate and decoupling of bandwidth from the input pair.
+    \end{itemize}
+    
+    % Placeholder for a circuit diagram
+    % \begin{figure}
+    %     \centering
+    %     \includegraphics[height=0.4\textheight]{images/your_circuit_diagram.pdf}
+    % \end{figure}
+\end{frame}
+
+% ==========================================
+\section{PMOS LDO}
+% ==========================================
+
+\begin{frame}{Sizing Methodology}
+    \svg{../images/pmos_ldo.svg}{}{1}
+\end{frame}
+
+% ==========================================
+\section{Telescopic OTA}
+% ==========================================
+
+\begin{frame}{Telescopic OTA}
+    \svg{../images/tel_ota.svg}{}{1}
+\end{frame}
+
+\begin{frame}{Bode Plot}
+    \svg{../simulations/images/tel_bode.svg}{}{1}
+\end{frame}
+
+% ==========================================
+\section{Simulation Results}
+% ==========================================
+
+\begin{frame}{Transient Response \& PSRR}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \textbf{Load Transient Response}
+            \vspace{0.5em}
+            % \includegraphics[width=\linewidth]{images/transient.pdf}
+            \begin{itemize}
+                \item Settling time ($t_s$): $< \qty{40}{\nano\second}$
+                \item Undershoot/Overshoot within acceptable margins.
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{Power Supply Rejection Ratio}
+            \vspace{0.5em}
+            % \includegraphics[width=\linewidth]{images/psrr.pdf}
+            \begin{itemize}
+                \item Low-frequency PSRR: $> \qty{65}{\decibel}$
+                \item High-frequency PSRR (\qty{1}{\mega\hertz}): $> \qty{2}{\decibel}$
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% ==========================================
+\section{Conclusion}
+% ==========================================
+
+\begin{frame}{Conclusion}
+    \begin{itemize}
+        \item The \textbf{Telescopic OTA} provided the best overall noise performance.
+        \item The \textbf{Current Mirror OTA} offered superior dynamic response at the cost of slight area increase.
+        \item All topologies successfully met the capacitor-less stability criteria across the specified load range.
+    \end{itemize}
+    
+    \vspace{1.5em}
+    \begin{center}
+        \Large \textbf{Thank you!} \\
+        \normalsize Questions?
+    \end{center}
+\end{frame}
+
+\end{document}
