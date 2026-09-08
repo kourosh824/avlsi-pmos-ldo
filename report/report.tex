@@ -37,56 +37,38 @@ This paper presents the design and comparison of three capacitor-less (CL) PMOS 
 
 This work will focus on designing three individual LDO architectures. Each LDO topology must meet the proposed specifications that are presented in Table I. The general LDO schematic is also shown in Figure 1.
 
-\begin{table}[!ht]
-\renewcommand{\arraystretch}{1.4}
+\begin{table}[htbp]
+\renewcommand{\arraystretch}{1.2}
 \caption{Technical LDO Target Specifications}
+\label{tab:target_specs}
 \centering
-\begin{tabular}{|l|l|}
-\hline
-\textbf{Parameter} & \textbf{Proposed Value}\\
-\hline
-Power Supply Voltage & \qty{3}{\volt}\\
-\hline
-Bias Current $I_{bias}$ & \qty{5}{\micro\ampere}\\
-\hline
-Load Current $I_{L}$ & \qty{500}{\micro\ampere}\\
-\hline
-Load Capacitance $C_{L}$ & \qty{50}{\pico\farad}\\
-\hline
-Reference Voltage $V_{REF}$ & {$\qty{1.2}{\volt} \pm \qty{1}{\percent}$}\\
-\hline
-Output Voltage $V_{OUT}$ & \qty{2.3}{\volt}\\
-\hline
-Trim Voltages & \qty{2.1}{\volt}, \qty{1.6}{\volt}\\
-\hline
-Compensation Capacitor $C_c$ & \qty{<7}{\pico\farad}\\
-\hline
-Phase Margin @ No-Load & \qty{>60}{\degree}\\
-\hline
-Phase Margin @ Full-Load & \qty{>70}{\degree}\\
-\hline
-PSRR @ \qty{1}{\hertz} & \qty{>65}{\decibel}\\
-\hline
-PSRR @ \qty{1}{\mega\hertz} & \qty{>2}{\decibel}\\
-\hline
-PSRR @ \qty{10}{\mega\hertz} & \qty{>2}{\decibel}\\
-\hline
-Output Referred Noise @ \qty{10}{\hertz} & \qty{<-115}{\decibel\volt\slash\sqrt{\Hz}}\\
-\hline
-Output Referred Noise @ \qty{1}{\kilo\hertz} & \qty{<-125}{\decibel\volt\slash\sqrt{\Hz}}\\
-\hline
-Output Referred Noise @ \qty{10}{\kilo\hertz} & \qty{<-134}{\decibel\volt\slash\sqrt{\Hz}}\\
-\hline
-Output Referred Noise @ \qty{100}{\kilo\hertz} & \qty{<-143}{\decibel\volt\slash\sqrt{\Hz}}\\
-\hline
-Output Referred Noise @ \qty{1}{\mega\hertz} & \qty{<-155}{\decibel\volt\slash\sqrt{\Hz}}\\
-\hline
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Parameter} & \textbf{Target Value} \\ \midrule
+Power Supply Voltage ($V_{EXT}$) & \qty{3}{\volt} \\
+Bias Current ($I_{bias}$) & \qty{5}{\micro\ampere} \\
+Load Current ($I_{L}$) & \qty{500}{\micro\ampere} \\
+Load Capacitance ($C_{L}$) & \qty{50}{\pico\farad} \\ \midrule
+Reference Voltage ($V_{REF}$) & $\qty{1.2}{\volt} \pm \qty{1}{\percent}$ \\
+Output Voltage ($V_{OUT}$) & \qty{2.3}{\volt} \\
+Programmable Trim Voltages & \qty{2.1}{\volt}, \qty{1.6}{\volt} \\ \midrule
+Compensation Capacitor ($C_c$) & $<\qty{7}{\pico\farad}$ \\
+Phase Margin @ No-Load & $>\qty{60}{\degree}$ \\
+Phase Margin @ Full-Load & $>\qty{70}{\degree}$ \\ \midrule
+PSRR @ \qty{1}{\hertz} & $>\qty{65}{\decibel}$ \\
+PSRR @ \qty{1}{\mega\hertz} & $>\qty{2}{\decibel}$ \\
+PSRR @ \qty{10}{\mega\hertz} & $>\qty{2}{\decibel}$ \\ \midrule
+Output-Referred Noise @ \qty{10}{\hertz} & $<-\qty{115}{\decibel\volt\slash\sqrt{\Hz}}$ \\
+Output-Referred Noise @ \qty{1}{\kilo\hertz} & $<-\qty{125}{\decibel\volt\slash\sqrt{\Hz}}$ \\
+Output-Referred Noise @ \qty{10}{\kilo\hertz} & $<-\qty{134}{\decibel\volt\slash\sqrt{\Hz}}$ \\
+Output-Referred Noise @ \qty{100}{\kilo\hertz} & $<-\qty{143}{\decibel\volt\slash\sqrt{\Hz}}$ \\
+Output-Referred Noise @ \qty{1}{\mega\hertz} & $<-\qty{155}{\decibel\volt\slash\sqrt{\Hz}}$ \\ \bottomrule
 \end{tabular}
 \end{table}
 
 \svg{../images/pmos_ldo.svg}{General LDO Schematic}{1}
 
-As shown in Figure 1, a PMOS LDO is made of an Error Amplifier (EA), a PMOS Pass Device (PD), two feedback resistors $R_1$ and $R_2$ for setting the output voltage and a compensation network consisting of a resistor $R_c$ and a capacitor $C_c$. In this work only one-stage EAs will be presented and analyzed.
+As shown in Figure 1, a PMOS LDO is made of an Error Amplifier (EA), a PMOS Pass Device (PD), two feedback resistors $R_1$ and $R_2$ for setting the output voltage and a compensation network consisting of a nulling resistor $R_c$ and a capacitor $C_c$. In this work only one-stage EAs will be presented and analyzed.
 
 \subsection{Output Voltage}
 Assuming that the EA has infinite DC gain (therefore $A_{EA,0} \rightarrow \infty$), LDO's gain is given by:
@@ -195,6 +177,7 @@ Simulations prove that the width of the PMOS active load can directly affect the
 \svg{../images/tel_ota.svg}{Telescopic OTA}{1}
 
 \section{Current Mirror OTA-Based LDO}
+\svg{../images/cm_ota.svg}{Current Mirror OTA}{1}
 
 \nocite{*}
 \section*{Acknowledgments}

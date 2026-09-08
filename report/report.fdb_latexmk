@@ -1,15 +1,16 @@
 # Fdb version 4
-["bibtex report"] 1788888607.46461 "report.aux" "report.bbl" "report" 1788888621.26333 0
+["bibtex report"] 1788902063.97708 "report.aux" "report.bbl" "report" 1788902064.60134 0
   "./IEEEabrv.bib" 1168499786 17394 5f68ac6bd88a4483a55f39046634d899 ""
   "./report.bib" 1788884688.3524 867 bc3f05a50ab381fb1f12997f64b0c901 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "report.aux" 1788888621.15445 2743 4ed6730c381362e5434faf803d76f13c "pdflatex"
+  "report.aux" 1788902064.48934 2913 f7b4949cfeaa756f2c7537a00c081c23 "pdflatex"
   (generated)
   "report.bbl"
   "report.blg"
   (rewritten before read)
-["pdflatex"] 1788888620.68074 "/home/kidb/dev/ece-ntua/avlsi-pmos-ldo/report/report.tex" "report.pdf" "report" 1788888621.26351 0
+["pdflatex"] 1788902063.99845 "/home/kidb/dev/ece-ntua/avlsi-pmos-ldo/report/report.tex" "report.pdf" "report" 1788902064.60152 0
   "../images/5t_ota.svg" 1788201333.44655 34626 112e33edf662484a632d7d41c35732df ""
+  "../images/cm_ota.svg" 1788901246.5438 46269 fafbf73e824fa65126ee3deef8fcac45 ""
   "../images/pmos_ldo.svg" 1788201319.71431 29675 8554b7030fa5684001ea3dbd3b4b7547 ""
   "../images/pmos_ldo_ss.svg" 1788201212.03646 26712 92046bb51d1e13668802d3c7a6133fbc ""
   "../images/tel_ota.svg" 1788201326.07442 51559 b3aeb1dedeb98c6bcccc2fc0c1ebd070 ""
@@ -17,7 +18,7 @@
   "../simulations/images/5t_loop_phase.svg" 1788859345.18784 85563 051d06d07ee39a47d9c2d601a615c188 ""
   "../simulations/images/5t_psrr.svg" 1788859290.95118 80083 a7d9c8b827f643a5a8c515b99960dd06 ""
   "/etc/texmf/web2c/texmf.cnf" 1783174740.31686 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/kidb/dev/ece-ntua/avlsi-pmos-ldo/report/report.tex" 1788888620.48245 10530 8685a85e81f779fec211f2690db9fb01 ""
+  "/home/kidb/dev/ece-ntua/avlsi-pmos-ldo/report/report.tex" 1788902062.71327 10617 ff919765d949de5244724479dd0c3348 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -161,9 +162,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1741904018 41538 c016915c1d51223b6dbbfe27341748a8 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1783174746 165211 6b08d096f3d0fe5ff6b266061a2b45e0 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1783175469 1958753 a13da54103a8dc52104caebd551da3e4 ""
-  "report.aux" 1788888621.15445 2743 4ed6730c381362e5434faf803d76f13c "pdflatex"
-  "report.bbl" 1788888607.47829 1580 0392f0c05bbd85c98dd9ac21cc2cfa24 "bibtex report"
-  "report.tex" 1788888620.48245 10530 8685a85e81f779fec211f2690db9fb01 ""
+  "report.aux" 1788902064.48934 2913 f7b4949cfeaa756f2c7537a00c081c23 "pdflatex"
+  "report.bbl" 1788902063.98932 1580 0392f0c05bbd85c98dd9ac21cc2cfa24 "bibtex report"
+  "report.tex" 1788902062.71327 10617 ff919765d949de5244724479dd0c3348 ""
   "svg-inkscape/5t_loop_gain_svg-tex.pdf" 1788870268.85062 86742 60c1f1edb0b674a3fd7b6f43a9574d12 ""
   "svg-inkscape/5t_loop_gain_svg-tex.pdf_tex" 1788870268.85062 2080 e37bf50d2a2ebb38a252843f16e7a75e ""
   "svg-inkscape/5t_loop_phase_svg-tex.pdf" 1788870287.93085 89705 f040f31c3b32cf1a6fcb8a2e1a0e2f27 ""
@@ -172,6 +173,8 @@
   "svg-inkscape/5t_ota_svg-tex.pdf_tex" 1788294272.29852 2081 b3c51e34d5f476d6b30077d19ad25988 ""
   "svg-inkscape/5t_psrr_svg-tex.pdf" 1788859292.3472 85670 8fb8cf966321d03cfb4ed1adb608b7fb ""
   "svg-inkscape/5t_psrr_svg-tex.pdf_tex" 1788859292.3472 2070 acaac86eaeb7d52324537bce1fb46e3e ""
+  "svg-inkscape/cm_ota_svg-tex.pdf" 1788902063.78131 57071 619da5063853aaebe34d59c346e0eeb5 ""
+  "svg-inkscape/cm_ota_svg-tex.pdf_tex" 1788902063.78131 2081 f8c9ed5c9942e1cc4192275536077ef0 ""
   "svg-inkscape/pmos_ldo_ss_svg-tex.pdf" 1788201213.30448 29675 ef9318b6453289aa05a97b4c06bc26f5 ""
   "svg-inkscape/pmos_ldo_ss_svg-tex.pdf_tex" 1788201213.30448 2090 9590f2cdcf8943abca46f0e025ba9d75 ""
   "svg-inkscape/pmos_ldo_svg-tex.pdf" 1788201320.94634 33644 7479e4d2aa963fd2e68a2de7a373984c ""
