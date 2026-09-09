@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.7.4)  9 SEP 2026 00:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.7.4)  9 SEP 2026 18:41
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -494,20 +494,20 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 32
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Package svg Info: Last page of `./svg-inkscape/pmos_ldo_svg-tex.pdf' is 1 on input line 69.
+Package svg Info: Last page of `./svg-inkscape/pmos_ldo_svg-tex.pdf' is 1 on input line 70.
  (./svg-inkscape/pmos_ldo_svg-tex.pdf_tex
 <./svg-inkscape/pmos_ldo_svg-tex.pdf, id=5, page=1, 584.90671pt x 343.66191pt>
 File: ./svg-inkscape/pmos_ldo_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/pmos_ldo_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/pmos_ldo_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 258.46837pt x 151.86717pt.
+(pdftex.def)             Requested size: 206.77548pt x 121.48955pt.
 )
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-Package svg Info: Last page of `./svg-inkscape/pmos_ldo_ss_svg-tex.pdf' is 1 on input line 101.
+Package svg Info: Last page of `./svg-inkscape/pmos_ldo_ss_svg-tex.pdf' is 1 on input line 102.
 (./svg-inkscape/pmos_ldo_ss_svg-tex.pdf_tex
 <./svg-inkscape/pmos_ldo_ss_svg-tex.pdf, id=7, page=1, 600.45528pt x 129.94266pt>
 File: ./svg-inkscape/pmos_ldo_ss_svg-tex.pdf Graphic file (type pdf)
@@ -524,22 +524,50 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
  <./svg-inkscape/pmos_ldo_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/5t_ota_svg-tex.pdf' is 1 on input line 131.
+Package svg Info: Last page of `./svg-inkscape/5t_ota_svg-tex.pdf' is 1 on input line 132.
  (./svg-inkscape/5t_ota_svg-tex.pdf_tex
 <./svg-inkscape/5t_ota_svg-tex.pdf, id=180, page=1, 361.63457pt x 301.26352pt>
 File: ./svg-inkscape/5t_ota_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/5t_ota_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/5t_ota_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 258.46837pt x 215.32362pt.
+(pdftex.def)             Requested size: 180.92706pt x 150.72331pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package svg Info: Last page of `./svg-inkscape/5t_tran_svg-tex.pdf' is 1 on input line 165.
+(./svg-inkscape/5t_tran_svg-tex.pdf_tex
+<./svg-inkscape/5t_tran_svg-tex.pdf, id=182, page=1, 433.62pt x 433.62pt>
+File: ./svg-inkscape/5t_tran_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/5t_tran_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/5t_tran_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 258.46837pt x 258.48018pt.
 )
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-Package svg Info: Last page of `./svg-inkscape/5t_psrr_svg-tex.pdf' is 1 on input line 168.
-(./svg-inkscape/5t_psrr_svg-tex.pdf_tex
-<./svg-inkscape/5t_psrr_svg-tex.pdf, id=182, page=1, 578.16pt x 361.35pt>
+
+
+[2 <./svg-inkscape/pmos_ldo_ss_svg-tex.pdf> <./svg-inkscape/5t_ota_svg-tex.pdf
+
+pdfTeX warning: pdflatex (file ./svg-inkscape/5t_ota_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/5t_tran_svg-tex.pdf
+
+pdfTeX warning: pdflatex (file ./svg-inkscape/5t_tran_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Package svg Info: Last page of `./svg-inkscape/5t_bode_svg-tex.pdf' is 1 on input line 171.
+ (./svg-inkscape/5t_bode_svg-tex.pdf_tex
+<./svg-inkscape/5t_bode_svg-tex.pdf, id=804, page=1, 433.62pt x 433.62pt>
+File: ./svg-inkscape/5t_bode_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/5t_bode_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/5t_bode_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 258.46837pt x 258.48018pt.
+)
+Package svg Info: Last page of `./svg-inkscape/5t_psrr_svg-tex.pdf' is 1 on input line 179.
+ (./svg-inkscape/5t_psrr_svg-tex.pdf_tex
+<./svg-inkscape/5t_psrr_svg-tex.pdf, id=806, page=1, 578.16pt x 361.35pt>
 File: ./svg-inkscape/5t_psrr_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/5t_psrr_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/5t_psrr_svg-tex.pdf , page1 used on input line 56.
@@ -548,93 +576,57 @@ Package pdftex.def Info: ./svg-inkscape/5t_psrr_svg-tex.pdf , page1 used on inpu
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package svg Info: Last page of `./svg-inkscape/5t_loop_gain_svg-tex.pdf' is 1 on input line 170.
-(./svg-inkscape/5t_loop_gain_svg-tex.pdf_tex
-<./svg-inkscape/5t_loop_gain_svg-tex.pdf, id=184, page=1, 578.16pt x 361.35pt>
-File: ./svg-inkscape/5t_loop_gain_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/5t_loop_gain_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/5t_loop_gain_svg-tex.pdf , page1 used on input line 56.
+Package svg Info: Last page of `./svg-inkscape/5t_noise_svg-tex.pdf' is 1 on input line 181.
+(./svg-inkscape/5t_noise_svg-tex.pdf_tex
+<./svg-inkscape/5t_noise_svg-tex.pdf, id=808, page=1, 578.16pt x 361.35pt>
+File: ./svg-inkscape/5t_noise_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/5t_noise_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/5t_noise_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 258.46837pt x 161.54184pt.
 )
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package svg Info: Last page of `./svg-inkscape/5t_loop_phase_svg-tex.pdf' is 1 on input line 172.
-(./svg-inkscape/5t_loop_phase_svg-tex.pdf_tex
-<./svg-inkscape/5t_loop_phase_svg-tex.pdf, id=186, page=1, 578.16pt x 361.35pt>
-File: ./svg-inkscape/5t_loop_phase_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/5t_loop_phase_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/5t_loop_phase_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 258.46837pt x 161.54184pt.
-)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package svg Info: Last page of `./svg-inkscape/5t_loop_phase_svg-tex.pdf' is 1 on input line 174.
-(./svg-inkscape/5t_loop_phase_svg-tex.pdf_tex
-File: ./svg-inkscape/5t_loop_phase_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/5t_loop_phase_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/5t_loop_phase_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 258.46837pt x 161.54184pt.
-)
+(./report.bbl)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package svg Info: Last page of `./svg-inkscape/tel_ota_svg-tex.pdf' is 1 on input line 177.
-(./svg-inkscape/tel_ota_svg-tex.pdf_tex
-<./svg-inkscape/tel_ota_svg-tex.pdf, id=189, page=1, 704.91707pt x 430.74727pt>
-File: ./svg-inkscape/tel_ota_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/tel_ota_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/tel_ota_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 258.46837pt x 157.94115pt.
-)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package svg Info: Last page of `./svg-inkscape/cm_ota_svg-tex.pdf' is 1 on input line 180.
-(./svg-inkscape/cm_ota_svg-tex.pdf_tex
-<./svg-inkscape/cm_ota_svg-tex.pdf, id=191, page=1, 590.48958pt x 403.64601pt>
-File: ./svg-inkscape/cm_ota_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/cm_ota_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/cm_ota_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 258.46837pt x 176.68707pt.
-)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./report.bbl
-
-[2 <./svg-inkscape/pmos_ldo_ss_svg-tex.pdf> <./svg-inkscape/5t_ota_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/5t_ota_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-
-)
-
+[leftcolumn badness]: 1000000 on 222.7485pt
+[rightcolumn badness]: 1000000 on 222.7485pt
+[leftcolumn badness]: 1000000 on 222.7485pt
+[rightcolumn badness]: 1000000 on 222.7485pt
+[leftcolumn badness]: 1000000 on 222.7485pt
+[rightcolumn badness]: 1000000 on 222.7485pt
+[leftcolumn badness]: 1000000 on 222.7485pt
+[rightcolumn badness]: 1000000 on 222.7485pt
+[leftcolumn badness]: 1000000 on 222.7485pt
+[rightcolumn badness]: 1000000 on 222.7485pt
+[leftcolumn badness]: 1000000 on 222.7485pt
+[rightcolumn badness]: 1000000 on 222.7485pt
+[leftcolumn badness]: 1000000 on 222.7485pt
+[rightcolumn badness]: 1000000 on 222.7485pt
+[leftcolumn badness]: 1000000 on 222.7485pt
+[rightcolumn badness]: 1000000 on 222.7485pt
+[leftcolumn badness]: 1000000 on 222.7485pt
+[rightcolumn badness]: 1000000 on 222.7485pt
 - LAST -
 Extra skip:0.0pt
-Left:702.97421pt/0.0pt
-Right:691.16022pt/0.0pt
-Split: 696.0pt
-Output:696.0pt
-Pageshrink: 1.0pt
-Pagestretch: 1.0pt
+Left:679.85994pt/0.0pt
+Right:630.04941pt/0.0pt
+Split: 672.2272pt
+Output:672.2272pt
+Pageshrink: 9.55005pt
+Pagestretch: 20.44995pt
 @colht:696.0pt
-FLUSHEND [output]: 696.0pt
-FLUSHEND [leftcolumn badness]: 6
+FLUSHEND [output]: 672.2272pt
+FLUSHEND [leftcolumn badness]: 83
 FUSHEND [rightcolumn badness]: 0
-[3 <./svg-inkscape/5t_psrr_svg-tex.pdf> <./svg-inkscape/5t_loop_gain_svg-tex.pdf
+[3 <./svg-inkscape/5t_bode_svg-tex.pdf> <./svg-inkscape/5t_psrr_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/5t_loop_gain_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/5t_loop_phase_svg-tex.pdf
+pdfTeX warning: pdflatex (file ./svg-inkscape/5t_psrr_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/5t_noise_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/5t_loop_phase_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/tel_ota_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/tel_ota_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/cm_ota_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/cm_ota_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./svg-inkscape/5t_noise_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
@@ -642,18 +634,18 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 11298 strings out of 475102
- 259997 string characters out of 5764878
- 659421 words of memory out of 5000000
- 34076 multiletter control sequences out of 15000+600000
+ 11281 strings out of 475102
+ 259192 string characters out of 5764878
+ 662444 words of memory out of 5000000
+ 34064 multiletter control sequences out of 15000+600000
  608822 words of font info for 133 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 94i,13n,93p,1206b,783s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,13n,93p,1029b,783s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (3 pages, 617829 bytes).
+Output written on report.pdf (3 pages, 675956 bytes).
 PDF statistics:
- 2101 PDF objects out of 2487 (max. 8388607)
- 1377 compressed objects within 14 object streams
+ 2070 PDF objects out of 2073 (max. 8388607)
+ 1358 compressed objects within 14 object streams
  0 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 83 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -24,18 +24,19 @@
 
 \markboth{Analog VLSI Design NTUA Course}{}
 
-\title{A Comparative Analysis of Capacitor-Less LDO Topologies in 130nm CMOS Technology}
+\title{A Comparative Analysis of Two Capacitor-Less LDO Topologies in 130nm CMOS Technology}
 \author{Kourosh N. Baygi, \IEEEmembership{Student Member}, \IEEEmembership{IEEE}, \textit{National Technical University of Athens}, \textit{Greece}, \textit{School of Electrical \& Computer Engineering}, el22174@mail.ntua.gr \vspace{-14pt}}
 \maketitle
 
 \begin{abstract}
-This paper presents the design and comparison of three capacitor-less (CL) PMOS low dropout (LDO) regulators implemented in a 130nm CMOS technology. Each LDO topology was designed using a different OTA (5T OTA, Current Mirror OTA, Telescopic OTA). All three LDO configurations drive a 50 pF load, deliver a load current of {\bfseries \SI[per-mode=symbol,detect-weight]{500}{\micro\ampere}}, support programmable output voltages ({\bfseries \SI[per-mode=symbol,detect-weight]{2.3}{\volt}}, {\bfseries \SI[per-mode=symbol,detect-weight]{2.1}{\volt}} and {\bfseries \SI[per-mode=symbol,detect-weight]{1.6}{\volt}}), and have a consumption strictly below {\bfseries \SI[per-mode=symbol,detect-weight]{100}{\micro\ampere}}. Simulation results demonstrate that the 5T OTA provides the most balanced final results, whereas the Telescopic OTA maximizes loop gain at the sever expense of the Error Amplifier's output voltage swing. Furthermore, the Current Mirror OTA is shown to be incapable of satisfying the target specifications while keeping all the transistors in saturation.
+This paper presents the design and comparison of two capacitor-less (CL) PMOS low dropout (LDO) regulators implemented in a 130nm CMOS technology. Each LDO topology was designed using a different OTA (5T OTA, Telescopic OTA). Both LDO configurations drive a 50 pF load, deliver a load current of {\bfseries \SI[per-mode=symbol,detect-weight]{500}{\micro\ampere}}, support programmable output voltages ({\bfseries \SI[per-mode=symbol,detect-weight]{2.3}{\volt}}, {\bfseries \SI[per-mode=symbol,detect-weight]{2.1}{\volt}} and {\bfseries \SI[per-mode=symbol,detect-weight]{1.6}{\volt}}), and have a consumption strictly below {\bfseries \SI[per-mode=symbol,detect-weight]{100}{\micro\ampere}}. Simulation results demonstrate that the 5T OTA provides the most balanced final results, whereas the Telescopic OTA maximizes loop gain at the sever expense of the Error Amplifier's output voltage swing. 
+% Both topologies fail to satisfy the noise specification at {\bfseries \SI[per-mode=symbol,detect-weight]{1}{\mega\hertz}}.
 \end{abstract}
 
 \section{Introduction and Theoretical Framework}
 \IEEEPARstart{L}{}ow dropout (LDO) voltage regulators are one of the most essential building blocks in power-management systems. Specially with today's increasing demand for system-on-chip solutions, many mixed-signal systems utilize LDO regulators to deliver local supply voltages with reduced noise.
 
-This work will focus on designing three individual LDO architectures. Each LDO topology must meet the proposed specifications that are presented in Table I. The general LDO schematic is also shown in Figure 1.
+This work will focus on designing two individual LDO architectures. Both LDO topologies must meet the proposed specifications that are presented in Table I. The general LDO schematic is also shown in Figure 1.
 
 \begin{table}[htbp]
 \renewcommand{\arraystretch}{1.2}
@@ -66,7 +67,7 @@ Output-Referred Noise @ \qty{1}{\mega\hertz} & $<-\qty{155}{\decibel\volt\slash\
 \end{tabular}
 \end{table}
 
-\svg{../images/pmos_ldo.svg}{General LDO Schematic}{1}
+\svg{../images/pmos_ldo.svg}{General LDO Schematic}{0.8}
 
 As shown in Figure 1, a PMOS LDO is made of an Error Amplifier (EA), a PMOS Pass Device (PD), two feedback resistors $R_1$ and $R_2$ for setting the output voltage and a compensation network consisting of a nulling resistor $R_c$ and a capacitor $C_c$. In this work only one-stage EAs will be presented and analyzed.
 
@@ -107,7 +108,7 @@ Even though unity gain bandwidth is not a required specification, one could find
 \end{equation}
 
 \subsection{Power Supply Rejection Ratio (PSRR)}
-Power supply rejection refers to the amount of voltage ripple at the output of the LDO coming from the input voltage and therefore is of great importance. The PSR transfer function of a LDO regulator strongly depends on the type of the EA and whether the input transistors of the EA are NMOS or PMOS (Type-A or Type-B EA respectively). For a PMOS PD, Type-A EAs give the best PSRR results at low frequencies [2]. Therefore, all the LDOs presented in this work utilize Type-A EAs and their PSRR can be approximated by:
+Power supply rejection refers to the amount of voltage ripple at the output of the LDO coming from the input voltage and therefore is of great importance. The PSR transfer function of a LDO regulator strongly depends on the type of the EA and whether the input transistors of the EA are NMOS or PMOS (Type-A or Type-B EA respectively). For a PMOS PD, Type-A EAs yield the best PSRR results at low frequencies [2]. Therefore, both LDOs presented in this work utilize Type-A EAs and their PSRR can be approximated by:
 
 \begin{equation}
     |PSRR_{DC}| \cong \frac{1}{\beta A_{EA,0} g_{m,p} r_{ds,p}}
@@ -128,7 +129,7 @@ Noise in LDO regulators refer to the flicker and thermal noise generated by tran
 The EA and feedback resistors noise are typically the dominant sources of a LDO regulator noise.
 
 \section{5T OTA-Based LDO}
-\svg{../images/5t_ota.svg}{5T OTA}{1}
+\svg{../images/5t_ota.svg}{5T OTA}{0.7}
 The 5-transistor OTA used as EA in this LDO variation can be seen in Figure 3. 5T OTA is a simple differential pair with a gain of:
 \begin{equation}
     A_{5T}=\frac{g_{m,12}}{g_{ds,2}+g_{ds,4}}
@@ -137,8 +138,6 @@ whereas the output impedance:
 \begin{equation}
     g_{5T,out}=g_{ds,2}+g_{ds,4}
 \end{equation}
-
-For achieving the PSRR specifications, we must maximize the OTA's loop gain. This can be achieved by increasing the transconductance of the NMOS input pair and the output resistance. Also, large transistors will reduce the Flicker noise leading to reduced output referred noise at lower frequencies. Table II shows the sizing of transistors for this LDO variation.
 
 \begin{table}[htbp]
 \centering
@@ -163,21 +162,62 @@ Power Stage
 \end{tabular}
 \end{table}
 
-Simulations prove that the width of the PMOS active load can directly affect the PSRR of LDO and as a result, a small PMOS active load was chosen. For reducing the noise at higher frequencies (Thermal noise), we increased the tail current of the differential pair, leading to the final value presented in the previous table.
+\svg{../simulations/images/5t_tran.svg}{5T OTA-Based LDO's Ramp Response}{1}
+
+In order to satisfy both the PSRR and output voltages, the EA has to deliver enough gain. This can be achieved by increasing the transconductance of the NMOS input pair and the output resistance. Large transistors will also reduce the Flicker noise (as we see later) leading to reduced output referred noise at lower frequencies. Table II shows the device sizing for this LDO variation.
+
+The first thing to see is whether this topology can achieve the required output voltages. Figure 4 illustrates the LDO's ramp response where we can see that the system settles at the target voltages of \qty{2.3}{\volt}, \qty{2.1}{\volt}, and \qty{1.6}{\volt} with a minimal steady-state offset. This means that the EA (5T-OTA) has an acceptable DC loop gain. Both the loop gain and the loop phase are presented in Figure 6 which also shows the system's phase margin under load. By changing the value of the nulling resistor and therefore the system's zero, the phase margin can either be decreased or increased.
+
+\svg{../simulations/images/5t_bode.svg}{5T OTA-Based LDO's Bode Plot Under Load}{1}
+
+Figure 6 shows the PSRR of the proposed LDO. Simulations prove that the width of the PMOS active load can directly affect the PSRR of LDO and as a result, a small PMOS active load was chosen. The nulling resistor and the sizing of the PD also help in achieving the PSRR at higher frequencies.
+
+As for the output referred noise, as it was mentioned before, larger input transistors help in reducing the DC noise. For noise at higher frequencies, one must increase the current of the transistors, leading to a reduced transistor Thermal noise.
+
+Finally, the simulation results for this LDO topology are presented in Table III. Note that we were unable to satisfy the noise specification at \qty{1}{\mega\hertz}.
 
 \svg{../simulations/images/5t_psrr.svg}{5T OTA-Based LDO's PSRR}{1}
 
-\svg{../simulations/images/5t_loop_gain.svg}{5T OTA-Based LDO's Loop Gain}{1}
+\svg{../simulations/images/5t_noise.svg}{5T OTA-Based LDO's Output Referred Noise}{1}
 
-\svg{../simulations/images/5t_loop_phase.svg}{5T OTA-Based LDO's Loop Phase}{1}
+\begin{table}[htbp]
+    \renewcommand{\arraystretch}{1.2}
+    \caption{Simulated Performance Summary (Across All Trims)}
+    \label{tab:5t_performance_summary}
+    \centering
+    \begin{tabular}{@{}ll@{}}
+        \toprule
+        \textbf{Parameter} & \textbf{Simulated Value (Min -- Max)} \\
+        \midrule
+        Trim Voltage 1 & \qty{2.293}{\volt} -- \qty{2.299}{\volt} \\
+        Trim Voltage 2 & \qty{2.096}{\volt} -- \qty{2.102}{\volt} \\
+        Trim Voltage 3 & \qty{1.602}{\volt} -- \qty{1.607}{\volt} \\
+        Quiescent Current & \qty{48.16}{\micro\ampere} -- \qty{94.49}{\micro\ampere} \\
+        \midrule
+        Phase Margin ($I_{load} = 0$) & \qty{77.62}{\degree} -- \qty{99.2}{\degree} \\
+        Phase Margin ($I_{load} = \qty{500}{\micro\ampere}$) & \qty{82.7}{\degree} -- \qty{116.2}{\degree} \\
+        \bottomrule
+    \end{tabular}
+\end{table}
 
-\svg{../simulations/images/5t_loop_phase.svg}{5T OTA-Based LDO's Loop Phase}{1}
-
-\section{Telescopic OTA-Based LDO}
-\svg{../images/tel_ota.svg}{Telescopic OTA}{1}
-
-\section{Current Mirror OTA-Based LDO}
-\svg{../images/cm_ota.svg}{Current Mirror OTA}{1}
+% \begin{table}[htbp]
+% \renewcommand{\arraystretch}{1.2}
+% \caption{Simulated Performance Summary (Across All Trims)}
+% \label{tab:performance_summary}
+% \centering
+% \begin{tabular}{@{}ll@{}}
+% \toprule
+% \textbf{Parameter} & \textbf{Simulated Value (Min -- Max)} \\ \midrule
+% Output Voltage Range & \qty{1.6}{\volt} -- \qty{2.3}{\volt} \\
+% Quiescent Current ($I_Q$) & \qty{48.2}{\micro\ampere} -- \qty{94.5}{\micro\ampere} \\ \midrule
+% Phase Margin (Worst-Case) & $\qty{77.6}{\degree}$ (at $V_{OUT} = \qty{1.6}{\volt}$) \\ 
+% PSRR @ \qty{1}{\hertz} ($I_{load} = 0$) & \qty{50.7}{\decibel} -- \qty{51.7}{\decibel} \\
+% PSRR @ \qty{1}{\hertz} ($I_{load} = \qty{500}{\micro\ampere}$) & \qty{66.1}{\decibel} -- \qty{88.3}{\decibel} \\
+% PSRR @ \qty{1}{\mega\hertz} & \qty{7.9}{\decibel} -- \qty{10.9}{\decibel} \\ \midrule
+% Noise @ \qty{10}{\hertz} & $-\qty{118.3}{}$ -- $-\qty{115.1}{\decibel\volt\slash\sqrt{\Hz}}$ \\
+% Noise @ \qty{1}{\mega\hertz} & $-\qty{152.3}{}$ -- $-\qty{150.2}{\decibel\volt\slash\sqrt{\Hz}}$ \\ \bottomrule
+% \end{tabular}
+% \end{table}
 
 \nocite{*}
 \section*{Acknowledgments}
