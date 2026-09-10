@@ -1,5 +1,8 @@
 Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 "Parameters: iload=0, trim_select=0",,,,,,
+7,dc,================== DC ==================,,,,
+7,dc,Vout,2.294,,,
+7,dc,Current Consumption,84.12e-6,< 100u,,pass
 1,ac,================ PSRR =================,,,,
 1,ac,PSRR,,,,
 1,ac,PSRR @ 1 Hz,79.45,> 65,,pass
@@ -20,6 +23,9 @@ Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 1,ac,Noise @ 100 kHz,-145.3,< -143,,pass
 1,ac,Noise @ 1 MHz,-147.7,< -155,,near
 "Parameters: iload=0, trim_select=1",,,,,,
+8,dc,================== DC ==================,,,,
+8,dc,Vout,2.096,,,
+8,dc,Current Consumption,75.11e-6,< 100u,,pass
 2,ac,================ PSRR =================,,,,
 2,ac,PSRR,,,,
 2,ac,PSRR @ 1 Hz,81.71,> 65,,pass
@@ -40,6 +46,9 @@ Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 2,ac,Noise @ 100 kHz,-146,< -143,,pass
 2,ac,Noise @ 1 MHz,-148,< -155,,near
 "Parameters: iload=0, trim_select=2",,,,,,
+9,dc,================== DC ==================,,,,
+9,dc,Vout,1.6,,,
+9,dc,Current Consumption,52.56e-6,< 100u,,pass
 3,ac,================ PSRR =================,,,,
 3,ac,PSRR,,,,
 3,ac,PSRR @ 1 Hz,88.97,> 65,,pass
@@ -60,6 +69,9 @@ Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 3,ac,Noise @ 100 kHz,-147.9,< -143,,pass
 3,ac,Noise @ 1 MHz,-148.5,< -155,,near
 "Parameters: iload=500u, trim_select=0",,,,,,
+10,dc,================== DC ==================,,,,
+10,dc,Vout,2.294,,,
+10,dc,Current Consumption,84.11e-6,< 100u,,pass
 4,ac,================ PSRR =================,,,,
 4,ac,PSRR,,,,
 4,ac,PSRR @ 1 Hz,70.73,> 65,,pass
@@ -80,6 +92,9 @@ Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 4,ac,Noise @ 100 kHz,-145.3,< -143,,pass
 4,ac,Noise @ 1 MHz,-148.3,< -155,,near
 "Parameters: iload=500u, trim_select=1",,,,,,
+11,dc,================== DC ==================,,,,
+11,dc,Vout,2.096,,,
+11,dc,Current Consumption,75.11e-6,< 100u,,pass
 5,ac,================ PSRR =================,,,,
 5,ac,PSRR,,,,
 5,ac,PSRR @ 1 Hz,72.19,> 65,,pass
@@ -100,6 +115,9 @@ Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 5,ac,Noise @ 100 kHz,-146,< -143,,pass
 5,ac,Noise @ 1 MHz,-148.7,< -155,,near
 "Parameters: iload=500u, trim_select=2",,,,,,
+12,dc,================== DC ==================,,,,
+12,dc,Vout,1.6,,,
+12,dc,Current Consumption,52.56e-6,< 100u,,pass
 6,ac,================ PSRR =================,,,,
 6,ac,PSRR,,,,
 6,ac,PSRR @ 1 Hz,75.86,> 65,,pass

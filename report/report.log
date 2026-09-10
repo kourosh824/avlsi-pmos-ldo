@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.7.4)  9 SEP 2026 18:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.7.4)  10 SEP 2026 15:20
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -436,44 +436,53 @@ Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@cntb=\count323
 \multirow@dima=\skip64
 \bigstrutjot=\dimen279
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen280
+\TX@old@table=\dimen281
+\TX@old@col=\dimen282
+\TX@target=\dimen283
+\TX@delta=\dimen284
+\TX@cols=\count324
+\TX@ftn=\toks34
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 23.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 24.
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count324
+\l__color_backend_stack_int=\count325
 \l__pdf_internal_box=\box77
 ) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 -- Lines per column: 58 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count325
-\scratchdimen=\dimen280
+\scratchcounter=\count326
+\scratchdimen=\dimen285
 \scratchbox=\box78
-\nofMPsegments=\count326
-\nofMParguments=\count327
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count328
-\MPscratchDim=\dimen281
-\MPnumerator=\count329
-\makeMPintoPDFobject=\count330
-\everyMPtoPDFconversion=\toks35
+\nofMPsegments=\count327
+\nofMParguments=\count328
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count329
+\MPscratchDim=\dimen286
+\MPnumerator=\count330
+\makeMPintoPDFobject=\count331
+\everyMPtoPDFconversion=\toks36
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -482,7 +491,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 23.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 24.
 
 Package siunitx Info: Option "detect-weight" has been deprecated in this
 (siunitx)             release.
@@ -490,11 +499,11 @@ Package siunitx Info: Option "detect-weight" has been deprecated in this
 (siunitx)             Use "reset-text-series = false, text-series-to-math =
 (siunitx)             true" as a replacement.
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 32.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 33.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Package svg Info: Last page of `./svg-inkscape/pmos_ldo_svg-tex.pdf' is 1 on input line 70.
+Package svg Info: Last page of `./svg-inkscape/pmos_ldo_svg-tex.pdf' is 1 on input line 77.
  (./svg-inkscape/pmos_ldo_svg-tex.pdf_tex
 <./svg-inkscape/pmos_ldo_svg-tex.pdf, id=5, page=1, 584.90671pt x 343.66191pt>
 File: ./svg-inkscape/pmos_ldo_svg-tex.pdf Graphic file (type pdf)
@@ -507,7 +516,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-Package svg Info: Last page of `./svg-inkscape/pmos_ldo_ss_svg-tex.pdf' is 1 on input line 102.
+Package svg Info: Last page of `./svg-inkscape/pmos_ldo_ss_svg-tex.pdf' is 1 on input line 109.
 (./svg-inkscape/pmos_ldo_ss_svg-tex.pdf_tex
 <./svg-inkscape/pmos_ldo_ss_svg-tex.pdf, id=7, page=1, 600.45528pt x 129.94266pt>
 File: ./svg-inkscape/pmos_ldo_ss_svg-tex.pdf Graphic file (type pdf)
@@ -524,7 +533,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
  <./svg-inkscape/pmos_ldo_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/5t_ota_svg-tex.pdf' is 1 on input line 132.
+Package svg Info: Last page of `./svg-inkscape/5t_ota_svg-tex.pdf' is 1 on input line 139.
  (./svg-inkscape/5t_ota_svg-tex.pdf_tex
 <./svg-inkscape/5t_ota_svg-tex.pdf, id=180, page=1, 361.63457pt x 301.26352pt>
 File: ./svg-inkscape/5t_ota_svg-tex.pdf Graphic file (type pdf)
@@ -535,7 +544,9 @@ Package pdftex.def Info: ./svg-inkscape/5t_ota_svg-tex.pdf , page1 used on input
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package svg Info: Last page of `./svg-inkscape/5t_tran_svg-tex.pdf' is 1 on input line 165.
+
+
+Package svg Info: Last page of `./svg-inkscape/5t_tran_svg-tex.pdf' is 1 on input line 187.
 (./svg-inkscape/5t_tran_svg-tex.pdf_tex
 <./svg-inkscape/5t_tran_svg-tex.pdf, id=182, page=1, 433.62pt x 433.62pt>
 File: ./svg-inkscape/5t_tran_svg-tex.pdf Graphic file (type pdf)
@@ -544,30 +555,21 @@ Package pdftex.def Info: ./svg-inkscape/5t_tran_svg-tex.pdf , page1 used on inpu
 (pdftex.def)             Requested size: 258.46837pt x 258.48018pt.
 )
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-
-
 [2 <./svg-inkscape/pmos_ldo_ss_svg-tex.pdf> <./svg-inkscape/5t_ota_svg-tex.pdf
 
 pdfTeX warning: pdflatex (file ./svg-inkscape/5t_ota_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/5t_tran_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/5t_tran_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Package svg Info: Last page of `./svg-inkscape/5t_bode_svg-tex.pdf' is 1 on input line 171.
+Package svg Info: Last page of `./svg-inkscape/5t_bode_svg-tex.pdf' is 1 on input line 189.
  (./svg-inkscape/5t_bode_svg-tex.pdf_tex
-<./svg-inkscape/5t_bode_svg-tex.pdf, id=804, page=1, 433.62pt x 433.62pt>
+<./svg-inkscape/5t_bode_svg-tex.pdf, id=482, page=1, 433.62pt x 433.62pt>
 File: ./svg-inkscape/5t_bode_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/5t_bode_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/5t_bode_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 258.46837pt x 258.48018pt.
 )
-Package svg Info: Last page of `./svg-inkscape/5t_psrr_svg-tex.pdf' is 1 on input line 179.
+Package svg Info: Last page of `./svg-inkscape/5t_psrr_svg-tex.pdf' is 1 on input line 191.
  (./svg-inkscape/5t_psrr_svg-tex.pdf_tex
-<./svg-inkscape/5t_psrr_svg-tex.pdf, id=806, page=1, 578.16pt x 361.35pt>
+<./svg-inkscape/5t_psrr_svg-tex.pdf, id=484, page=1, 578.16pt x 361.35pt>
 File: ./svg-inkscape/5t_psrr_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/5t_psrr_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/5t_psrr_svg-tex.pdf , page1 used on input line 56.
@@ -576,9 +578,9 @@ Package pdftex.def Info: ./svg-inkscape/5t_psrr_svg-tex.pdf , page1 used on inpu
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package svg Info: Last page of `./svg-inkscape/5t_noise_svg-tex.pdf' is 1 on input line 181.
+Package svg Info: Last page of `./svg-inkscape/5t_noise_svg-tex.pdf' is 1 on input line 193.
 (./svg-inkscape/5t_noise_svg-tex.pdf_tex
-<./svg-inkscape/5t_noise_svg-tex.pdf, id=808, page=1, 578.16pt x 361.35pt>
+<./svg-inkscape/5t_noise_svg-tex.pdf, id=486, page=1, 578.16pt x 361.35pt>
 File: ./svg-inkscape/5t_noise_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/5t_noise_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/5t_noise_svg-tex.pdf , page1 used on input line 56.
@@ -587,46 +589,109 @@ Package pdftex.def Info: ./svg-inkscape/5t_noise_svg-tex.pdf , page1 used on inp
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+Package svg Info: Last page of `./svg-inkscape/tel_ota_svg-tex.pdf' is 1 on input line 196.
+(./svg-inkscape/tel_ota_svg-tex.pdf_tex
+<./svg-inkscape/tel_ota_svg-tex.pdf, id=488, page=1, 704.91707pt x 430.74727pt>
+File: ./svg-inkscape/tel_ota_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/tel_ota_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/tel_ota_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 258.46837pt x 157.94115pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-(./report.bbl)
 
-[leftcolumn badness]: 1000000 on 222.7485pt
-[rightcolumn badness]: 1000000 on 222.7485pt
-[leftcolumn badness]: 1000000 on 222.7485pt
-[rightcolumn badness]: 1000000 on 222.7485pt
-[leftcolumn badness]: 1000000 on 222.7485pt
-[rightcolumn badness]: 1000000 on 222.7485pt
-[leftcolumn badness]: 1000000 on 222.7485pt
-[rightcolumn badness]: 1000000 on 222.7485pt
-[leftcolumn badness]: 1000000 on 222.7485pt
-[rightcolumn badness]: 1000000 on 222.7485pt
-[leftcolumn badness]: 1000000 on 222.7485pt
-[rightcolumn badness]: 1000000 on 222.7485pt
-[leftcolumn badness]: 1000000 on 222.7485pt
-[rightcolumn badness]: 1000000 on 222.7485pt
-[leftcolumn badness]: 1000000 on 222.7485pt
-[rightcolumn badness]: 1000000 on 222.7485pt
-[leftcolumn badness]: 1000000 on 222.7485pt
-[rightcolumn badness]: 1000000 on 222.7485pt
-- LAST -
-Extra skip:0.0pt
-Left:679.85994pt/0.0pt
-Right:630.04941pt/0.0pt
-Split: 672.2272pt
-Output:672.2272pt
-Pageshrink: 9.55005pt
-Pagestretch: 20.44995pt
-@colht:696.0pt
-FLUSHEND [output]: 672.2272pt
-FLUSHEND [leftcolumn badness]: 83
-FUSHEND [rightcolumn badness]: 0
-[3 <./svg-inkscape/5t_bode_svg-tex.pdf> <./svg-inkscape/5t_psrr_svg-tex.pdf
+
+
+[3 <./svg-inkscape/5t_tran_svg-tex.pdf> <./svg-inkscape/5t_bode_svg-tex.pdf
+
+pdfTeX warning: pdflatex (file ./svg-inkscape/5t_bode_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/5t_psrr_svg-tex.pdf
 
 pdfTeX warning: pdflatex (file ./svg-inkscape/5t_psrr_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/5t_noise_svg-tex.pdf
 
 pdfTeX warning: pdflatex (file ./svg-inkscape/5t_noise_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/tel_ota_svg-tex.pdf
+
+pdfTeX warning: pdflatex (file ./svg-inkscape/tel_ota_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Package svg Info: Last page of `./svg-inkscape/tel_tran_svg-tex.pdf' is 1 on input line 259.
+ (./svg-inkscape/tel_tran_svg-tex.pdf_tex
+<./svg-inkscape/tel_tran_svg-tex.pdf, id=2369, page=1, 433.62pt x 433.62pt>
+File: ./svg-inkscape/tel_tran_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/tel_tran_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/tel_tran_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 258.46837pt x 258.48018pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package svg Info: Last page of `./svg-inkscape/tel_bode_svg-tex.pdf' is 1 on input line 261.
+(./svg-inkscape/tel_bode_svg-tex.pdf_tex
+<./svg-inkscape/tel_bode_svg-tex.pdf, id=2371, page=1, 433.62pt x 433.62pt>
+File: ./svg-inkscape/tel_bode_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/tel_bode_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/tel_bode_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 258.46837pt x 258.48018pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package svg Info: Last page of `./svg-inkscape/tel_psrr_svg-tex.pdf' is 1 on input line 263.
+(./svg-inkscape/tel_psrr_svg-tex.pdf_tex
+<./svg-inkscape/tel_psrr_svg-tex.pdf, id=2373, page=1, 578.16pt x 361.35pt>
+File: ./svg-inkscape/tel_psrr_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/tel_psrr_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/tel_psrr_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 258.46837pt x 161.54184pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package svg Info: Last page of `./svg-inkscape/tel_noise_svg-tex.pdf' is 1 on input line 265.
+(./svg-inkscape/tel_noise_svg-tex.pdf_tex
+<./svg-inkscape/tel_noise_svg-tex.pdf, id=2375, page=1, 578.16pt x 361.35pt>
+File: ./svg-inkscape/tel_noise_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/tel_noise_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/tel_noise_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 258.46837pt x 161.54184pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package svg Info: Last page of `./svg-inkscape/cm_ota_svg-tex.pdf' is 1 on input line 304.
+(./svg-inkscape/cm_ota_svg-tex.pdf_tex
+<./svg-inkscape/cm_ota_svg-tex.pdf, id=2377, page=1, 590.48958pt x 403.64601pt>
+File: ./svg-inkscape/cm_ota_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/cm_ota_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/cm_ota_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 258.46837pt x 176.68707pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+
+
+[4 <./svg-inkscape/tel_tran_svg-tex.pdf> <./svg-inkscape/tel_bode_svg-tex.pdf
+
+pdfTeX warning: pdflatex (file ./svg-inkscape/tel_bode_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \vbox (badness 1776) has occurred while \output is active []
+
+
+
+(./report.bbl)
+
+[5 <./svg-inkscape/tel_psrr_svg-tex.pdf> <./svg-inkscape/tel_noise_svg-tex.pdf
+
+pdfTeX warning: pdflatex (file ./svg-inkscape/tel_noise_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/cm_ota_svg-tex.pdf
+
+pdfTeX warning: pdflatex (file ./svg-inkscape/cm_ota_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
@@ -634,18 +699,18 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 11281 strings out of 475102
- 259192 string characters out of 5764878
- 662444 words of memory out of 5000000
- 34064 multiletter control sequences out of 15000+600000
+ 11442 strings out of 475102
+ 264287 string characters out of 5764878
+ 665155 words of memory out of 5000000
+ 34204 multiletter control sequences out of 15000+600000
  608822 words of font info for 133 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 94i,13n,93p,1029b,783s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,15n,93p,1030b,873s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (3 pages, 675956 bytes).
+Output written on report.pdf (5 pages, 1135559 bytes).
 PDF statistics:
- 2070 PDF objects out of 2073 (max. 8388607)
- 1358 compressed objects within 14 object streams
+ 4268 PDF objects out of 4296 (max. 8388607)
+ 2808 compressed objects within 29 object streams
  0 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

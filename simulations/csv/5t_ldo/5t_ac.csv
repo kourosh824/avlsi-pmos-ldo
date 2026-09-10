@@ -1,8 +1,5 @@
 Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 "Parameters: iload=0, trim_select=0",,,,,,
-1,dc,============== DC ===============,,,,
-1,dc,Vout,2.299,,,
-1,dc,Current Consumption,94.49e-6,< 100u,,pass
 1,ac,============== PSRR =============,,,,
 1,ac,PSRR,,,,
 1,ac,PSRR @ 1 Hz,50.84,> 65,,fail
@@ -11,6 +8,7 @@ Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 1,ac,============ Stability ============,,,,
 1,ac,Loop Gain dB20,,,,
 1,ac,Loop Phase deg,,,,
+1,ac,Loop Gain @ 1 Hz,53.82,> 50,,pass
 1,ac,UGBW,53.82,< 200K,,pass
 1,ac,Phase Margin,99.2,> 70,,pass
 1,ac,Gain Margin,25.75,> 12,,pass
@@ -22,9 +20,6 @@ Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 1,ac,Noise @ 100 KHz,-148,< -143,,pass
 1,ac,Noise @ 1 MHz,-150.2,< -155,,near
 "Parameters: iload=0, trim_select=1",,,,,,
-2,dc,============== DC ===============,,,,
-2,dc,Vout,2.102,,,
-2,dc,Current Consumption,81.31e-6,< 100u,,pass
 2,ac,============== PSRR =============,,,,
 2,ac,PSRR,,,,
 2,ac,PSRR @ 1 Hz,50.74,> 65,,fail
@@ -33,6 +28,7 @@ Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 2,ac,============ Stability ============,,,,
 2,ac,Loop Gain dB20,,,,
 2,ac,Loop Phase deg,,,,
+2,ac,Loop Gain @ 1 Hz,54.66,> 50,,pass
 2,ac,UGBW,54.66,< 200K,,pass
 2,ac,Phase Margin,94.56,> 70,,pass
 2,ac,Gain Margin,25.56,> 12,,pass
@@ -44,9 +40,6 @@ Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 2,ac,Noise @ 100 KHz,-148.7,< -143,,pass
 2,ac,Noise @ 1 MHz,-150.5,< -155,,near
 "Parameters: iload=0, trim_select=2",,,,,,
-3,dc,============== DC ===============,,,,
-3,dc,Vout,1.607,,,
-3,dc,Current Consumption,48.26e-6,< 100u,,pass
 3,ac,============== PSRR =============,,,,
 3,ac,PSRR,,,,
 3,ac,PSRR @ 1 Hz,51.68,> 65,,fail
@@ -55,6 +48,7 @@ Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 3,ac,============ Stability ============,,,,
 3,ac,Loop Gain dB20,,,,
 3,ac,Loop Phase deg,,,,
+3,ac,Loop Gain @ 1 Hz,55.36,> 50,,pass
 3,ac,UGBW,55.36,< 200K,,pass
 3,ac,Phase Margin,77.62,> 70,,pass
 3,ac,Gain Margin,26.62,> 12,,pass
@@ -66,9 +60,6 @@ Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 3,ac,Noise @ 100 KHz,-150.6,< -143,,pass
 3,ac,Noise @ 1 MHz,-151.5,< -155,,near
 "Parameters: iload=500u, trim_select=0",,,,,,
-4,dc,============== DC ===============,,,,
-4,dc,Vout,2.293,,,
-4,dc,Current Consumption,94.3e-6,< 100u,,pass
 4,ac,============== PSRR =============,,,,
 4,ac,PSRR,,,,
 4,ac,PSRR @ 1 Hz,66.07,> 65,,pass
@@ -77,6 +68,7 @@ Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 4,ac,============ Stability ============,,,,
 4,ac,Loop Gain dB20,,,,
 4,ac,Loop Phase deg,,,,
+4,ac,Loop Gain @ 1 Hz,54.95,> 50,,pass
 4,ac,UGBW,54.95,< 200K,,pass
 4,ac,Phase Margin,116.2,> 70,,pass
 4,ac,Gain Margin,17.82,> 12,,pass
@@ -88,9 +80,6 @@ Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 4,ac,Noise @ 100 KHz,-148,< -143,,pass
 4,ac,Noise @ 1 MHz,-150.5,< -155,,near
 "Parameters: iload=500u, trim_select=1",,,,,,
-5,dc,============== DC ===============,,,,
-5,dc,Vout,2.096,,,
-5,dc,Current Consumption,81.15e-6,< 100u,,pass
 5,ac,============== PSRR =============,,,,
 5,ac,PSRR,,,,
 5,ac,PSRR @ 1 Hz,88.27,> 65,,pass
@@ -99,6 +88,7 @@ Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 5,ac,============ Stability ============,,,,
 5,ac,Loop Gain dB20,,,,
 5,ac,Loop Phase deg,,,,
+5,ac,Loop Gain @ 1 Hz,57.13,> 50,,pass
 5,ac,UGBW,57.13,< 200K,,pass
 5,ac,Phase Margin,107.4,> 70,,pass
 5,ac,Gain Margin,16.91,> 12,,pass
@@ -110,9 +100,6 @@ Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 5,ac,Noise @ 100 KHz,-148.7,< -143,,pass
 5,ac,Noise @ 1 MHz,-150.9,< -155,,near
 "Parameters: iload=500u, trim_select=2",,,,,,
-6,dc,============== DC ===============,,,,
-6,dc,Vout,1.602,,,
-6,dc,Current Consumption,48.16e-6,< 100u,,pass
 6,ac,============== PSRR =============,,,,
 6,ac,PSRR,,,,
 6,ac,PSRR @ 1 Hz,66.65,> 65,,pass
@@ -121,6 +108,7 @@ Point,Test,Output,Nominal,Spec,Weight,Pass/Fail
 6,ac,============ Stability ============,,,,
 6,ac,Loop Gain dB20,,,,
 6,ac,Loop Phase deg,,,,
+6,ac,Loop Gain @ 1 Hz,61.63,> 50,,pass
 6,ac,UGBW,61.63,< 200K,,pass
 6,ac,Phase Margin,82.7,> 70,,pass
 6,ac,Gain Margin,14.37,> 12,,pass
