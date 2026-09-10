@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex report"] 1789042388.55544 "report.aux" "report.bbl" "report" 1789043187.44157 0
+["bibtex report"] 1789042388.55544 "report.aux" "report.bbl" "report" 1789042853.01895 0
   "./IEEEabrv.bib" 1168499786 17394 5f68ac6bd88a4483a55f39046634d899 ""
   "./report.bib" 1788884688.3524 867 bc3f05a50ab381fb1f12997f64b0c901 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "report.aux" 1789043187.21422 4015 8ad6f44c6f071cb345e760d7806e24ca "pdflatex"
+  "report.aux" 1789042852.79194 4015 8ad6f44c6f071cb345e760d7806e24ca "pdflatex"
   (generated)
   "report.bbl"
   "report.blg"
   (rewritten before read)
-["pdflatex"] 1789043185.96656 "/home/kidb/dev/ece-ntua/avlsi-pmos-ldo/report/report.tex" "report.pdf" "report" 1789043187.44192 0
+["pdflatex"] 1789042851.52966 "/home/kidb/dev/ece-ntua/avlsi-pmos-ldo/report/report.tex" "report.pdf" "report" 1789042853.01927 0
   "../images/5t_ota.svg" 1788201333.44655 34626 112e33edf662484a632d7d41c35732df ""
   "../images/cm_ota.svg" 1788901246.5438 46269 fafbf73e824fa65126ee3deef8fcac45 ""
   "../images/pmos_ldo.svg" 1788201319.71431 29675 8554b7030fa5684001ea3dbd3b4b7547 ""
@@ -23,7 +23,7 @@
   "../simulations/images/tel_psrr.svg" 1788869410.55634 82632 e55e6e108430a0e78a6bc0e424c24975 ""
   "../simulations/images/tel_tran.svg" 1788870685.09566 89935 054f4871e085da720c80a85ff71bb2e2 ""
   "/etc/texmf/web2c/texmf.cnf" 1783174740.31686 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/kidb/dev/ece-ntua/avlsi-pmos-ldo/report/report.tex" 1789043185.67019 19052 d1e86e13af37063b0e81c257822de6b0 ""
+  "/home/kidb/dev/ece-ntua/avlsi-pmos-ldo/report/report.tex" 1789042850.9839 18898 b94f9ff882b32125db6ff41e6a09e0ab ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -168,9 +168,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1741904018 41538 c016915c1d51223b6dbbfe27341748a8 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1783174746 165211 6b08d096f3d0fe5ff6b266061a2b45e0 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1783175469 1958753 a13da54103a8dc52104caebd551da3e4 ""
-  "report.aux" 1789043187.21422 4015 8ad6f44c6f071cb345e760d7806e24ca "pdflatex"
+  "report.aux" 1789042852.79194 4015 8ad6f44c6f071cb345e760d7806e24ca "pdflatex"
   "report.bbl" 1789042388.5829 1580 0392f0c05bbd85c98dd9ac21cc2cfa24 "bibtex report"
-  "report.tex" 1789043185.67019 19052 d1e86e13af37063b0e81c257822de6b0 ""
+  "report.tex" 1789042850.9839 18898 b94f9ff882b32125db6ff41e6a09e0ab ""
   "svg-inkscape/5t_bode_svg-tex.pdf" 1788963133.78393 148277 5f8dd26862665693d83540aee9d23c1a ""
   "svg-inkscape/5t_bode_svg-tex.pdf_tex" 1788963133.78393 2066 fc024834ea3b68a7d8a6234089497bc5 ""
   "svg-inkscape/5t_noise_svg-tex.pdf" 1788963422.56068 106083 59a60b464947ef0053d97b120e87e77b ""
