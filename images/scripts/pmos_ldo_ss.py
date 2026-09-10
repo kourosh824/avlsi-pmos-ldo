@@ -29,7 +29,7 @@ with schemdraw.Drawing(file='../pmos_ldo_ss.svg') as d:
     cc = elm.Line().right().length(0.5)
 
     elm.Dot()
-    elm.SourceControlledI().down().label(r'$g_{m,p}u_1$')
+    elm.SourceControlledI().down().label(r'$g_{m,PD}u_1$')
     elm.Ground()
 
     elm.Line().right().length(2).at(cc.end)
