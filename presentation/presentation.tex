@@ -5,14 +5,12 @@
 \usecolortheme{seahorse} % Clean blue color palette
 
 % --- Language and Fonts ---
-% Beamer uses sans-serif fonts by default. CMU Sans Serif supports Greek perfectly.
 \usepackage[english]{babel}
 
-% --- Engineering Packages ---
 \usepackage{amsmath}
 \usepackage{siunitx}
 \usepackage{graphicx}
-\usepackage{booktabs} % For professional tables
+\usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{svg}
 
@@ -26,14 +24,14 @@
 }
 
 % --- Title Page Information ---
-\title[PMOS LDO in 130nm CMOS]{A Comparative Analysis of Capacitor-Less LDO Topologies in 130nm CMOS Technology}
+\title[PMOS LDO in 130nm CMOS]{A Comparative Analysis of Two Capacitor-Less LDO Topologies in 130nm CMOS Technology}
 \author[Kourosh N. Baygi]{Kourosh Nourmohammadi Baygi}
 \institute[NTUA]{
     Circuits and Systems Group \\
     School of Electrical and Computer Engineering \\ 
     National Technical University of Athens
 }
-\date{September 2026}
+\date{AVLSI 2026}
 
 \begin{document}
 
@@ -47,112 +45,356 @@
     \tableofcontents
 \end{frame}
 
-% ==========================================
 \section{Introduction}
-% ==========================================
-
-\begin{frame}{Motivation \& Target Specifications}
-    \textbf{Design Goal:} Implement a stable, capacitor-less PMOS Low-Dropout Regulator in \qty{130}{\nano\meter} CMOS technology.
-    
-    \vspace{0.5em}
-    \begin{table}
-        \centering
-        \begin{tabular}{ll}
-            \toprule
-            \textbf{Parameter} & \textbf{Target} \\
-            \midrule
-            Supply Voltage ($V_{EXT}$) & \qty{3}{\volt} \\
-            Output Voltage ($V_{OUT}$) & \qty{2.3}{\volt} \\
-            Max Load Current ($I_{load}$) & \qty{500}{\micro\ampere} \\
-            Phase Margin (Full/No Load) & $>\qty{70}{\degree} / >\qty{60}{\degree}$ \\
-            \bottomrule
-        \end{tabular}
-    \end{table}
-\end{frame}
-
-% ==========================================
-\section{Proposed Architectures}
-% ==========================================
-
-\begin{frame}{Error Amplifier Topologies}
-    To achieve the desired gain and PSRR without an external capacitor, three OTA topologies were evaluated:
-    
-    \begin{itemize}
-        \item \textbf{Standard 5T OTA:} Baseline for area and current consumption.
-        \item \textbf{Telescopic OTA:} High gain and bandwidth, but limited output swing.
-        \item \textbf{Current Mirror OTA:} Improved slew rate and decoupling of bandwidth from the input pair.
-    \end{itemize}
-    
-    % Placeholder for a circuit diagram
-    % \begin{figure}
-    %     \centering
-    %     \includegraphics[height=0.4\textheight]{images/your_circuit_diagram.pdf}
-    % \end{figure}
-\end{frame}
-
-% ==========================================
-\section{PMOS LDO}
-% ==========================================
-
-\begin{frame}{Sizing Methodology}
-    \svg{../images/pmos_ldo.svg}{}{1}
-\end{frame}
-
-% ==========================================
-\section{Telescopic OTA}
-% ==========================================
-
-\begin{frame}{Telescopic OTA}
-    \svg{../images/tel_ota.svg}{}{1}
-\end{frame}
-
-\begin{frame}{Bode Plot}
-    \svg{../simulations/images/tel_bode.svg}{}{1}
-\end{frame}
-
-% ==========================================
-\section{Simulation Results}
-% ==========================================
-
-\begin{frame}{Transient Response \& PSRR}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \textbf{Load Transient Response}
-            \vspace{0.5em}
-            % \includegraphics[width=\linewidth]{images/transient.pdf}
-            \begin{itemize}
-                \item Settling time ($t_s$): $< \qty{40}{\nano\second}$
-                \item Undershoot/Overshoot within acceptable margins.
-            \end{itemize}
+\begin{frame}{Introduction}
+    \begin{columns}[c,onlytextwidth]
+        \begin{column}{0.48\textwidth}
+            \svg{../images/pll_diagram.svg}{Phase Locked Loop with LDO}{1}
         \end{column}
-        \begin{column}{0.5\textwidth}
-            \textbf{Power Supply Rejection Ratio}
-            \vspace{0.5em}
-            % \includegraphics[width=\linewidth]{images/psrr.pdf}
+        \begin{column}{0.48\textwidth}
+            \begin{table}[htbp]
+                \scriptsize
+                \renewcommand{\arraystretch}{0.5}
+                \label{tab:target_specs}
+                \centering
+                \begin{tabularx}{\textwidth}{@{}Xl@{}}
+                    \toprule
+                    \textbf{Parameter} & \textbf{Target Value} \\
+                    \midrule
+                    Power Supply Voltage ($V_{EXT}$) & \qty{3}{\volt} \\
+                    Bias Current ($I_{bias}$) & \qty{5}{\micro\ampere} \\
+                    Load Current ($I_{L}$) & \qty{500}{\micro\ampere} \\
+                    Load Capacitance ($C_{L}$) & \qty{50}{\pico\farad} \\
+                    \midrule
+                    Reference Voltage ($V_{REF}$) & $\qty{1.2}{\volt} \pm \qty{1}{\percent}$ \\
+                    Output Voltages ($V_{OUT}$) & \qty{2.3}{\volt}, \qty{2.1}{\volt}, \qty{1.6}{\volt} \\
+                    \midrule
+                    Compensation Capacitor ($C_c$) & $<\qty{7}{\pico\farad}$ \\
+                    Phase Margin @ No-Load & $>\qty{60}{\degree}$ \\
+                    Phase Margin @ Full-Load & $>\qty{70}{\degree}$ \\
+                    \midrule
+                    Loop Gain @ \qty{1}{\hertz} & $>\qty{50}{\decibel}$ \\
+                    PSRR @ \qty{1}{\hertz} & $>\qty{65}{\decibel}$ \\
+                    PSRR @ \qty{1}{\mega\hertz} & $>\qty{2}{\decibel}$ \\
+                    PSRR @ \qty{10}{\mega\hertz} & $>\qty{2}{\decibel}$ \\
+                    \midrule
+                    Output-Referred Noise @ \qty{10}{\hertz} & $<-\qty{115}{\decibel\volt\slash\sqrt{\Hz}}$ \\
+                    Output-Referred Noise @ \qty{1}{\kilo\hertz} & $<-\qty{125}{\decibel\volt\slash\sqrt{\Hz}}$ \\
+                    Output-Referred Noise @ \qty{10}{\kilo\hertz} & $<-\qty{134}{\decibel\volt\slash\sqrt{\Hz}}$ \\
+                    Output-Referred Noise @ \qty{100}{\kilo\hertz} & $<-\qty{143}{\decibel\volt\slash\sqrt{\Hz}}$ \\
+                    Output-Referred Noise @ \qty{1}{\mega\hertz} & $<-\qty{155}{\decibel\volt\slash\sqrt{\Hz}}$ \\
+                    \bottomrule
+                \end{tabularx}
+                \caption{Technical LDO Target Specifications}
+            \end{table}
+        \end{column}
+    \end{columns}
+    
+\end{frame}
+
+\section{Background}
+\begin{frame}{PMOS LDO Schematic}
+    \svg{../images/pmos_ldo.svg}{General LDO schematic}{1}
+\end{frame}
+\begin{frame}{LDO's Small-Signal Model}
+    \begin{columns}[T,onlytextwidth]
+        \begin{column}{0.4\textwidth}
+            \small
+            \textbf{Output voltage}
+            \begin{equation*}
+                \frac{V_{OUT}}{V_{REF}} \approx \frac{1}{\beta},
+                \qquad
+                \frac{R_1}{R_2} = \frac{V_{REF}}{V_{OUT}} - 1
+            \end{equation*}
+            \textbf{PSRR}
+            \begin{equation*}
+                |PSRR_{DC}| \cong
+                \frac{1}{\beta A_{EA,0}g_{m,PD}r_{ds,p}}
+            \end{equation*}
+        \end{column}
+        \begin{column}{0.6\textwidth}
+            \small
+            \textbf{Stability}
+            \begin{equation*}
+                \omega_{p1}=\frac{1}{g_{m,PD}R_1R_2C_c},
+                \quad
+                \omega_{p2}=\frac{g_{m,PD}}{C_1+C_2},
+                \quad
+                \omega_{z}=\frac{1}{C_c(1 \slash g_{m,PD}-R_c)}
+            \end{equation*}
+            \textbf{Output-referred noise}
+            \begin{equation*}
+                S_{n,o}(f) \cong (S_{n,ref}(f)+S_{n,EA}(f))(1+\frac{R_1}{R_2})^2
+                +S_{n,R2}(f)(\frac{R_1}{R_2})^2+S_{n,R_1}(f)
+            \end{equation*}
+        \end{column}
+    \end{columns}
+    \vspace{-0.3em}
+    \begin{figure}
+        \centering
+        \includesvg[width=0.72\linewidth,height=0.40\textheight,keepaspectratio]{../images/pmos_ldo_ss.svg}
+        \caption{Small-signal model of the LDO}
+    \end{figure}
+\end{frame}
+
+\section{5T OTA-Based LDO}
+\begin{frame}{5T OTA (Simple Differential Pair)}
+    \begin{columns}[c,onlytextwidth]
+        \begin{column}{0.48\textwidth}
+            5T OTA is a simple differential pair with a gain of:
+            \begin{equation*}
+                A_{5T}=\frac{g_{m,12}}{g_{5T,out}}
+            \end{equation*}
+            whereas the output impedance:
+            \begin{equation*}
+                g_{5T,out}=g_{ds,2}+g_{ds,4}
+            \end{equation*}
+            as for the output swing, in order to keep all the transistors in saturation, we must have:
+            \begin{equation*}
+                V_{REF} - V_{T} \leq V_{OUT} \leq V_{EXT} - V_{DSAT}
+            \end{equation*}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \svg{../images/5t_ota.svg}{5T OTA}{1}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{5T OTA (Sizing)}
+    \begin{columns}[T,onlytextwidth]
+        \begin{column}{0.4\textwidth}
+            \begin{table}[htbp]
+                \scriptsize
+                \centering
+                \label{tab:sizing_5t}
+                \begin{tabular}{@{}lllc@{}}
+                    \toprule
+                    \textbf{Device} & \textbf{Value / Sizing} & \textbf{Unit} \\
+                    \midrule
+                    $M_1, M_2$ (Input Pair) & $42.0 / 5.0$ & \unit{\micro\meter} \\
+                    $M_3, M_4$ (Active Load) & $3.8 / 5.0$ & \unit{\micro\meter} \\
+                    \midrule
+                    $M_5$ (Tail Current) & $12.0 / 5.0$ & \unit{\micro\meter} \\
+                    $M_6$ (Input Current) & $5.0 / 5.0$ & \unit{\micro\meter} \\
+                    \midrule
+                    $M_{PD}$ (Pass Device) & $20.0 / 0.14$ & \unit{\micro\meter} \\
+                    \midrule
+                    $R_1$ (Divider) & 15.00 & \unit{\kilo\ohm} \\
+                    $R_{21}$ (Divider) & 16.36 & \unit{\kilo\ohm} \\
+                    $R_{22}$ (Divider) & 20.00 & \unit{\kilo\ohm} \\
+                    $R_{23}$ (Divider) & 45.00 & \unit{\kilo\ohm} \\
+                    $R_c$ (Compensation) & 15.00 & \unit{\kilo\ohm} \\
+                    $C_c$ (Compensation) & 7.00 & \unit{\pico\farad} \\
+                    \bottomrule
+                \end{tabular}
+                \caption{Device Sizing for the 5T OTA LDO}
+            \end{table}
+        \end{column}
+        \begin{column}{0.6\textwidth}
             \begin{itemize}
-                \item Low-frequency PSRR: $> \qty{65}{\decibel}$
-                \item High-frequency PSRR (\qty{1}{\mega\hertz}): $> \qty{2}{\decibel}$
+                \item \textbf{Input Pair:} Large W and L for reducing the Flicker noise and increasing the loop gain.
+                \item \textbf{Active Load:} Large L for increasing the loop gain, small W for improving PSRR.
+                \item \textbf{Tail Current:} Large L for better current mirroring, large W for increasing the bias current and reducing the Thermal noise at higher frequencies.
+                \item \textbf{Pass Device:} Large W to improve transconductance and loop gain.
+                \item \textbf{Divider:} Small resistors to minimize noise and decrease PD's gate voltage @ No-Load.
+                \item \textbf{Compensation:} Nulling resistor and compensation capacitor for improving UGBW and PSRR at higher frequencies.
             \end{itemize}
         \end{column}
     \end{columns}
 \end{frame}
 
-% ==========================================
+\begin{frame}{5T OTA (Simulation Results)}
+    \begin{columns}[c,onlytextwidth]
+        \begin{column}{0.48\textwidth}
+            \svg{../simulations/images/5t_tran.svg}{Transient Response}{1}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \svg{../simulations/images/5t_bode.svg}{Bode Plot}{1}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{5T OTA (Simulation Results)}
+    \begin{columns}[c,onlytextwidth]
+        \begin{column}{0.48\textwidth}
+            \svg{../simulations/images/5t_psrr.svg}{PSRR}{1}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \svg{../simulations/images/5t_noise.svg}{Output-Referred Noise}{1}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\section{Telescopic OTA-Based LDO}
+\begin{frame}{Telescopic OTA}
+    \svg{../images/tel_ota.svg}{Telescopic OTA}{1}
+\end{frame}
+\begin{frame}{Telescopic OTA}
+    \begin{columns}[c,onlytextwidth]
+        \begin{column}{0.48\textwidth}
+            \svg{../images/tel_ota.svg}{Telescopic OTA}{1}
+            Leading to the following output swing:
+            \begin{equation*}
+                V_{REF} - V_{T} + V_{DSAT} \leq V_{OUT} \leq V_{EXT} - 2V_{DSAT}
+            \end{equation*}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            Both loop gain and output impedance are substantially increased compared to the 5T OTA. More specifically, the loop gain can be given by:
+            \begin{equation*}
+                A_{TEL} = \frac{g_{m12}}{g_{tel,out}}
+            \end{equation*}
+            whereas the output impedance is given by:
+            \begin{equation*}
+                g_{tel,out} = \frac{1}{
+                    g_{ds2} \frac{g_{ds2C}}{g_{m2C}} +
+                    g_{ds4} \frac{g_{ds4C}}{g_{m4C}}
+                }
+            \end{equation*}
+            Bias transistors should be sized in the following manner in order to ensure maximum output swing:
+            \begin{equation*}
+                \frac{W_{8}}{L_{8}} = \frac{W_{3,4}}{4L_{3,4}},
+                \quad
+                \frac{W_{10}}{L_{10}} = \frac{W_{1,2}}{4L_{1,2}}
+            \end{equation*}
+            \begin{equation*}
+            \end{equation*}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Telescopic OTA (Sizing)}
+    \begin{columns}[T,onlytextwidth]
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item \textbf{Input Pair \& Active Load:} Large W and L for reducing the Flicker noise and increasing the loop gain.
+                \item \textbf{Cascode Transistors:} Small W to ensure saturation, no need for larger transconductance.
+                \item \textbf{Tail Current:} Large L for better current mirroring, large W for increasing the bias current and reducing the Thermal noise at higher frequencies.
+                \item \textbf{Pass Device:} Large W to improve transconductance and loop gain.
+                \item \textbf{Divider:} Small resistors to minimize noise and decrease PD's gate voltage @ No-Load.
+                \item \textbf{Compensation:} Nulling resistor and compensation capacitor for improving UGBW and PSRR at higher frequencies.
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{table}[htbp]
+                \scriptsize
+                \centering
+                \label{tab:sizing_tel}
+                \begin{tabular}{@{}lllc@{}}
+                    \toprule
+                    \textbf{Device} & \textbf{Value / Sizing} & \textbf{Unit} \\
+                    \midrule
+                    $M_1, M_2$ (Input Pair) & $25.0 / 5.0$ & \unit{\micro\meter} \\
+                    $M_{1C}, M_{2C}$ (NMOS Cascode) & $0.65 / 1.0$ & \unit{\micro\meter} \\
+                    $M_{3C}, M_{4C}$ (PMOS Cascode) & $2.0 / 1.0$ & \unit{\micro\meter} \\
+                    $M_3, M_4$ (Active Load) & $40.0 / 5.0$ & \unit{\micro\meter} \\
+                    \midrule
+                    $M_8$ (NMOS Bias) & $0.65 / 4.0$ & \unit{\micro\meter} \\
+                    $M_9, M_{10}$ (PMOS Bias) & $2.0 / 4.0$ & \unit{\micro\meter} \\
+                    $M_5$ (Tail Current) & $0.95 / 1.0$ & \unit{\micro\meter} \\
+                    $M_6$ (Bias Current) & $0.28 / 1.0$ & \unit{\micro\meter} \\
+                    $M_7$ (Input Current) & $0.28 / 1.0$ & \unit{\micro\meter} \\
+                    \midrule
+                    $M_{PD}$ (Pass Device) & $40.0 / 0.13$ & \unit{\micro\meter} \\
+                    \midrule
+                    $R_1$ (Divider) & 22.00 & \unit{\kilo\ohm} \\
+                    $R_{21}$ (Divider) & 24.00 & \unit{\kilo\ohm} \\
+                    $R_{22}$ (Divider) & 29.33 & \unit{\kilo\ohm} \\
+                    $R_{23}$ (Divider) & 66.00 & \unit{\kilo\ohm} \\
+                    $R_c$ (Compensation) & 20.00 & \unit{\kilo\ohm} \\
+                    $C_c$ (Compensation) & 7.00 & \unit{\pico\farad} \\
+                    \bottomrule
+                \end{tabular}
+                \caption{Device Sizing for the Telescopic OTA LDO}
+            \end{table}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{5T OTA (Simulation Results)}
+    \begin{columns}[c,onlytextwidth]
+        \begin{column}{0.48\textwidth}
+            \svg{../simulations/images/5t_tran.svg}{Ramp Response}{1}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \svg{../simulations/images/5t_bode.svg}{Bode Plot}{1}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{5T OTA (Simulation Results)}
+    \begin{columns}[c,onlytextwidth]
+        \begin{column}{0.48\textwidth}
+            \svg{../simulations/images/5t_psrr.svg}{PSRR}{1}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \svg{../simulations/images/5t_noise.svg}{Output-Referred Noise}{1}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Bode Plot}
+    \begin{columns}[T,onlytextwidth]
+        \begin{column}{0.48\textwidth}
+            \svg{../simulations/images/tel_bode.svg}{}{1}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\section{Comparison}
+\begin{frame}{Simulation Results}
+    \begin{table}[t]
+        \scriptsize
+        \renewcommand{\arraystretch}{1.2}
+        \label{tab:5t_performance_summary}
+        \centering
+        \begin{tabularx}{\textwidth}{@{} X X @{} X X @{}}
+            \toprule
+            \textbf{Parameter} & \textbf{Target Specification} & \textbf{5T-OTA (Min -- Max)} & \textbf{Telescopic-OTA (Min -- Max)}\\
+            \midrule
+            Trim Voltage 1 & $= \qty{2.3}{\volt}$ & 2.293 -- 2.299 & 2.294 \\
+            Trim Voltage 2 & $= \qty{2.1}{\volt}$ & 2.096 -- 2.102 & 2.096 \\
+            Trim Voltage 3 & $= \qty{1.6}{\volt}$ & 1.602 -- 1.607 & 1.6 \\
+            Quiescent Current & $< \qty{100}{\micro\ampere}$ & 48.16 -- 94.49 & 52.56 -- 84.12 \\
+            \midrule
+            Phase Margin ($I_{load} = 0$) & $> \qty{60}{\degree}$ & 77.62 -- 99.2 & 74.15 -- 99 \\
+            Phase Margin ($I_{load} = \qty{500}{\micro\ampere}$) & $> \qty{70}{\degree}$ & 82.7 -- 116.2 & 107.2 -- 120.1 \\
+            \bottomrule
+            Loop Gain @ \qty{1}{\hertz} & $> \qty{50}{\decibel}$ & 54.95 -- 61.63 & 80.53 -- 86.23 \\
+            PSRR @ \qty{1}{\hertz} & $>\qty{65}{\decibel}$ & 66.07 -- 88.27 & 70.73 -- 75.86 \\
+            PSRR @ \qty{1}{\mega\hertz} & $>\qty{2}{\decibel}$ & 8.43 -- 10.95 & 6.373 -- 8.537 \\
+            PSRR @ \qty{10}{\mega\hertz} & $>\qty{2}{\decibel}$ & 4.353 -- 4.934 & 2.107 -- 2.118 \\
+            \midrule
+            Output-Referred Noise @ \qty{10}{\hertz} & $<-\qty{115}{\decibel\volt\slash\sqrt{\Hz}}$ & -118.3 -- -115.1 & -118.6 -- -115.5 \\
+            Output-Referred Noise @ \qty{1}{\kilo\hertz} & $<-\qty{125}{\decibel\volt\slash\sqrt{\Hz}}$ & -138.1 -- -135 & -138.1 -- -135.1 \\
+            Output-Referred Noise @ \qty{10}{\kilo\hertz} & $<-\qty{134}{\decibel\volt\slash\sqrt{\Hz}}$ & -146.5 -- -143.6 & -145.4 -- -142.5 \\
+            Output-Referred Noise @ \qty{100}{\kilo\hertz} & $<-\qty{143}{\decibel\volt\slash\sqrt{\Hz}}$ & -150.6 -- -148 & -148 -- -145.3 \\
+            Output-Referred Noise @ \qty{1}{\mega\hertz} & $<-\qty{155}{\decibel\volt\slash\sqrt{\Hz}}$ & -152.3 -- -150.5 & -149.9 -- -148.3 \\
+            \bottomrule
+        \end{tabularx}
+        \caption{Simulated Performance Summary (Across All Trims)}
+    \end{table}
+\end{frame}
+
 \section{Conclusion}
-% ==========================================
 
 \begin{frame}{Conclusion}
-    \begin{itemize}
-        \item The \textbf{Telescopic OTA} provided the best overall noise performance.
-        \item The \textbf{Current Mirror OTA} offered superior dynamic response at the cost of slight area increase.
-        \item All topologies successfully met the capacitor-less stability criteria across the specified load range.
-    \end{itemize}
-    
-    \vspace{1.5em}
-    \begin{center}
-        \Large \textbf{Thank you!} \\
-        \normalsize Questions?
-    \end{center}
+    \begin{columns}[T,onlytextwidth]
+        \begin{column}{0.48\textwidth}
+            \begin{itemize}
+                \item The \textbf{Telescopic OTA} provided the best overall noise performance.
+                \item The \textbf{Current Mirror OTA} offered superior dynamic response at the cost of slight area increase.
+                \item All topologies successfully met the capacitor-less stability criteria across the specified load range.
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \begin{center}
+                \Large \textbf{Thank you!} \\
+                \normalsize Questions?
+            \end{center}
+        \end{column}
+    \end{columns}
 \end{frame}
 
 \end{document}

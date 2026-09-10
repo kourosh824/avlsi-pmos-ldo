@@ -157,11 +157,11 @@ as for the output swing, in order to keep all the transistors in saturation, we 
         \midrule
         $M_1, M_2$ (Input Pair) & $42.0 / 5.0$ & \unit{\micro\meter} \\
         $M_3, M_4$ (Active Load) & $3.8 / 5.0$ & \unit{\micro\meter} \\
+        \midrule
         $M_5$ (Tail Current) & $12.0 / 5.0$ & \unit{\micro\meter} \\
+        $M_6$ (Input Current) & $5.0 / 5.0$ & \unit{\micro\meter} \\
         \midrule
-        $M_6$ (Input Current) & $12.0 / 5.0$ & \unit{\micro\meter} \\
-        \midrule
-        $M_{PD}$ (Pass Device) & $5.0 / 5.0$ & \unit{\micro\meter} \\
+        $M_{PD}$ (Pass Device) & $20.0 / 0.14$ & \unit{\micro\meter} \\
         \midrule
         $R_1$ (Divider) & 15.00 & \unit{\kilo\ohm} \\
         $R_{21}$ (Divider) & 16.36 & \unit{\kilo\ohm} \\
@@ -191,7 +191,7 @@ Regarding output-referred noise, larger input transistors reduce flicker noise a
 
 \section{Telescopic OTA-Based LDO}
 \svg{../images/tel_ota.svg}{Telescopic OTA}{1}
-Figure 8 shows the Telescopic OTA schematic used in this LDO variation. This topology features a cascode gain stage with a high-swing current mirror and self-bias network. Consequently, both loop gain and output impedance are substantially increased compared to the 5T-OTA. More specifically, the loop gain can be given by:
+Figure 8 shows the Telescopic OTA schematic used in this LDO variation. This topology features a cascode gain stage with a high-swing current mirror and self-bias network. Consequently, both loop gain and output impedance are substantially increased compared to the 5T OTA. More specifically, the loop gain can be given by:
 \begin{equation}
     A_{TEL} = \frac{g_{m12}}{g_{tel,out}}
 \end{equation}
