@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.7.4)  11 SEP 2026 00:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.7.4)  11 SEP 2026 11:12
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -622,7 +622,7 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/5t_noise_svg-tex.pdf): PDF inclusi
 
 pdfTeX warning: pdflatex (file ./svg-inkscape/tel_ota_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Package svg Info: Last page of `./svg-inkscape/tel_tran_svg-tex.pdf' is 1 on input line 254.
+Package svg Info: Last page of `./svg-inkscape/tel_tran_svg-tex.pdf' is 1 on input line 253.
  (./svg-inkscape/tel_tran_svg-tex.pdf_tex
 <./svg-inkscape/tel_tran_svg-tex.pdf, id=2369, page=1, 433.62pt x 433.62pt>
 File: ./svg-inkscape/tel_tran_svg-tex.pdf Graphic file (type pdf)
@@ -633,7 +633,7 @@ Package pdftex.def Info: ./svg-inkscape/tel_tran_svg-tex.pdf , page1 used on inp
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package svg Info: Last page of `./svg-inkscape/tel_bode_svg-tex.pdf' is 1 on input line 256.
+Package svg Info: Last page of `./svg-inkscape/tel_bode_svg-tex.pdf' is 1 on input line 255.
 (./svg-inkscape/tel_bode_svg-tex.pdf_tex
 <./svg-inkscape/tel_bode_svg-tex.pdf, id=2371, page=1, 433.62pt x 433.62pt>
 File: ./svg-inkscape/tel_bode_svg-tex.pdf Graphic file (type pdf)
@@ -644,24 +644,24 @@ Package pdftex.def Info: ./svg-inkscape/tel_bode_svg-tex.pdf , page1 used on inp
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package svg Info: Last page of `./svg-inkscape/tel_psrr_svg-tex.pdf' is 1 on input line 258.
+Package svg Info: Last page of `./svg-inkscape/tel_psrr_svg-tex.pdf' is 1 on input line 257.
 (./svg-inkscape/tel_psrr_svg-tex.pdf_tex
 <./svg-inkscape/tel_psrr_svg-tex.pdf, id=2373, page=1, 578.16pt x 361.35pt>
 File: ./svg-inkscape/tel_psrr_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/tel_psrr_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/tel_psrr_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 258.46837pt x 161.54184pt.
+(pdftex.def)             Requested size: 232.61995pt x 145.38655pt.
 )
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package svg Info: Last page of `./svg-inkscape/tel_noise_svg-tex.pdf' is 1 on input line 260.
+Package svg Info: Last page of `./svg-inkscape/tel_noise_svg-tex.pdf' is 1 on input line 259.
 (./svg-inkscape/tel_noise_svg-tex.pdf_tex
 <./svg-inkscape/tel_noise_svg-tex.pdf, id=2375, page=1, 578.16pt x 361.35pt>
 File: ./svg-inkscape/tel_noise_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/tel_noise_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/tel_noise_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 258.46837pt x 161.54184pt.
+(pdftex.def)             Requested size: 232.61995pt x 145.38655pt.
 )
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -675,34 +675,15 @@ Package pdftex.def Info: ./svg-inkscape/cm_ota_svg-tex.pdf , page1 used on input
 (pdftex.def)             Requested size: 206.77548pt x 141.34596pt.
 )
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
 
 
 [4 <./svg-inkscape/tel_tran_svg-tex.pdf> <./svg-inkscape/tel_bode_svg-tex.pdf
 
 pdfTeX warning: pdflatex (file ./svg-inkscape/tel_bode_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Underfull \vbox (badness 1776) has occurred while \output is active []
-
-
 
 (./report.bbl)
 
-- LAST -
-Extra skip:0.0pt
-Left:434.5495pt/0.0pt
-Right:414.77917pt/0.0pt
-Split: 434.01932pt
-Output:434.01932pt
-Pageshrink: 9.55005pt
-Pagestretch: 20.44995pt
-@colht:447.08096pt
-FLUSHEND [output]: 434.01932pt
-FLUSHEND [leftcolumn badness]: 0
-FUSHEND [rightcolumn badness]: 0
 [5 <./svg-inkscape/tel_psrr_svg-tex.pdf> <./svg-inkscape/tel_noise_svg-tex.pdf
 
 pdfTeX warning: pdflatex (file ./svg-inkscape/tel_noise_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
@@ -717,14 +698,14 @@ L3 programming layer <2025-01-18>
  ) 
 Here is how much of TeX's memory you used:
  11442 strings out of 475102
- 264287 string characters out of 5764878
+ 264284 string characters out of 5764878
  665155 words of memory out of 5000000
  34204 multiletter control sequences out of 15000+600000
  608822 words of font info for 133 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  94i,15n,93p,1030b,873s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (5 pages, 1134772 bytes).
+Output written on report.pdf (5 pages, 1133413 bytes).
 PDF statistics:
  4268 PDF objects out of 4296 (max. 8388607)
  2808 compressed objects within 29 object streams

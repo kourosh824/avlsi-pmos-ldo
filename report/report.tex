@@ -193,14 +193,13 @@ Regarding output-referred noise, larger input transistors reduce flicker noise a
 \svg{../images/tel_ota.svg}{Telescopic OTA}{1}
 Figure 8 shows the Telescopic OTA schematic used in this LDO variation. This topology features a cascode gain stage with a high-swing current mirror and self-bias network. Consequently, both loop gain and output impedance are substantially increased compared to the 5T OTA. More specifically, the loop gain can be given by:
 \begin{equation}
-    A_{TEL} = \frac{g_{m12}}{g_{tel,out}}
+    A_{TEL} = \frac{g_{m,12}}{g_{tel,out}}
 \end{equation}
 whereas the output impedance is given by:
 \begin{equation}
-    g_{tel,out} = \frac{1}{
-        g_{ds2} \frac{g_{ds2C}}{g_{m2C}} +
-        g_{ds4} \frac{g_{ds4C}}{g_{m4C}}
-    }
+    g_{tel,out} =
+        g_{ds,2} \frac{g_{ds,2C}}{g_{m,2C}} +
+        g_{ds,4} \frac{g_{ds,4C}}{g_{m,4C}}
 \end{equation}
 Note that M2C and M4C represent NMOS and PMOS cascode transistors, respectively.
 
@@ -218,7 +217,7 @@ Leading to the following output swing:
 
 Table III presents the device sizing. Compared to the 5T OTA design, the Telescopic OTA employs smaller bias transistor dimensions, larger feedback resistors, and increased pass device width to ensure the pass device gate voltage remains within the OTA output range.
 
-Figure 9 demonstrates that all three target output voltages are achieved. Figure 10 presents the Bode plot for this LDO variation, which exhibits significantly higher DC gain compared to the 5T-OTA, resulting in superior PSRR performance.
+Figure 9 demonstrates that all three target output voltages are achieved. Figure 10 presents the Bode plot for this LDO variation, which exhibits significantly higher DC gain compared to the 5T OTA, resulting in superior PSRR performance.
 
 \begin{table}[htbp]
     \centering
@@ -255,11 +254,11 @@ Figure 9 demonstrates that all three target output voltages are achieved. Figure
 
 \svg{../simulations/images/tel_bode.svg}{Telescopic OTA-Based LDO's Bode Plot Under Load}{1}
 
-\svg{../simulations/images/tel_psrr.svg}{Telescopic OTA-Based LDO's PSRR}{1}
+\svg{../simulations/images/tel_psrr.svg}{Telescopic OTA-Based LDO's PSRR}{0.9}
 
-\svg{../simulations/images/tel_noise.svg}{Telescopic OTA-Based LDO's Output Referred Noise}{1}
+\svg{../simulations/images/tel_noise.svg}{Telescopic OTA-Based LDO's Output Referred Noise}{0.9}
 
-Figure 11 illustrates the PSRR results, which are superior to those of the 5T-OTA due to the higher loop gain. Figure 12 presents the output-referred noise, which is comparable to the 5T-OTA results because the cascode transistors contribute negligibly to the total noise.
+Figure 11 illustrates the PSRR results, which are superior to those of the 5T OTA due to the higher loop gain. Figure 12 presents the output-referred noise, which is comparable to the 5T OTA results because the cascode transistors contribute negligibly to the total noise.
 
 \section{Comparison}
 Table IV summarizes the performance of both LDO variations against the target specifications. Both designs satisfy all specifications except the output-referred noise requirement at \qty{1}{\mega\hertz}. The 5T OTA design is preferred when a smaller pass device or increased output voltage swing is required. The Telescopic OTA, conversely, maximizes loop gain and PSRR but suffers from severely limited output swing.
@@ -267,11 +266,11 @@ Table IV summarizes the performance of both LDO variations against the target sp
 \begin{table*}[t]
     \renewcommand{\arraystretch}{1.2}
     \caption{Simulated Performance Summary (Across All Trims)}
-    \label{tab:5t_performance_summary}
+    \label{tab:performance_summary}
     \centering
     \begin{tabularx}{\textwidth}{@{} X X @{} X X @{}}
         \toprule
-        \textbf{Parameter} & \textbf{Target Specification} & \textbf{5T-OTA (Min -- Max)} & \textbf{Telescopic-OTA (Min -- Max)}\\
+        \textbf{Parameter} & \textbf{Target Specification} & \textbf{5T OTA (Min -- Max)} & \textbf{Telescopic-OTA (Min -- Max)}\\
         \midrule
         Trim Voltage 1 & $= \qty{2.3}{\volt}$ & 2.293 -- 2.299 & 2.294 \\
         Trim Voltage 2 & $= \qty{2.1}{\volt}$ & 2.096 -- 2.102 & 2.096 \\
@@ -280,7 +279,7 @@ Table IV summarizes the performance of both LDO variations against the target sp
         \midrule
         Phase Margin ($I_{load} = 0$) & $> \qty{60}{\degree}$ & 77.62 -- 99.2 & 74.15 -- 99 \\
         Phase Margin ($I_{load} = \qty{500}{\micro\ampere}$) & $> \qty{70}{\degree}$ & 82.7 -- 116.2 & 107.2 -- 120.1 \\
-        \bottomrule
+        \midrule
         Loop Gain @ \qty{1}{\hertz} & $> \qty{50}{\decibel}$ & 54.95 -- 61.63 & 80.53 -- 86.23 \\
         PSRR @ \qty{1}{\hertz} & $>\qty{65}{\decibel}$ & 66.07 -- 88.27 & 70.73 -- 75.86 \\
         PSRR @ \qty{1}{\mega\hertz} & $>\qty{2}{\decibel}$ & 8.43 -- 10.95 & 6.373 -- 8.537 \\
@@ -295,9 +294,9 @@ Table IV summarizes the performance of both LDO variations against the target sp
     \end{tabularx}
 \end{table*}
 
-\section{Future Work}
-\svg{../images/cm_ota.svg}{Current Mirror OTA-Based LDO}{0.8}
-Achieving the noise specification at higher frequencies requires increasing the input transistor bias current, as thermal noise dominates in this regime. However, increasing bias current in both topologies reduces output impedance, thereby decreasing loop gain and PSRR performance. Alternative architectures with separate input and gain stages, each optimized for different operating currents, warrant investigation. One such candidate is the Current Mirror OTA topology shown in Figure 13, which potentially offers independent optimization of noise and gain performance.
+\section{Conclusion}
+Both designs performed well across almost all proposed specifications and failed only to meet the output-referred noise specification at higher frequencies. From the results obtained, it is safe to say that a one-stage EA, such as the 5T OTA or Telescopic OTA, is more than sufficient for building high-performance LDO circuits. Achieving the noise specification at higher frequencies requires increasing the input-transistor bias current, as thermal noise dominates in this regime. However, increasing the bias current in both topologies reduces the output impedance, thereby decreasing loop gain and PSRR performance. Alternative architectures with separate input and gain stages, each optimized for different operating currents, warrant investigation. One such candidate is the current-mirror OTA topology shown in Figure 13, which potentially offers independent optimization of noise and gain performance.
+\svg{../images/cm_ota.svg}{Current Mirror OTA}{0.8}
 
 \section*{Acknowledgments}
 This work wouldn't have been possible without the help of PhD candidate Andreas Papathanasiou and Pr. Paul-Peter Sotiriadis. Special thanks go to Dr. Dimitrios Baxevanakis for his guidance and help all throughout the project.

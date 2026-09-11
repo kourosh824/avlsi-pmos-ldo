@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{1}
+Tony {Chan Carusone}, David {A. Johns}, and Kenneth {W. Martin}.
+\newblock {\em Analog Integrated Circuit Design}.
+\newblock John Wiley \& Sons, Inc., second edition, 2012.
+
+\bibitem{pretl2026}
+Harald Pretl, Michael Koefinger, and Simon Dorrer.
+\newblock Analog {(Integrated)} {Circuit} {Design}.
+
+\bibitem{2}
+Joselyn {Torres}, Mohamed {El-Nozahi}, Ahmed {Amer}, Seenu {Gopalraju}, Reza {Abdullah}, Kamran {Entesari}, and Edgar {Sanchez-Sinencio}.
+\newblock {Low Drop-Out Voltage Regulators: Capacitor-less Architecture Comparison}.
+\newblock {\em IEEE Circuits and Systems Magazine}, 14(2):6--26, 2014.
+
+\end{thebibliography}

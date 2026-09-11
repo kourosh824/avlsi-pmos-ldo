@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.7.4)  11 SEP 2026 00:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.7.4)  11 SEP 2026 11:25
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -668,24 +668,24 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 ) (./presentation.aux)
 \openout1 = `presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -740,53 +740,53 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 36.
+Package hyperref Info: Link coloring OFF on input line 38.
  (./presentation.out) (./presentation.out)
 \@outlinefile=\write5
 \openout5 = `presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 36.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 38.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 36.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 38.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 36.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 36.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 36.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 36.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 38.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 36.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 36.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 36.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 38.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 36.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 36.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 36.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 38.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 36.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 36.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 38.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 36.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 38.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 36.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 36.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 36.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 36.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 36.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 36.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 38.
  (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -802,7 +802,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 ) (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 36.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 38.
  (./presentation.nav)
 
 [1
@@ -812,125 +812,121 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 [2
 
 ]
-Package svg Info: Last page of `./svg-inkscape/pll_diagram_svg-tex.pdf' is 1 on input line 93.
+Package svg Info: Last page of `./svg-inkscape/pll_diagram_svg-tex.pdf' is 1 on input line 53.
  (./svg-inkscape/pll_diagram_svg-tex.pdf_tex
-<./svg-inkscape/pll_diagram_svg-tex.pdf, id=124, page=1, 485.85614pt x 255.1131pt>
+<./svg-inkscape/pll_diagram_svg-tex.pdf, id=142, page=1, 485.85614pt x 255.1131pt>
 File: ./svg-inkscape/pll_diagram_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/pll_diagram_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/pll_diagram_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 208.91528pt x 109.69649pt.
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 93.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 93.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+(pdftex.def)             Requested size: 326.45177pt x 171.41536pt.
 )
 
 [3
 
- <./svg-inkscape/pll_diagram_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/pmos_ldo_svg-tex.pdf' is 1 on input line 98.
+ <./svg-inkscape/pll_diagram_svg-tex.pdf>] (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+
+[4
+
+]
+Package svg Info: Last page of `./svg-inkscape/pmos_ldo_svg-tex.pdf' is 1 on input line 95.
  (./svg-inkscape/pmos_ldo_svg-tex.pdf_tex
-<./svg-inkscape/pmos_ldo_svg-tex.pdf, id=304, page=1, 584.90671pt x 343.66191pt>
+<./svg-inkscape/pmos_ldo_svg-tex.pdf, id=350, page=1, 584.90671pt x 343.66191pt>
 File: ./svg-inkscape/pmos_ldo_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/pmos_ldo_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/pmos_ldo_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 291.72586pt x 171.41101pt.
 )
 
-[4
+[5
 
  <./svg-inkscape/pmos_ldo_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/pmos_ldo_ss_svg-tex.pdf' is 1 on input line 138.
+Package svg Info: Last page of `./svg-inkscape/pmos_ldo_ss_svg-tex.pdf' is 1 on input line 135.
  (./svg-inkscape/pmos_ldo_ss_svg-tex.pdf_tex
-<./svg-inkscape/pmos_ldo_ss_svg-tex.pdf, id=481, page=1, 600.45528pt x 129.94266pt>
+<./svg-inkscape/pmos_ldo_ss_svg-tex.pdf, id=526, page=1, 600.45528pt x 129.94266pt>
 File: ./svg-inkscape/pmos_ldo_ss_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/pmos_ldo_ss_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/pmos_ldo_ss_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 313.37624pt x 67.8184pt.
 )
 
-[5
+[6
 
  <./svg-inkscape/pmos_ldo_ss_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/5t_ota_svg-tex.pdf' is 1 on input line 161.
+Package svg Info: Last page of `./svg-inkscape/5t_ota_svg-tex.pdf' is 1 on input line 158.
  (./svg-inkscape/5t_ota_svg-tex.pdf_tex
-<./svg-inkscape/5t_ota_svg-tex.pdf, id=609, page=1, 361.63457pt x 301.26352pt>
+<./svg-inkscape/5t_ota_svg-tex.pdf, id=654, page=1, 361.63457pt x 301.26352pt>
 File: ./svg-inkscape/5t_ota_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/5t_ota_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/5t_ota_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 205.75322pt x 171.40479pt.
 )
 
-[6
+[7
 
  <./svg-inkscape/5t_ota_svg-tex.pdf>]
 
-[7
+[8
 
 ]
-Package svg Info: Last page of `./svg-inkscape/5t_tran_svg-tex.pdf' is 1 on input line 215.
+Package svg Info: Last page of `./svg-inkscape/5t_tran_svg-tex.pdf' is 1 on input line 212.
  (./svg-inkscape/5t_tran_svg-tex.pdf_tex
-<./svg-inkscape/5t_tran_svg-tex.pdf, id=870, page=1, 433.62pt x 433.62pt>
+<./svg-inkscape/5t_tran_svg-tex.pdf, id=916, page=1, 433.62pt x 433.62pt>
 File: ./svg-inkscape/5t_tran_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/5t_tran_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/5t_tran_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 171.39607pt x 171.39381pt.
 )
-Package svg Info: Last page of `./svg-inkscape/5t_bode_svg-tex.pdf' is 1 on input line 215.
+Package svg Info: Last page of `./svg-inkscape/5t_bode_svg-tex.pdf' is 1 on input line 212.
  (./svg-inkscape/5t_bode_svg-tex.pdf_tex
-<./svg-inkscape/5t_bode_svg-tex.pdf, id=872, page=1, 433.62pt x 433.62pt>
+<./svg-inkscape/5t_bode_svg-tex.pdf, id=918, page=1, 433.62pt x 433.62pt>
 File: ./svg-inkscape/5t_bode_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/5t_bode_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/5t_bode_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 171.39607pt x 171.39381pt.
 )
 
-[8
+[9
 
  <./svg-inkscape/5t_tran_svg-tex.pdf> <./svg-inkscape/5t_bode_svg-tex.pdf
 
 pdfTeX warning: pdflatex (file ./svg-inkscape/5t_bode_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Package svg Info: Last page of `./svg-inkscape/5t_psrr_svg-tex.pdf' is 1 on input line 226.
+Package svg Info: Last page of `./svg-inkscape/5t_psrr_svg-tex.pdf' is 1 on input line 223.
  (./svg-inkscape/5t_psrr_svg-tex.pdf_tex
-<./svg-inkscape/5t_psrr_svg-tex.pdf, id=1777, page=1, 578.16pt x 361.35pt>
+<./svg-inkscape/5t_psrr_svg-tex.pdf, id=1822, page=1, 578.16pt x 361.35pt>
 File: ./svg-inkscape/5t_psrr_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/5t_psrr_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/5t_psrr_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 208.91528pt x 130.5711pt.
 )
-Package svg Info: Last page of `./svg-inkscape/5t_noise_svg-tex.pdf' is 1 on input line 226.
+Package svg Info: Last page of `./svg-inkscape/5t_noise_svg-tex.pdf' is 1 on input line 223.
  (./svg-inkscape/5t_noise_svg-tex.pdf_tex
-<./svg-inkscape/5t_noise_svg-tex.pdf, id=1779, page=1, 578.16pt x 361.35pt>
+<./svg-inkscape/5t_noise_svg-tex.pdf, id=1824, page=1, 578.16pt x 361.35pt>
 File: ./svg-inkscape/5t_noise_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/5t_noise_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/5t_noise_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 208.91528pt x 130.5711pt.
 )
 
-[9
+[10
 
  <./svg-inkscape/5t_psrr_svg-tex.pdf> <./svg-inkscape/5t_noise_svg-tex.pdf
 
 pdfTeX warning: pdflatex (file ./svg-inkscape/5t_noise_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Package svg Info: Last page of `./svg-inkscape/tel_ota_svg-tex.pdf' is 1 on input line 231.
+Package svg Info: Last page of `./svg-inkscape/tel_ota_svg-tex.pdf' is 1 on input line 228.
  (./svg-inkscape/tel_ota_svg-tex.pdf_tex
-<./svg-inkscape/tel_ota_svg-tex.pdf, id=2420, page=1, 704.91707pt x 430.74727pt>
+<./svg-inkscape/tel_ota_svg-tex.pdf, id=2465, page=1, 704.91707pt x 430.74727pt>
 File: ./svg-inkscape/tel_ota_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/tel_ota_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/tel_ota_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 280.5324pt x 171.42168pt.
 )
 
-[10
+[11
 
  <./svg-inkscape/tel_ota_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/tel_ota_svg-tex.pdf' is 1 on input line 263.
+Package svg Info: Last page of `./svg-inkscape/tel_ota_svg-tex.pdf' is 1 on input line 257.
  (./svg-inkscape/tel_ota_svg-tex.pdf_tex
 File: ./svg-inkscape/tel_ota_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/tel_ota_svg-tex.pdf, page 1>
@@ -938,65 +934,59 @@ Package pdftex.def Info: ./svg-inkscape/tel_ota_svg-tex.pdf , page1 used on inpu
 (pdftex.def)             Requested size: 208.91528pt x 127.66087pt.
 )
 
-[11
-
-]
-Overfull \vbox (11.76373pt too high) detected at line 311
- []
-
-
-
 [12
 
 ]
-Package svg Info: Last page of `./svg-inkscape/5t_tran_svg-tex.pdf' is 1 on input line 322.
- (./svg-inkscape/5t_tran_svg-tex.pdf_tex
-File: ./svg-inkscape/5t_tran_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/5t_tran_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/5t_tran_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 171.39607pt x 171.39381pt.
-)
-Package svg Info: Last page of `./svg-inkscape/5t_bode_svg-tex.pdf' is 1 on input line 322.
- (./svg-inkscape/5t_bode_svg-tex.pdf_tex
-File: ./svg-inkscape/5t_bode_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/5t_bode_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/5t_bode_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 171.39607pt x 171.39381pt.
-)
 
 [13
 
 ]
-Package svg Info: Last page of `./svg-inkscape/5t_psrr_svg-tex.pdf' is 1 on input line 333.
- (./svg-inkscape/5t_psrr_svg-tex.pdf_tex
-File: ./svg-inkscape/5t_psrr_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/5t_psrr_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/5t_psrr_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 208.91528pt x 130.5711pt.
+Package svg Info: Last page of `./svg-inkscape/tel_tran_svg-tex.pdf' is 1 on input line 316.
+ (./svg-inkscape/tel_tran_svg-tex.pdf_tex
+<./svg-inkscape/tel_tran_svg-tex.pdf, id=2943, page=1, 433.62pt x 433.62pt>
+File: ./svg-inkscape/tel_tran_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/tel_tran_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/tel_tran_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 171.39607pt x 171.39381pt.
 )
-Package svg Info: Last page of `./svg-inkscape/5t_noise_svg-tex.pdf' is 1 on input line 333.
- (./svg-inkscape/5t_noise_svg-tex.pdf_tex
-File: ./svg-inkscape/5t_noise_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/5t_noise_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/5t_noise_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 208.91528pt x 130.5711pt.
-)
-
-[14
-
-]
-Package svg Info: Last page of `./svg-inkscape/tel_bode_svg-tex.pdf' is 1 on input line 343.
+Package svg Info: Last page of `./svg-inkscape/tel_bode_svg-tex.pdf' is 1 on input line 316.
  (./svg-inkscape/tel_bode_svg-tex.pdf_tex
-<./svg-inkscape/tel_bode_svg-tex.pdf, id=2955, page=1, 433.62pt x 433.62pt>
+<./svg-inkscape/tel_bode_svg-tex.pdf, id=2945, page=1, 433.62pt x 433.62pt>
 File: ./svg-inkscape/tel_bode_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/tel_bode_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/tel_bode_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 171.39607pt x 171.39381pt.
 )
 
+[14
+
+ <./svg-inkscape/tel_tran_svg-tex.pdf> <./svg-inkscape/tel_bode_svg-tex.pdf
+
+pdfTeX warning: pdflatex (file ./svg-inkscape/tel_bode_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Package svg Info: Last page of `./svg-inkscape/tel_psrr_svg-tex.pdf' is 1 on input line 327.
+ (./svg-inkscape/tel_psrr_svg-tex.pdf_tex
+<./svg-inkscape/tel_psrr_svg-tex.pdf, id=3843, page=1, 578.16pt x 361.35pt>
+File: ./svg-inkscape/tel_psrr_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/tel_psrr_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/tel_psrr_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 208.91528pt x 130.5711pt.
+)
+Package svg Info: Last page of `./svg-inkscape/tel_noise_svg-tex.pdf' is 1 on input line 327.
+ (./svg-inkscape/tel_noise_svg-tex.pdf_tex
+<./svg-inkscape/tel_noise_svg-tex.pdf, id=3845, page=1, 578.16pt x 361.35pt>
+File: ./svg-inkscape/tel_noise_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/tel_noise_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/tel_noise_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 208.91528pt x 130.5711pt.
+)
+
 [15
 
- <./svg-inkscape/tel_bode_svg-tex.pdf>]
+ <./svg-inkscape/tel_psrr_svg-tex.pdf> <./svg-inkscape/tel_noise_svg-tex.pdf
+
+pdfTeX warning: pdflatex (file ./svg-inkscape/tel_noise_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
 
 [16
 
@@ -1005,6 +995,91 @@ Package pdftex.def Info: ./svg-inkscape/tel_bode_svg-tex.pdf , page1 used on inp
 [17
 
 ]
+Package svg Info: Last page of `./svg-inkscape/cm_ota_svg-tex.pdf' is 1 on input line 395.
+ (./svg-inkscape/cm_ota_svg-tex.pdf_tex
+<./svg-inkscape/cm_ota_svg-tex.pdf, id=4549, page=1, 590.48958pt x 403.64601pt>
+File: ./svg-inkscape/cm_ota_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/cm_ota_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/cm_ota_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 208.91528pt x 142.80568pt.
+)
+
+[18
+
+ <./svg-inkscape/cm_ota_svg-tex.pdf>]
+Package svg Info: Last page of `./svg-inkscape/cm_ota_svg-tex.pdf' is 1 on input line 414.
+ (./svg-inkscape/cm_ota_svg-tex.pdf_tex
+File: ./svg-inkscape/cm_ota_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/cm_ota_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/cm_ota_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 208.91528pt x 142.80568pt.
+)
+
+[19
+
+]
+
+[20
+
+]
+Package svg Info: Last page of `./svg-inkscape/cm_tran_svg-tex.pdf' is 1 on input line 455.
+ (./svg-inkscape/cm_tran_svg-tex.pdf_tex
+<./svg-inkscape/cm_tran_svg-tex.pdf, id=4937, page=1, 433.62pt x 433.62pt>
+File: ./svg-inkscape/cm_tran_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/cm_tran_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/cm_tran_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 171.39607pt x 171.39381pt.
+)
+Package svg Info: Last page of `./svg-inkscape/cm_bode_svg-tex.pdf' is 1 on input line 455.
+ (./svg-inkscape/cm_bode_svg-tex.pdf_tex
+<./svg-inkscape/cm_bode_svg-tex.pdf, id=4939, page=1, 433.62pt x 433.62pt>
+File: ./svg-inkscape/cm_bode_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/cm_bode_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/cm_bode_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 171.39607pt x 171.39381pt.
+)
+
+[21
+
+ <./svg-inkscape/cm_tran_svg-tex.pdf> <./svg-inkscape/cm_bode_svg-tex.pdf
+
+pdfTeX warning: pdflatex (file ./svg-inkscape/cm_bode_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Package svg Info: Last page of `./svg-inkscape/cm_psrr_svg-tex.pdf' is 1 on input line 466.
+ (./svg-inkscape/cm_psrr_svg-tex.pdf_tex
+<./svg-inkscape/cm_psrr_svg-tex.pdf, id=5968, page=1, 578.16pt x 361.35pt>
+File: ./svg-inkscape/cm_psrr_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/cm_psrr_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/cm_psrr_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 208.91528pt x 130.5711pt.
+)
+Package svg Info: Last page of `./svg-inkscape/cm_noise_svg-tex.pdf' is 1 on input line 466.
+ (./svg-inkscape/cm_noise_svg-tex.pdf_tex
+<./svg-inkscape/cm_noise_svg-tex.pdf, id=5970, page=1, 578.16pt x 361.35pt>
+File: ./svg-inkscape/cm_noise_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/cm_noise_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/cm_noise_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 208.91528pt x 130.5711pt.
+)
+
+[22
+
+ <./svg-inkscape/cm_psrr_svg-tex.pdf> <./svg-inkscape/cm_noise_svg-tex.pdf
+
+pdfTeX warning: pdflatex (file ./svg-inkscape/cm_noise_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+
+[23
+
+]
+
+[24
+
+] (./presentation.bbl)
+
+[25
+
+ </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
 \tf@nav=\write6
 \openout6 = `presentation.nav'.
 
@@ -1020,21 +1095,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 2EB835E95DFEDB06E1CAD62F74805947;680.
+(rerunfilecheck)             Checksum: F57AF53F302929A291F74D010EB4990C;1187.
  ) 
 Here is how much of TeX's memory you used:
- 28003 strings out of 475102
- 592674 string characters out of 5764878
- 965713 words of memory out of 5000000
- 50389 multiletter control sequences out of 15000+600000
- 568788 words of font info for 72 fonts, out of 8000000 for 9000
+ 28264 strings out of 475102
+ 601129 string characters out of 5764878
+ 965921 words of memory out of 5000000
+ 50605 multiletter control sequences out of 15000+600000
+ 569145 words of font info for 73 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 101i,18n,107p,439b,1180s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,18n,107p,664b,1038s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/kidb/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss0700.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on presentation.pdf (17 pages, 855432 bytes).
+Output written on presentation.pdf (25 pages, 1546854 bytes).
 PDF statistics:
- 3677 PDF objects out of 4296 (max. 8388607)
- 2548 compressed objects within 26 object streams
- 45 named destinations out of 1000 (max. 500000)
- 264 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6792 PDF objects out of 7423 (max. 8388607)
+ 4671 compressed objects within 47 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 353 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,7 +1,10 @@
 \babel@toc {english}{}\relax 
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{Background}{4}{0}{2}
-\beamer@sectionintoc {3}{5T OTA-Based LDO}{6}{0}{3}
-\beamer@sectionintoc {4}{Telescopic OTA-Based LDO}{10}{0}{4}
+\beamer@sectionintoc {2}{Background}{5}{0}{2}
+\beamer@sectionintoc {3}{5T OTA-Based LDO}{7}{0}{3}
+\beamer@sectionintoc {4}{Telescopic OTA-Based LDO}{11}{0}{4}
 \beamer@sectionintoc {5}{Comparison}{16}{0}{5}
-\beamer@sectionintoc {6}{Conclusion}{17}{0}{6}
+\beamer@sectionintoc {6}{Conclusion and Future Work}{18}{0}{6}
+\beamer@sectionintoc {7}{Current Mirror OTA-Based LDO}{19}{0}{7}
+\beamer@sectionintoc {8}{Acknowledgements}{24}{0}{8}
+\beamer@sectionintoc {9}{Bibliography}{25}{0}{9}

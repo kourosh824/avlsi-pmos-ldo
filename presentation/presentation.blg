@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2025/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: presentation.aux
+The style file: plain.bst
+Database file #1: presentation.bib
+Warning--entry type for "pretl2026" isn't style-file defined
+--line 33 of file presentation.bib
+You've used 3 entries,
+            2118 wiz_defined-function locations,
+            510 strings with 4498 characters,
+and the built_in function-call counts, 1021 in all, are:
+= -- 86
+> -- 74
+< -- 0
++ -- 29
+- -- 26
+* -- 78
+:= -- 184
+add.period$ -- 8
+call.type$ -- 3
+change.case$ -- 22
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 30
+empty$ -- 69
+format.name$ -- 26
+if$ -- 202
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 3
+newline$ -- 17
+num.names$ -- 6
+pop$ -- 27
+preamble$ -- 1
+purify$ -- 19
+quote$ -- 0
+skip$ -- 23
+stack$ -- 0
+substring$ -- 27
+swap$ -- 3
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 10
+warning$ -- 0
+while$ -- 7
+width$ -- 4
+write$ -- 31
+(There was 1 warning)
