@@ -65,6 +65,7 @@
             Bias Current ($I_{bias}$) & \qty{5}{\micro\ampere} \\
             Load Current ($I_{L}$) & \qty{500}{\micro\ampere} \\
             Load Capacitance ($C_{L}$) & \qty{50}{\pico\farad} \\
+            Saturation Margin ($V_{DSAT-MARG}$) & \qty{>50}{\milli\volt} \\
             \midrule
             Reference Voltage ($V_{REF}$) & $\qty{1.2}{\volt} \pm \qty{1}{\percent}$ \\
             Output Voltages ($V_{OUT}$) & \qty{2.3}{\volt}, \qty{2.1}{\volt}, \qty{1.6}{\volt} \\
@@ -117,7 +118,7 @@
                 \quad
                 \omega_{p2}=\frac{g_{m,PD}}{C_1+C_2},
                 \quad
-                \omega_{z}=\frac{1}{C_c(1 \slash g_{m,PD}-R_c)}
+                \omega_{z}=\frac{-1}{C_c(1 \slash g_{m,PD}-R_c)}
             \end{equation*}
             \textbf{Output-referred noise}
             \begin{equation*}
@@ -138,15 +139,15 @@
 \begin{frame}{5T OTA (Simple Differential Pair)}
     \begin{columns}[c,onlytextwidth]
         \begin{column}{0.48\textwidth}
-            5T OTA is a simple differential pair with a gain of:
+            The 5T OTA is a simple differential pair with a gain of:
             \begin{equation*}
                 A_{5T}=\frac{g_{m,12}}{g_{5T,out}}
             \end{equation*}
-            whereas the output impedance:
+            while the output impedance is given by:
             \begin{equation*}
                 g_{5T,out}=g_{ds,2}+g_{ds,4}
             \end{equation*}
-            as for the output swing, in order to keep all the transistors in saturation, we must have:
+            As for the output swing, to keep all transistors in saturation, we must have:
             \begin{equation*}
                 V_{REF} - V_{T} \leq V_{OUT} \leq V_{EXT} - V_{DSAT}
             \end{equation*}
@@ -189,11 +190,10 @@
         \end{column}
         \begin{column}{0.6\textwidth}
             \begin{itemize}
-                \item \textbf{Input Pair:} Large W and L for reducing the Flicker noise and increasing the loop gain.
-                \item \textbf{Active Load:} Large L for increasing the loop gain, small W for improving PSRR.
-                \item \textbf{Tail Current:} Large L for better current mirroring, large W for increasing the bias current and reducing the Thermal noise at higher frequencies.
+                \item \textbf{Input Pair:} Large W and L to reduce flicker noise and increase loop gain.
+                \item \textbf{Active Load:} Large L to increase loop gain; small W to improve PSRR.
+                \item \textbf{Tail Current:} Large L for better current mirroring; large W to increase bias current and reduce thermal noise at higher frequencies.
                 \item \textbf{Pass Device:} Large W to improve transconductance and loop gain.
-                \item \textbf{Divider:} Small resistors to minimize noise and decrease PD's gate voltage @ No-Load.
                 \item \textbf{Compensation:} Nulling resistor and compensation capacitor for improving UGBW and PSRR at higher frequencies.
             \end{itemize}
         \end{column}
@@ -203,7 +203,7 @@
 \begin{frame}{5T OTA-Based LDO (Simulation Results)}
     \begin{columns}[c,onlytextwidth]
         \begin{column}{0.48\textwidth}
-            \svg{../simulations/images/5t_tran.svg}{Transient Response}{1}
+            \svg{../simulations/images/5t_tran.svg}{Ramp Response}{1}
         \end{column}
         \begin{column}{0.48\textwidth}
             \svg{../simulations/images/5t_bode.svg}{Bode Plot}{1}
@@ -230,7 +230,7 @@
     \begin{columns}[c,onlytextwidth]
         \begin{column}{0.48\textwidth}
             \svg{../images/tel_ota.svg}{Telescopic OTA}{1}
-            Leading to the following output swing:
+            This leads to the following output swing:
             \begin{equation*}
                 V_{REF} - V_{T} + V_{DSAT} \leq V_{OUT} \leq V_{EXT} - 2V_{DSAT}
             \end{equation*}
@@ -246,7 +246,7 @@
                     g_{ds,2} \frac{g_{ds,2C}}{g_{m,2C}} +
                     g_{ds,4} \frac{g_{ds,4C}}{g_{m,4C}}
             \end{equation*}
-            Bias transistors should be sized in the following manner in order to ensure maximum output swing:
+            Bias transistors should be sized as follows to ensure maximum output swing:
             \begin{equation*}
                 \frac{W_{8}}{L_{8}} = \frac{W_{3,4}}{4L_{3,4}},
                 \quad
@@ -260,11 +260,11 @@
     \begin{columns}[T,onlytextwidth]
         \begin{column}{0.55\textwidth}
             \begin{itemize}
-                \item \textbf{Input Pair \& Active Load:} Large W and L for reducing the Flicker noise and increasing the loop gain.
-                \item \textbf{Cascode Transistors:} Small W to ensure saturation, no need for larger transconductance.
-                \item \textbf{Current Mirror:} Large L for better current mirroring, small W for keeping all devices in saturation while improving PSRR.
+                \item \textbf{Input Pair \& Active Load:} Large W and L to reduce flicker noise and increase loop gain.
+                \item \textbf{Cascode Transistors:} Small W to ensure saturation; no need for larger transconductance.
+                \item \textbf{Current Mirror:} Large L for better current mirroring; small W to keep all devices in saturation while improving PSRR.
                 \item \textbf{Pass Device:} Large W to improve transconductance and loop gain.
-                \item \textbf{Divider:} Small resistors to minimize noise and decrease PD's gate voltage @ No-Load.
+                \item \textbf{Divider:} Small resistors to minimize noise and decrease the pass device's gate voltage at no-load.
                 \item \textbf{Compensation:} Nulling resistor and compensation capacitor for improving UGBW and PSRR at higher frequencies.
             \end{itemize}
         \end{column}
@@ -365,19 +365,19 @@
     \begin{itemize}
         \item \textbf{5T OTA-Based LDO:} Offers the most balanced results. Should be preferred when:
         \begin{enumerate}
-            \item Smaller Pass Device is needed.
-            \item Better EA output swing is required for keeping all devices in saturation.
-            \item Searching for a simpler design with fewer transistors.
-            \item Need for slightly better noise results @ high frequencies.
-            \item Need for slightly better PSRR results @ high frequencies.
+            \item A smaller pass device is needed.
+            \item Better error amplifier output swing is required to keep all devices in saturation.
+            \item A simpler design with fewer transistors is desired.
+            \item Slightly better noise performance at high frequencies is needed.
+            \item Slightly better PSRR performance at high frequencies is needed.
         \end{enumerate}
         \item \textbf{Telescopic OTA-Based LDO:} Maximizes loop gain and PSRR. Should be preferred when:
         \begin{enumerate}
-            \item Larger Pass Device can be utilized.
-            \item No care for the limited output swing of the EA.
-            \item Can work on more complex designs with more transistors.
-            \item Need for higher PSRR values @ low frequencies.
-            \item Need for better Phase Margin @ Load.
+            \item A larger pass device can be utilized.
+            \item The limited output swing of the error amplifier is not a concern.
+            \item More complex designs with additional transistors are acceptable.
+            \item Higher PSRR values at low frequencies are required.
+            \item Better phase margin under load is needed.
         \end{enumerate}
     \end{itemize}
 \end{frame}
@@ -389,7 +389,7 @@
             \svg{../images/cm_ota.svg}{Current Mirror OTA}{1}
         \end{column}
         \begin{column}{0.48\textwidth}
-            Both designs performed well across almost all proposed specifications and failed only to meet the output-referred noise specification at higher frequencies.Achieving the noise specification at higher frequencies requires increasing the input-transistor bias current, as thermal noise dominates in this regime. However, increasing the bias current in both topologies reduces the output impedance, thereby decreasing loop gain and PSRR performance. Alternative architectures with separate input and gain stages, each optimized for different operating currents, warrant investigation.
+            Both designs perform well across almost all specified performance targets, with the exception of the output-referred noise specification at higher frequencies. Meeting the noise specification at higher frequencies would require increasing the input-transistor bias current, as thermal noise dominates in this regime. However, increasing the bias current in both topologies reduces the output impedance, thereby decreasing loop gain and PSRR performance. Alternative architectures with separate input and gain stages, each optimized for different operating currents, warrant further investigation.
         \end{column}
     \end{columns}
 \end{frame}
@@ -439,7 +439,7 @@
             $C_c$ (Compensation) & 7.00 & \unit{\pico\farad} \\
             \bottomrule
         \end{tabular}
-        \caption{Device Sizing for the Current Mirror OTA LDO}
+        \caption{Device Sizing for the Current Mirror OTA-Based LDO}
     \end{table}
 \end{frame}
 
@@ -488,11 +488,11 @@
             PSRR @ \qty{1}{\mega\hertz} & $>\qty{2}{\decibel}$ & 7.923 -- 10.45 \\
             PSRR @ \qty{10}{\mega\hertz} & $>\qty{2}{\decibel}$ & 4.337 -- 4.802 \\
             \midrule
-            Output-Referred Noise @ \qty{10}{\hertz} & $<-\qty{115}{\decibel\volt\slash\sqrt{\Hz}}$ & -111.9 -- -115 \\
-            Output-Referred Noise @ \qty{1}{\kilo\hertz} & $<-\qty{125}{\decibel\volt\slash\sqrt{\Hz}}$ & -131.8 -- -134.9 \\
-            Output-Referred Noise @ \qty{10}{\kilo\hertz} & $<-\qty{134}{\decibel\volt\slash\sqrt{\Hz}}$ & -141 -- -144 \\
-            Output-Referred Noise @ \qty{100}{\kilo\hertz} & $<-\qty{143}{\decibel\volt\slash\sqrt{\Hz}}$ & -147 -- -149.5 \\
-            Output-Referred Noise @ \qty{1}{\mega\hertz} & $<-\qty{155}{\decibel\volt\slash\sqrt{\Hz}}$ & -150.3 -- -151.9 \\
+            Output-Referred Noise @ \qty{10}{\hertz} & $<-\qty{115}{\decibel\volt\slash\sqrt{\Hz}}$ & -115 -- -111.9 \\
+            Output-Referred Noise @ \qty{1}{\kilo\hertz} & $<-\qty{125}{\decibel\volt\slash\sqrt{\Hz}}$ & -134.9 -- -131.8 \\
+            Output-Referred Noise @ \qty{10}{\kilo\hertz} & $<-\qty{134}{\decibel\volt\slash\sqrt{\Hz}}$ & -144 -- -141 \\
+            Output-Referred Noise @ \qty{100}{\kilo\hertz} & $<-\qty{143}{\decibel\volt\slash\sqrt{\Hz}}$ & -149.5 -- -147 \\
+            Output-Referred Noise @ \qty{1}{\mega\hertz} & $<-\qty{155}{\decibel\volt\slash\sqrt{\Hz}}$ & -151.9 -- -150.3 \\
             \bottomrule
         \end{tabularx}
         \caption{Simulated Performance Summary (Across All Trims)}
@@ -501,22 +501,25 @@
 
 \section{Acknowledgements}
 \begin{frame}{Acknowledgements}
-    \begin{columns}[c,onlytextwidth]
-        \begin{column}{0.48\textwidth}
-            This work wouldn't have been possible without the help of PhD candidate Andreas Papathanasiou and Pr. Paul-Peter Sotiriadis. Special thanks go to Dr. Dimitrios Baxevanakis for his guidance and help all throughout the project.
-        \end{column}
-        \begin{column}{0.48\textwidth}
-            \centering
-            \textbf{Thank You! \\ Any Questions? \\}
-            el22174@mail.ntua.gr
-        \end{column}
-    \end{columns}
+    \vspace{1em}
+    \centering
+    \Large
+    \textbf{Thank You! \\[0.5em] Any Questions?}
+    \normalsize
+    \vspace{0.5em}
+    
+    el22174@mail.ntua.gr
+    
+    \vspace{1.5em}
+    
+    \normalsize
+    This work would not have been possible without the support of PhD candidate Andreas Papathanasiou and Prof. Paul-Peter Sotiriadis. Special thanks go to Dr. Dimitrios Baxevanakis for his guidance and support throughout the project.
 \end{frame}
 
 \section{Bibliography}
 \begin{frame}{Bibliography}
     \footnotesize
-    Key references: \cite{1,2,pretl2026}
+    Key references: \cite{1,pretl2026,2}
     \vspace{0.5em}
     \bibliography{presentation}
 \end{frame}

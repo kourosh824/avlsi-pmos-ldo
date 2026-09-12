@@ -699,6 +699,7 @@ INPUT ./svg-inkscape/cm_noise_svg-tex.pdf
 INPUT ./svg-inkscape/cm_noise_svg-tex.pdf_tex
 INPUT ./svg-inkscape/cm_noise_svg-tex.pdf
 INPUT ./svg-inkscape/cm_noise_svg-tex.pdf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT ./presentation.bbl
 INPUT ./presentation.bbl

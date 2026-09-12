@@ -30,13 +30,13 @@
 \maketitle
 
 \begin{abstract}
-This paper presents the design and comparison of two capacitor-less (CL) PMOS low dropout (LDO) regulators implemented in a 130nm CMOS technology. Each LDO topology was designed using a different OTA (5T OTA, Telescopic OTA). Both LDO configurations drive a 50 pF load, deliver a load current of {\bfseries \SI[per-mode=symbol,detect-weight]{500}{\micro\ampere}}, support programmable output voltages ({\bfseries \SI[per-mode=symbol,detect-weight]{2.3}{\volt}}, {\bfseries \SI[per-mode=symbol,detect-weight]{2.1}{\volt}} and {\bfseries \SI[per-mode=symbol,detect-weight]{1.6}{\volt}}), and have a consumption strictly below {\bfseries \SI[per-mode=symbol,detect-weight]{100}{\micro\ampere}}. Simulation results demonstrate that the 5T OTA provides the most balanced final results, whereas the Telescopic OTA maximizes loop gain at the severe expense of the Error Amplifier's output voltage swing. 
+This paper presents the design and comparison of two capacitor-less (CL) PMOS low dropout (LDO) regulators implemented in a 130nm CMOS technology. Each LDO topology was designed using a different OTA (5T OTA, Telescopic OTA). Both LDO configurations drive a 50 pF load, deliver a load current of {\bfseries \SI[per-mode=symbol,detect-weight]{500}{\micro\ampere}}, support programmable output voltages ({\bfseries \SI[per-mode=symbol,detect-weight]{2.3}{\volt}}, {\bfseries \SI[per-mode=symbol,detect-weight]{2.1}{\volt}} and {\bfseries \SI[per-mode=symbol,detect-weight]{1.6}{\volt}}), and have a consumption strictly below {\bfseries \SI[per-mode=symbol,detect-weight]{100}{\micro\ampere}}. Simulation results demonstrate that the 5T OTA provides the most balanced final results, whereas the Telescopic OTA maximizes loop gain and PSRR at the severe expense of the Error Amplifier's output voltage swing. 
 \end{abstract}
 
 \section{Introduction}
 \IEEEPARstart{L}{}ow dropout (LDO) voltage regulators are one of the most essential building blocks in power-management systems. Especially with today's increasing demand for system-on-chip solutions, many mixed-signal systems utilize LDO regulators to deliver local supply voltages with reduced noise.
 
-This work will focus on designing two individual LDO architectures. Both LDO topologies must meet the proposed specifications that are presented in Table I. The general LDO schematic is also shown in Figure 1.
+This work will focus on designing two individual LDO architectures. Both LDO topologies must meet the proposed specifications that are presented in Table I.
 
 \begin{table}[htbp]
     \renewcommand{\arraystretch}{1.2}
@@ -51,6 +51,7 @@ This work will focus on designing two individual LDO architectures. Both LDO top
         Bias Current ($I_{bias}$) & \qty{5}{\micro\ampere} \\
         Load Current ($I_{L}$) & \qty{500}{\micro\ampere} \\
         Load Capacitance ($C_{L}$) & \qty{50}{\pico\farad} \\
+        Saturation Margin ($V_{DSAT-MARG}$) & \qty{>50}{\milli\volt} \\
         \midrule
         Reference Voltage ($V_{REF}$) & $\qty{1.2}{\volt} \pm \qty{1}{\percent}$ \\
         Output Voltages ($V_{OUT}$) & \qty{2.3}{\volt}, \qty{2.1}{\volt}, \qty{1.6}{\volt} \\
@@ -73,13 +74,13 @@ This work will focus on designing two individual LDO architectures. Both LDO top
     \end{tabular}
 \end{table}
 
-Section II provides the theoretical background necessary to understand LDO architecture. Sections III and IV present the two topologies designed and tested in this work, while Section V compares their performance.
+Section II presents the theoretical background required to understand LDO architectures. Sections III and IV describe the two topologies designed and tested in this work, while Section V compares their performance.
 
 \section{Background}
 
 \svg{../images/pmos_ldo.svg}{General LDO Schematic}{0.8}
 
-As shown in Figure 1, a PMOS LDO is made of an Error Amplifier (EA), a PMOS Pass Device (PD), two feedback resistors $R_1$ and $R_2$ for setting the output voltage and a compensation network consisting of a nulling resistor $R_c$ and a capacitor $C_c$. In this work only one-stage EAs will be presented and analyzed.
+As shown in Figure 1, a PMOS LDO is made of an Error Amplifier (EA), a PMOS Pass Device (PD), a feedback network consisting of two feedback resistors $R_1$ and $R_2$ and a compensation network consisting of a nulling resistor $R_c$ and a capacitor $C_c$. In this work only one-stage EAs will be presented and analyzed.
 
 \subsection{Output Voltage}
 Assuming that the EA has infinite DC gain (therefore $A_{EA,0} \rightarrow \infty$), LDO's gain is given by:
@@ -106,13 +107,13 @@ A small signal model of the LDO schematic can be seen in Figure 2 where the EA's
 \end{equation}
 
 \begin{equation}
-    \omega_{z} = \frac{1}{C_c(1 \slash g_{m,PD} - R_c)}
+    \omega_{z} = \frac{-1}{C_c(1 \slash g_{m,PD} - R_c)}
 \end{equation}
 
 \svg{../images/pmos_ldo_ss.svg}{Small Signal Model of LDO}{1}
 
 \subsection{Power Supply Rejection Ratio (PSRR)}
-Power supply rejection refers to the amount of voltage ripple at the output of the LDO coming from the input voltage and therefore is of great importance. The PSR transfer function of a LDO regulator strongly depends on the type of the EA and whether the input transistors of the EA are NMOS or PMOS (Type-A or Type-B EA respectively). For a PMOS PD, Type-A EAs yield the best PSRR results at low frequencies [2]. Therefore, both LDOs presented in this work utilize Type-A EAs and their PSRR can be approximated by:
+Power supply rejection refers to the amount of voltage ripple at the output of the LDO coming from the input voltage and therefore is of great importance. The PSR transfer function of a LDO regulator strongly depends on the type of the EA and whether the input transistors of the EA are NMOS or PMOS (Type-A or Type-B EA respectively). For a PMOS PD, Type-A EAs yield the best PSRR results at low frequencies [3]. Therefore, both LDOs presented in this work utilize Type-A EAs and their PSRR can be approximated by:
 
 \begin{equation}
     |PSRR_{DC}| \cong \frac{1}{\beta A_{EA,0} g_{m,PD} r_{ds,p}}
@@ -121,7 +122,7 @@ Power supply rejection refers to the amount of voltage ripple at the output of t
 At higher frequencies, the nulling resistor along with the sizing of the PD can help in achieving the target PSRR requirements.
 
 \subsection{Noise}
-Noise in LDO regulators refers to the flicker and thermal noise generated by transistors and resistors. Aside from that, the reference voltage can also contribute to the total noise in LDO. If $S_{n,ref}(f)$, $S_{n,EA}(f)$, $S_{n,PD}(f)$, $S_{n,R1}(f)$ and $S_{n,R2}(f)$ represent the noise power spectral density of the voltage reference, error amplifier, pass device and feedback resistors respectively, then the total output noise power spectral density of the LDO regulator is [2]:
+Noise in LDO regulators refers to the flicker and thermal noise generated by transistors and resistors. Aside from that, the reference voltage can also contribute to the total noise in LDO. If $S_{n,ref}(f)$, $S_{n,EA}(f)$, $S_{n,PD}(f)$, $S_{n,R1}(f)$ and $S_{n,R2}(f)$ represent the noise power spectral density of the voltage reference, error amplifier, pass device and feedback resistors respectively, then the total output noise power spectral density of the LDO regulator is [3]:
 
 \begin{equation}
     \begin{aligned}
@@ -299,7 +300,7 @@ Both designs performed well across almost all proposed specifications and failed
 \svg{../images/cm_ota.svg}{Current Mirror OTA}{0.8}
 
 \section*{Acknowledgments}
-This work wouldn't have been possible without the help of PhD candidate Andreas Papathanasiou and Pr. Paul-Peter Sotiriadis. Special thanks go to Dr. Dimitrios Baxevanakis for his guidance and help all throughout the project.
+This work wouldn't have been possible without the help of PhD candidate Andreas Papathanasiou and Prof. Paul-Peter Sotiriadis. Special thanks go to Dr. Dimitrios Baxevanakis for his guidance and help all throughout the project.
 
 \bibliographystyle{IEEEtran}
 \nocite{*}

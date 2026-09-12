@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex presentation"] 1789114840.66729 "presentation.aux" "presentation.bbl" "presentation" 1789115124.28968 0
-  "./presentation.bib" 1789114590.44251 867 bc3f05a50ab381fb1f12997f64b0c901 ""
+["bibtex presentation"] 1789198381.57934 "presentation.aux" "presentation.bbl" "presentation" 1789198385.19056 0
+  "./presentation.bib" 1789198334.16971 867 bc3f05a50ab381fb1f12997f64b0c901 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "presentation.aux" 1789115124.0488 7558 28657c077c1a3fa62dec80d9844f7130 "pdflatex"
+  "presentation.aux" 1789198385.06245 7558 fd87f55faa4b3390331f37b75cbda571 "pdflatex"
   (generated)
   "presentation.bbl"
   "presentation.blg"
   (rewritten before read)
-["pdflatex"] 1789115119.62299 "/home/kidb/dev/ece-ntua/avlsi-pmos-ldo/presentation/presentation.tex" "presentation.pdf" "presentation" 1789115124.29 0
+["pdflatex"] 1789198381.6181 "/home/kidb/dev/ece-ntua/avlsi-pmos-ldo/presentation/presentation.tex" "presentation.pdf" "presentation" 1789198385.19075 0
   "../images/5t_ota.svg" 1788201333.44655 34626 112e33edf662484a632d7d41c35732df ""
   "../images/cm_ota.svg" 1788901246.5438 46269 fafbf73e824fa65126ee3deef8fcac45 ""
   "../images/pll_diagram.svg" 1789067578.5347 44108 57ea4e4baee661988a472e34043fec68 ""
@@ -28,7 +28,7 @@
   "../simulations/images/tel_tran.svg" 1788870685.09566 89935 054f4871e085da720c80a85ff71bb2e2 ""
   "/etc/texmf/web2c/texmf.cnf" 1783174740.31686 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/kidb/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss0700.600pk" 1789064493.24385 7604 0de391203835bc3e677f9d5fadbfc5fa ""
-  "/home/kidb/dev/ece-ntua/avlsi-pmos-ldo/presentation/presentation.tex" 1789115119.28474 23939 d745602cef44acb8b9efc7ab57a0d1dc ""
+  "/home/kidb/dev/ece-ntua/avlsi-pmos-ldo/presentation/presentation.tex" 1789198382.34641 23833 4092de4cbb323b36a54f5848b27691b4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcss0500.tfm" 1136768653 1536 60d93b2a4c4b97d3f95d298d025a3cac ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcss0700.tfm" 1136768653 1536 e5428b375c095aa4874fb47053e1d4fc ""
@@ -256,12 +256,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1741904018 41538 c016915c1d51223b6dbbfe27341748a8 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1783174746 165211 6b08d096f3d0fe5ff6b266061a2b45e0 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1783175469 1958753 a13da54103a8dc52104caebd551da3e4 ""
-  "presentation.aux" 1789115124.0488 7558 28657c077c1a3fa62dec80d9844f7130 "pdflatex"
-  "presentation.bbl" 1789114840.68939 667 115ac6f02a088c4ff4b5c2f4f9006b7f "bibtex presentation"
-  "presentation.nav" 1789115124.0488 4014 ed400ae1b81927fd4bfcc9fcd5ecd571 "pdflatex"
-  "presentation.out" 1789115124.0488 1187 f57af53f302929a291f74d010eb4990c "pdflatex"
-  "presentation.tex" 1789115119.28474 23939 d745602cef44acb8b9efc7ab57a0d1dc ""
-  "presentation.toc" 1789115124.0488 514 c9dccb78efb21457d3f0d17b9eb8f948 "pdflatex"
+  "presentation.aux" 1789198385.06245 7558 fd87f55faa4b3390331f37b75cbda571 "pdflatex"
+  "presentation.bbl" 1789198381.6024 667 115ac6f02a088c4ff4b5c2f4f9006b7f "bibtex presentation"
+  "presentation.nav" 1789198385.06245 4014 ed400ae1b81927fd4bfcc9fcd5ecd571 "pdflatex"
+  "presentation.out" 1789198385.06245 1187 f57af53f302929a291f74d010eb4990c "pdflatex"
+  "presentation.tex" 1789198382.34641 23833 4092de4cbb323b36a54f5848b27691b4 ""
+  "presentation.toc" 1789198385.06245 514 c9dccb78efb21457d3f0d17b9eb8f948 "pdflatex"
   "svg-inkscape/5t_bode_svg-tex.pdf" 1789071423.25072 148277 f0492f496acecf316ddb7991fe58c44f ""
   "svg-inkscape/5t_bode_svg-tex.pdf_tex" 1789071423.25072 2066 fc024834ea3b68a7d8a6234089497bc5 ""
   "svg-inkscape/5t_noise_svg-tex.pdf" 1789071465.23143 106083 6d6d19f3c1efe71970258ae30f23be52 ""
