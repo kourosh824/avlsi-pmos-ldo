@@ -47,5 +47,6 @@ The project focuses on the spec-driven co-design of two low dropout (LDO) regula
 
 ## Author
 **Kourosh N. Baygi**
+
 National Technical University of Athens (NTUA)  
 School of Electrical & Computer Engineering
